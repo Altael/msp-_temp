@@ -1,0 +1,1412 @@
+/*
+body.theme_am.amDiary - для страницы дневника
+.amDiary-edit - для режима редактирования дневника
+*/
+@import "../colors";
+@import "../theme_am/colors";
+@import "../theme_am/variables";
+
+body.theme_am.amDiary {
+    font-family: $font-family-base;
+    font-weight: 500;
+
+    .dhrtScroll-wrapperInner {
+        padding: 0 0 100px;
+    }
+}
+
+.dhrtCheckbox,
+.dhrtRadio {
+    &:hover &View {
+        background: transparent;
+    }
+    &View {
+        width: 22px;
+        height: 22px;
+        border: 2px solid $white;
+        background-color: transparent;
+        margin-right: 8px;
+        cursor: pointer;
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 0;
+        border-radius: 100%;
+
+        &:hover {
+            border-color: #fff;
+        }
+
+
+        &:after {
+            border-right: 1px solid transparent;
+            border-top: 1px solid transparent;
+        }
+
+        input[type='radio']:checked + &,
+        input[type='checkbox']:checked + & {
+            background-color: $white;
+            border-color: $white;
+        }
+        .amDiarySummary label &,
+        .amDiarySummary label & {
+            margin-right: 4px;
+            border-color: #BCBCBC;
+        }
+
+        .amDiarySummary input[type='radio']:checked + &,
+        .amDiarySummary input[type='checkbox']:checked + & {
+            background-color: #45CB4A;
+            border-color: #45CB4A;
+        }
+
+        .amDiarySummary input[type='radio']:checked + &:after,
+        .amDiarySummary input[type='checkbox']:checked + &:after {
+            background-color: #45CB4A;
+            border-color: $white;
+        }
+
+        input[type='radio']:checked + &:after,
+        input[type='checkbox']:checked + &:after {
+            background-color: $white;
+            border-color: $amDiary_orange;
+            transform: scaleX(-1) rotate(135deg);
+            transform-origin: left top;
+            height: 9px;
+            width: 5px;
+            left: 4px;
+            top: 10px;
+            border-radius: 0;
+
+        }
+
+    }
+    &-label {
+        color: $white;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    label {
+        min-height: 34px;
+        border-bottom: 1px solid $white;
+        margin: 8px 0;
+        @media screen {
+            & {
+                padding: 8px 0;
+            }
+        }
+
+
+        .amDiarySummary & {
+            border-bottom: none;
+            white-space: normal;
+        }
+
+        &.amDiaryPage-morningAll {
+            margin-top: 32px;
+        }
+    }
+}
+
+
+.amDiaryEditing {
+    .amToolbar {
+        display: none;
+    }
+    #amDiary,
+    .appPageContentBody > .dhrtScroll-wrapperInner {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}
+
+.appPageContentBody > .dhrtScroll-wrapperInner,
+#amDiary {
+    height: calc(var(--vh, 1vh) * 100 - #{$amToolBar});
+    background: $amDiary_bg;
+}
+
+.amDiary-tools {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .summaryEdit &CalendarBtn {
+        display: none;
+    }
+
+    .settings &SettingsLink {
+        display: none;
+    }
+    & .appIcons {
+        cursor: pointer;
+    }
+    &Items {
+        height: $amDiary-toolsHeight;
+        line-height: $amDiary-toolsHeight;
+        color: $amDiary-toolsText;
+        font-family: $font-family-tools;
+        font-size: 14px;
+        background: $amDiary-toolsBg;
+        width: 100%;
+        max-width: $amWidth;
+        padding: 0 16px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            height: $amDiary-toolsHeight;
+        }
+    }
+
+
+    &Center {
+        justify-content: center;
+        z-index: 1;
+
+        .amDiary-edit & [class^='msppIcons-chevron-'] {
+            display: none;
+        }
+
+    }
+
+    &Left {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        z-index: 2;
+        line-height: $amDiary-toolsHeight;
+
+        .msppIcons-settings {
+            font-size: 18px;
+            line-height: $amDiary-toolsHeight;
+        }
+
+        &Item {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            margin-left: -8px;
+        }
+
+        &Item .appIcons {
+            font-size: 28px;
+            display: block;
+        }
+    }
+
+    &Right {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        z-index: 3;
+
+        @media screen and (min-height: $borderHeight2) {
+            &Finish {
+                display: none;
+            }
+        }
+
+        &Action {
+            color: $amDiary-toolsLink;
+            cursor: pointer;
+            font-size: 17px;
+            line-height: $amDiary-toolsHeight;
+
+
+            &.Ready {
+                display: block;
+            }
+
+            &.Start {
+                font-size: 18px;
+                line-height: $amDiary-toolsHeight;
+                color: $amDiary-toolsText;
+            }
+
+
+        }
+
+    }
+}
+.summaryView,
+.newDay {
+    .amDiary-Page,
+    .amDiary-content,
+    [class^='amDiaryStage'],
+    .amDiaryTouch,
+    .amDiary-content {
+        height: calc(var(--vh, 1vh) * 100 - #{$amToolBar} - #{$amDiary-toolsHeight});
+    }
+}
+.summaryEdit {
+    .amDiary-Page,
+    .amDiary-content,
+    [class^='amDiaryStage'],
+    .amDiaryTouch,
+    .amDiary-content {
+        height: calc(var(--vh, 1vh) * 100 - #{$amDiary-toolsHeight});
+    }
+}
+.amDiary-edit {
+    .amDiaryTouch,
+    [class^='amDiaryStage'] {
+        height: calc(var(--vh, 1vh) * 100 - #{$amDiary-toolsHeight});
+    }
+    .amDiaryTouch .amDiary-content {
+        height: calc(var(--vh, 1vh) * 100 - #{$amDiary-toolsHeight} - #{$amDiary-progressHeight});
+    }
+}
+
+
+[class^='amDiaryStage'] {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.amDiaryTouch {
+    position: fixed;
+    top: $amDiary-toolsHeight;
+    bottom: $amToolBar;
+    width: 100%;
+    max-width: $amWidth;
+}
+.amDiary-content {
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+    background: $amDiary_orange;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .summaryEdit & {
+        justify-content: center;
+    }
+
+}
+.summaryEdit .dhrtScroll-wrapperInner {
+    max-height: calc(var(--vh, 1vh) * 100 - 374px);
+}
+
+.amDiary-btn {
+    height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    width: 223px;
+    background: #fff;
+    border-radius: 29px;
+    opacity: 1;
+    color: $am_color;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin: 8px auto;
+
+    .amDiary-settingsButtons & {
+        border: 1px solid $amDiary-settingsGroupBorder;
+    }
+}
+
+#amDiaryStoryModal {
+
+    align-items: flex-end;
+    $amDiaryStoryModalHeight: calc(100vh - #{$amDiary-toolsHeight} - 8px);
+
+    .dhrtModalWindow-content {
+        width: 100vw;
+        height: $amDiaryStoryModalHeight;
+        max-height: $amDiaryStoryModalHeight;
+        max-width: $amWidth;
+        border-radius: 8px 8px 0 0;
+    }
+    .dhrtModalWindow-body {
+        display: flex;
+        align-items: center;
+    }
+    .dhrtModalWindow-body,
+    .dhrtScroll-wrapperInner {
+        height: calc(#{$amDiaryStoryModalHeight} - 142px);
+        font-size: 16px;
+    }
+    .dhrtModalWindow-scroll .dhrtModalWindow-body,
+    .dhrtModalWindow-scroll .dhrtScroll-wrapperInner {
+        max-height: calc(90vh - 129px);
+    }
+}
+
+.amDiaryPage {
+    position: absolute;
+    background: $amDiary-barColor;
+    top: 0;
+    bottom: 0;
+
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 1;
+    $paddingV: 16px;
+    padding: $paddingV 20px;
+    .amDiaryStage1 & {
+        height: calc(var(--vh, 1vh) * 100 - #{$amDiary-toolsHeight} - #{$amToolBar});
+        @media screen and (min-height: $borderHeight2) {
+            max-height: 570px;
+            position: relative;
+
+        }
+    }
+    /*
+    will-change: transform;
+    transform-origin: 100% 0;
+    transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out,-webkit-transform 0.5s ease-out;
+    transform: scale(0);
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;*/
+    display: none;
+
+    @media screen and (min-height: $borderHeight2) {
+        $paddingV: 26px;
+        & {
+            padding: $paddingV 20px;
+        }
+    }
+
+    .amDiaryStage1 & {
+        align-items: center;
+
+
+    }
+
+    &.curPage {
+        /*transform: scale(1);*/
+        display: flex;
+    }
+
+
+
+    &-title {
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 500;
+        margin-bottom: 16px;
+
+        @media all and (min-height: $borderHeight2) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &-button {
+        @extend .amDiary-btn;
+        display: none;
+
+        .newDay & {
+            display: block;
+        }
+
+        .newDay & {
+            margin: 24px auto;
+        }
+
+
+        @media screen and (min-height: $borderHeight2) {
+            margin: 0 auto;
+        }
+
+        .summaryEdit &,
+        .summaryView & {
+
+            @media screen and (min-height: $borderHeight2) {
+                display: block;
+            }
+        }
+
+
+    }
+
+    &1 {
+        &-title {
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: bold;
+            text-align: center;
+
+            @media screen and (min-height: $borderHeight1) {
+                font-size: 22px;
+                line-height: 24px;
+            }
+        }
+
+        &-image {
+            margin-bottom: 16px;
+            height: 100px;
+            @extend .appGrid-flexCenterCenter;
+
+            @media screen and (min-height: $borderHeight1) {
+                height: 125px;
+                margin-top: 8px;
+            }
+            @media screen and (min-height: $borderHeight2) {
+                margin-bottom: 24px;
+                height: 175px;
+            }
+            img {
+                height: 100%;
+            }
+        }
+        &-datePaginator {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 130px;
+
+            @media all and (min-height: $borderHeight1) {
+                margin: 8px auto;
+            }
+            @media all and (min-height: $borderHeight2) {
+                margin: 0 auto;
+            }
+
+            & > * {
+                cursor: pointer;
+                border-radius: 100%;
+                border: 3px solid $am_diary_text;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 17px
+            }
+            &Btn{
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    font-size: 40px;
+                    line-height: 28px;
+                    color: $am_diary_text;
+                }
+                &Left:after {
+                    content: '‹';
+                    left: 8px;
+                }
+                &Right:after {
+                    content: '›';
+                    left: 11px;
+                }
+            }
+
+            &Btn.disabled {
+                border-color: $am_diary_disabled;
+
+                &:after {
+                    color: $am_diary_disabled;
+                }
+
+            }
+        }
+    }
+
+    &-help{
+        .dhrtScroll-wrapperInner {
+            padding-right: 16px;
+        }
+         &Link {
+             display: flex;
+             justify-content: flex-end;
+             position: absolute;
+             right: 16px;
+             top: 16px;
+             font-size: 30px;
+             cursor: pointer;
+             z-index: 9;
+
+
+         }
+        &Content {
+            position: absolute;
+            background: white;
+            left: 0;
+            right: 0;
+            top: 8px;
+            bottom: 0;
+            z-index: 999;
+            border-radius: 14px 14px 0 0;
+
+
+
+        }
+        &Head {
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+            font-size: 22px;
+            background: #F5F0EF;
+            color: #000000;
+            border-radius: 14px 14px 0 0;
+
+            &Close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: #E5E1E2;
+                background: #707070;
+                font-size: 30px;
+                border-radius: 100%;
+                cursor: pointer;
+                width: 28px;
+                height: 28px;
+            }
+            &Close:before {
+                position: relative;
+                top: -1px;
+                left: -1px;
+
+            }
+
+        }
+        &Body {
+            font-size: 16px;
+            color: #000000;
+            padding: 32px 16px;
+            $helpBodyHeight: calc(var(--vh, 1vh) * 100 - 172px);
+            .dhrtScroll-wrapperInner {
+                height: $helpBodyHeight;
+                padding-bottom: 32px;
+
+                .withoutSattvaPoints & {
+                    height: calc(#{$helpBodyHeight} - #{$amSattavaPointsHeight});
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.amDiaryStage1 {
+
+    .amDiary-content {
+        justify-content: center;
+    }
+
+
+    &-title {
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+
+}
+
+.amDiary-progress {
+    background: $amDiary-progressBg;
+    padding: 8px 16px;
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+
+    .amDiary-edit & {
+        display: block;
+        height: $amDiary-progressHeight;
+
+
+    }
+    .withoutSattvaPoints.amDiary-edit & {
+        height: calc(#{$amDiary-progressHeight} - #{$amSattavaPointsHeight});
+    }
+
+
+
+    &Bar {
+        width: 100%;
+        background: $amDiary-progressBarBg;
+        height: 4px;
+        border-radius: 2px;
+        margin: 8px auto;
+
+        &Meter {
+            width: 75%;
+            background: $amDiary-progressBar;
+            height: 4px;
+            border-radius: 2px;
+        }
+    }
+
+    &SattvaBar {
+        padding: 8px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0 auto;
+
+        &Item {
+            width: 2px;
+            height: 14px;
+            border-radius: 1px;
+            background-color: $amDiary-progressBar;
+            margin: 0 2px;
+
+            &.long {
+                height: 20px;
+            }
+
+            &.active {
+                &.green {
+                    background-color: $am_diary_sattva_green;
+                }
+
+                &.yellow {
+                    background-color: $am_diary_sattva_yellow;
+                }
+
+                &.red {
+                    background-color: $am_diary_sattva_red;
+                }
+            }
+        }
+    }
+
+    .amDiaryPage4 & &SattvaBarWrapper,
+    .amDiaryPage5 & &SattvaBarWrapper {
+        margin: 8px auto;
+    }
+
+
+
+    &SattvaText {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: $txt_diarySattavaText;
+    }
+    &SattvaPoints {
+        text-align: center;
+        font-size: 16px;
+        line-height: 16px;
+        color: $am_text;
+        height: $amSattavaPointsHeight;
+
+        .withoutSattvaPoints & {
+            display: none;
+        }
+
+        &Text {
+            line-height: 14px;
+            font-size: 12px;
+        }
+    }
+
+}
+
+.amDiary-edit {
+    .amDiary-content {
+        border-radius: 14px 14px 0 0 ;
+    }
+}
+
+.amDiary-settings {
+    height: 100%;
+    padding: 16px 0;
+    background: $white;
+
+    &Buttons {
+        padding: 32px 16px;
+        text-align: center;
+    }
+    &Group {
+        margin-bottom: 16px;
+
+        .amDiary-settingsGroupTitle {
+            font-size: 20px;
+            padding: 4px 16px;
+        }
+
+        &Item {
+            background: $amDiary-settingsGroupBg;
+            border-top: 1px solid $amDiary-settingsGroupBorder;
+            font-size: 16px;
+            color: $amDiary-settingsGroupText;
+            padding: 8px 16px;
+            cursor: pointer;
+
+            &:after {
+                @extend .amDiary-btnShevronRight;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid $amDiary-settingsGroupBorder;
+            }
+        }
+
+    }
+
+
+}
+
+.amDiary-btnShevronRight {
+
+    &After,
+    &:after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-top: 1px solid $amDiary-settingsGroupArrow;
+        border-right: 1px solid $amDiary-settingsGroupArrow;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        display: block;
+        position: absolute;
+        right: 18px;
+        top: 16px;
+    }
+}
+
+.amDiary-plan {
+    padding: 32px 0;
+    height: 100%;
+    background: $white;
+
+    .amDiary-planItem:last-child {
+        border-bottom: 1px solid $amDiary-settingsGroupBorder;
+    }
+    .amDiary-planItem {
+        background: $amDiary-settingsGroupBg;
+        border-top: 1px solid $amDiary-settingsGroupBorder;
+        font-size: 16px;
+        margin: 0;
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 100%;
+
+        .dhrtRadio-label {
+            color: $amDiary-settingsGroupText;
+            font-size: 16px;
+        }
+        .dhrtRadioView {
+            border-color: #ccc;
+            background-color: transparent;
+            border-width: 1px;
+        }
+        input[type='radio']:checked + .dhrtRadioView:after {
+            border-color: #ccc;
+            background-color: transparent;
+            left: 5px;
+        }
+        input[type='radio']:checked + .dhrtRadioView {
+            border-color: #ccc;
+            background-color: transparent;
+        }
+    }
+
+}
+.amDiaryEditing .amDiary-toolsCalendarBtn {
+    display: none;
+}
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.appProgressRadial {
+    float: left;
+    position: relative;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: $amDiary-barColor;
+    flex-shrink: 0;
+
+    .appDiaryStatus-super & {
+        background-color: $amDiary-barColor-super;
+    }
+    /* -------------------------------------
+     * Optional centered circle w/text
+     * ------------------------------------- */
+    &-overlay {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background-color: $amDiary-overlayColor;
+        border-radius: 50%;
+        margin-left: 8px;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 14px;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+
+        &Text {
+            font-size: 13px;
+            line-height: 13px;
+            white-space: pre-wrap;
+        }
+
+        &Percent {
+            line-height: 27px;
+            font-size: 25px;
+        }
+    }
+
+    /* -------------------------------------
+     * Mixin for progress-% class
+     * ------------------------------------- */
+
+    $step: 1; // step of % for created classes
+
+    $loops: round(100 / $step);
+    $increment: 360 / $loops;
+    $half: round($loops / 2);
+    @for $i from 0 through $loops {
+        &-progress#{$i*$step} {
+
+            @if $i < $half {
+                $nextdeg: 90deg + ( $increment * $i );
+                background-image: linear-gradient(90deg, $amDiary-barColorBg 50%, transparent 50%, transparent), linear-gradient($nextdeg, $amDiary-barColor 50%, $amDiary-barColorBg 50%, $amDiary-barColorBg);
+            } @else {
+                $nextdeg: -90deg + ( $increment * ( $i - $half ) );
+                background-image: linear-gradient($nextdeg, $amDiary-barColor 50%, transparent 50%, transparent), linear-gradient(270deg, $amDiary-barColor 50%, $amDiary-barColorBg 50%, $amDiary-barColorBg);
+            }
+        }
+    }
+}
+
+.amDiarySummary {
+    color: $am_text;
+    max-width: $mobile_width;
+    font-size: 14px;
+    background: $am_bg;
+    border-radius: 12px;
+    padding: 8px 16px;
+    width: 100%;
+    flex-shrink: 0;
+
+    @media all and (min-height: $borderHeight1) {
+        padding: 12px 16px;
+    }
+
+
+    .summaryView & {
+       height: 235px;
+
+        @media all and (min-height: $borderHeight1) {
+            height: 340px;
+        }
+        @media all and (min-height: $borderHeight2) {
+            height: 410px;
+        }
+    }
+
+    &-text {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 18px;
+
+        .summaryView & {
+            display: flex;
+
+            @media all and (min-height: $borderHeight1) {
+                display: none;
+            }
+        }
+        &Indicator {
+            background-image: linear-gradient(90deg, $amDiary-barColor 50%, $amDiary-barColorBg 50%);
+            padding: 2px 8px;
+            color: $white;
+        }
+
+        &Days {
+            text-align: center;
+        }
+    }
+    &-graph {
+        font-weight: 500;
+        display: none;
+        justify-content: space-between;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: $amDiaryIndicator;
+        margin-bottom: 8px;
+
+        @media all and (min-height: $borderHeight1) {
+            .summaryView & {
+                display: flex;
+            }
+        }
+        @media all and (min-height: $borderHeight2) {
+            margin-bottom: 8px;
+        }
+
+        &Line {
+            width: 1px;
+            height: 90px;
+            background: $am_line;
+        }
+
+        &Days {
+            @extend .appGrid-flexCenterCenter;
+            @extend .appGrid-width50percent;
+            background: url(/images/diaryDays.svg) no-repeat center;
+            font-size: 22px;
+            background-size: 135px;
+            color: white;
+            flex-direction: column;
+
+            &Txt,
+            &Num {
+
+                position: relative;
+                top: -1px;
+            }
+            &Num {
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 27px;
+            }
+            &Txt {
+                font-size: 13px;
+                line-height: 13px;
+                white-space: normal;
+                width: 44px;
+                text-align: center;
+            }
+        }
+
+        &Percent {
+            @extend .appGrid-flexCenterCenter;
+            @extend .appGrid-width50percent;
+            align-items: flex-start;
+        }
+    }
+
+    &-rank {
+        text-align: center;
+        padding: 4px 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        @media all and (min-height: $borderHeight1) {
+            padding: 8px 0;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        @media all and (min-height: $borderHeight2) {
+            padding: 12px 0;
+        }
+
+        &Status {
+            margin-bottom: 5px;
+            @media all and (min-height: $borderHeight2) {
+                padding: 8px 0;
+            }
+        }
+        &Level {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: left;
+            @media all and (min-height: $borderHeight1) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &-storyBtn {
+        font-size: 13px;
+        line-height: 13px;
+        color: #9A9A9A;
+        cursor: pointer;
+        @extend .appGrid-flexCenterCenter;
+        flex-direction: column;
+        flex-shrink: 0;
+
+        .summaryEdit & {
+            display: none;
+        }
+
+        &Img img,
+        &Img {
+
+            height: 50px;
+            min-height: 50px;
+
+            @media all and (min-height: $borderHeight2) {
+                height: 72px;
+                min-height: 72px;
+            }
+
+        }
+
+
+
+    }
+
+    &-separator {
+        width: 120px;
+        height: 1px;
+        background: $am_line;
+        margin: 10px auto 6px;
+
+        @media all and (min-height: $borderHeight2) {
+            margin: 16px auto;
+        }
+
+        &Wrap {
+            text-align: center;
+        }
+    }
+
+    &-Item {
+        line-height: 18px;
+        font-size: 14px;
+
+        @media all and (min-height: $borderHeight1) {
+            font-size: 16px;
+        }
+
+        &.performed {
+
+            margin-bottom: 4px;
+
+            @media all and (min-height: $borderHeight1) {
+                margin-bottom: 8px;
+            }
+            @media all and (min-height: $borderHeight2) {
+                margin-bottom: 12px;
+            }
+        }
+
+        &.public {
+            @media all and (min-height: $borderHeight1) {
+                height: 36px;
+            }
+
+        }
+        &.better {
+            margin-bottom: 4px;
+            display: none;
+
+            span {
+                color: $am_color;
+            }
+        }
+
+
+    }
+
+    &-Ending {
+        height: calc(var(--vh, 1vh) * 100 - 96px);
+        /*max-height: 450px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 16px;
+
+        .summaryView & {
+            height: calc(var(--vh, 1vh) * 100 - 132px);
+        }
+
+        @media screen and (min-width: 375px) {
+            font-size: 18px;
+        }
+        @media screen and (min-height: $borderHeight1) {
+            /*height: calc(var(--vh, 1vh) * 100 - 40px - 48px - #{$amDiaryIndicator} - 24px);*/
+            height: calc(var(--vh, 1vh) * 100 - 104px);
+        }
+        @media screen and (min-height: $borderHeight2) {
+            /*height: calc(var(--vh, 1vh) * 100 - 232px -  #{$amToolBar} - 24px);*/
+            height: calc(var(--vh, 1vh) * 100 - 120px);
+        }
+
+        &Stage {
+            &Content > * {
+                display: block;
+                width: 50%;
+                flex-shrink: 0;
+                flex-grow: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &Link {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                white-space: nowrap;
+                color: #999999;
+                line-height: 28px;
+
+                @media all and (min-height: $borderHeight1) {
+                    line-height: 36px;
+                }
+
+                @media all and (min-height: $borderHeight2) {
+                    line-height: 46px;
+                }
+
+            }
+            &Content {
+                display: flex;
+                align-items: center;
+                width: calc(100% - 16px);
+            }
+        }
+    }
+
+    &-MorningPractices {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        & > *:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        .amDiarySummary-EndingStageLinkName {
+            font-size: 12px;
+            line-height: 12px;
+            color: $am_text;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 32px;
+            min-height: 32px;
+        }
+    }
+
+    .dhrtScroll-wrapperInner {
+        max-height: calc(var(--vh, 1vh) * 100 - 422px);
+    }
+
+    .amDiaryPage1-datePaginator {
+        margin: 8px auto 16px;
+    }
+
+
+}
+
+.appGrid {
+    &-flex{
+        &CenterCenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    }
+    &-width50percent {
+        width: 50%;
+
+    }
+
+}
+
+.amDiaryNumpad {
+    width: 100%;
+    max-width: $amWidth;
+    margin: 0 auto;
+
+    &Wrapper {
+        width: 100%;
+        z-index: 99;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 14px;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        /*background: $am_color;*/
+
+        &Question,
+        &Unit {
+            font-size: 18px;
+
+        }
+        &Question {
+            margin-bottom: 8px;
+        }
+
+        &Display {
+            text-align: center;
+            border: none;
+            color: #FFFFFF;
+            font-size: 32px;
+            background: transparent;
+            width: 100%;
+        }
+
+
+    }
+
+
+    &-body {
+        background-color: #F5F0EF;
+        padding-bottom: 2px;
+        margin: 0;
+
+
+        &Keyboard {
+            display: grid;
+            grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+            gap: 6px;
+            text-align: center;
+            color: #000000;
+            font-size: 25px;
+            padding: 4px;
+
+            &Key {
+                background-color: #FCFCFE;
+                height: 30px;
+                line-height: 30px;
+                box-shadow: 0 1px 0 #898A8D;
+                border-radius: 5px;
+
+                @media screen  and (min-height: $borderHeight2) {
+                    height: 40px;
+                    line-height: 40px;
+                }
+
+                &:nth-child(10) {
+                    font-size: 25px;
+                    grid-column: 2/3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:nth-child(11) {
+                    font-size: 25px;
+                    background-color: #F5F0EF;
+                    box-shadow: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:nth-last-child(n+3) {
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+                &:nth-last-child(n+3)::first-line {
+                    font-size: 25px;
+                    font-weight: normal;
+                }
+            }
+        }
+
+
+        &SaveButton {
+            color: #F68B5F;
+            font-size: 16px;
+            text-align: right;
+            border-bottom: 0.5px solid #E5E5E5;
+            height: 36px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            cursor: pointer;
+
+            & > .msppIcons-delete {
+                color: grey;
+                padding-left: 15px;
+
+            }
+        }
+
+
+    }
+
+}
+
+.amDiaryPage-сontent .dhrtRadio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+
+    .dhrtRadio-label {
+        font-size: 16px;
+        line-height: 16px;
+        justify-content: center;
+        padding: 8px;
+        border: 1px solid $white;
+        border-radius: 30px;
+        text-align: center;
+        width: 100%;
+
+        @media all and (min-height: $borderHeight1) {
+            padding: 16px 24px;
+        }
+        @media all and (min-height: $borderHeight2) {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+
+    label {
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin: 0 0 8px;
+        display: flex;
+        border: none;
+        padding: 0;
+
+        @media all and (min-height: $borderHeight2) {
+            margin-bottom: 25px;
+        }
+
+
+        input[type=radio]:checked:not(.not-nulified) + span {
+            background: $amDiary_radiobox;
+            border-color: transparent;
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

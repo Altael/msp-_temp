@@ -1,0 +1,165 @@
+@import "../colors";
+@import "../theme_am/colors";
+@import "../theme_am/variables";
+@import "../mixins";
+@import "samgiits";
+
+
+.amDharmacakra {
+    .amPage-title {
+        height: $pageTitleHeight;
+        color: $amDC-dark;
+        @include amDCPage-bg;
+
+        &:before {
+            border-color: $amDC-dark;
+        }
+
+        &Name {
+            padding-left: 32px;
+        }
+    }
+}
+
+#amDCPageModal-settings {
+    z-index: 9999;
+
+    .dhrtModalWindow-contentClose {
+        line-height: 46px;
+    }
+}
+.amDharmacakra {
+    color: $amDC-dark;
+    font-size: 18px;
+    line-height: 24px;
+
+    .amSettings-dharmacakra .amBlock-title {
+        display: none;
+    }
+    .amSettings-dharmacakra {
+        margin-bottom: 32px;
+    }
+    .appPageContentBody {
+        @include amDCPage-bg;
+        background-size: 100% 100%;
+    }
+    .appPageContentBody > .dhrtScroll-wrapperInner {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}
+.amDharmacakra .numInputWrapper {
+    display: none !important;
+}
+#amDCPage {
+
+
+    @include placeholder {
+        color: $amDC-dark;
+        opacity: 0.6;
+        line-height: 21px;
+        font-size: 16px;
+    }
+
+    .amDCPage-settings {
+        position: fixed;
+        right: 16px;
+        top: 28px;
+        z-index: 9999;
+        cursor: pointer;
+
+        @media all and (min-width: $amWidth) {
+            right: calc(50% - #{$amWidth} / 2 + 16px);
+        }
+    }
+
+    .amDCPage-item {
+        padding: 8px 16px;
+        border-bottom: 1px dotted $amDC-dark;
+        margin-bottom: 16px;
+
+        &s {
+            /*padding-right: 50px;*/
+        }
+    }
+
+    .open .amDCPage-mantraTitle {
+        border-bottom: 1px solid $amDC-dark;
+    }
+
+
+    .amDCPage-mantra {
+        &Title {
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+
+
+        }
+
+        &Transcription {
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+        }
+        &Translation {
+            margin-bottom: 24px;
+        }
+    }
+
+
+
+    .amDCPage-bookmark {
+
+        border-radius: 24px 0 0 24px;
+        border-top: 1px solid $amDC-dark;
+        border-bottom: 1px solid $amDC-dark;
+        border-left: 1px solid $amDC-dark;
+        color: $amDC-dark;
+        padding: 4px 8px;
+        font-size: 24px;
+        line-height: 26px;
+        height: 36px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 38px;
+
+        &Anchor {
+
+        }
+
+        &s {
+            position: fixed;
+            right: 0;
+            bottom: 8px;
+            display: none;
+
+            @media all and (min-height: $borderHeight1) {
+                bottom: 16px;
+            }
+            @media all and (min-height: $borderHeight2) {
+                bottom: 32px;
+            }
+            @media all and (min-width: $amWidth) {
+                right: calc(50% - #{$amWidth} / 2);
+            }
+        }
+
+        .msppIcons-book1 {
+            font-size: 18px;
+        }
+        .msppIcons-DC,
+        .msppIcons-guru,
+        .msppIcons-feather {
+            font-size: 22px;
+        }
+    }
+
+
+
+}
+

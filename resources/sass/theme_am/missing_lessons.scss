@@ -1,0 +1,206 @@
+@import "colors";
+@import "../mixins";
+
+.amUserRequest-miss {
+    font-family: "SF Pro Text", Arial, sans-serif;
+    font-size: 16px;
+
+    #app & .dhrtDropdown-link {
+        color: $placeholder_color;
+        font-size: 14px;
+        padding-top: 0;
+        height: 39px;
+        line-height: 39px;
+    }
+    .dhrtSwitch.textLeft .dhrtSwitchSpinnerText {
+        color: $txt_blackLt;
+    }
+    .amForm-groupTitle {
+        padding-top: 8px;
+        padding-bottom: 16px;
+        letter-spacing: -0.38px;
+        color: $txt_blackLt;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .amForm-groupBody {
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0 1px 1px #00000029;
+        border: 0.5px solid #EAEAEA;
+        border-radius: 12px;
+    }
+
+    .dhrtDropdown-link,
+    .amForm-input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        height: 39px;
+        line-height: 39px;
+        width: 100%;
+    }
+
+    .amUserRequest-missDataField {
+        color: $txt_blackLt;
+    }
+}
+.amUserRequest-missAcaryaHand,
+.amUserRequest-missDataField {
+    input {
+        padding-left: 0;
+    }
+    input::placeholder {
+        font-size: 14px;
+        color: $placeholder_color;
+    }
+}
+
+.amUserRequest-missAcaryaField {
+    width: 100%;
+
+    .dhrtRadio {
+        @include flex-jl-ac;
+        @include child-mr8;
+        margin-bottom: 16px;
+    }
+
+    .dhrtDropdown-link {
+        width: 100%;
+    }
+}
+.amUserRequest-missOtherNow.dhrtCheckbox label {
+    font-size: 16px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.amUserRequest-missAcaryaField input,
+.amUserRequest-missAcaryaField input.form-control:disabled,
+.amUserRequest-missAcaryaField input.form-control[readonly] {
+    background-color: #fff;
+    opacity: 1;
+    border: none;
+    padding: 0;
+    height: 39px;
+    line-height: 39px;
+
+}
+.amUserRequest-missFirstAcarya {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    .amForm-group {
+        margin-bottom: 16px;
+    }
+}
+
+.amUserRequest-missCurrentLessons {
+    padding: 0 32px;
+
+    .dhrtCheckbox {
+        border-bottom: 0.5px solid #3C3C434D;
+
+        label {
+            margin: 0;
+            line-height: 39px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &:last-child  {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+}
+
+
+.amUserRequest-missFooterButtonSave {
+    background: $miss_less;
+    width: 208px;
+    height: 57px;
+    line-height: 57px;
+    padding: 0;
+    letter-spacing: -0.53px;
+    color: #FFFFFF;
+    border-radius: 29px;
+    opacity: 0.8;
+    font-size: 20px;
+    font-family: SF Pro Text, Arial, sans-serif;
+    margin: 0 auto;
+}
+.amUserRequest-missAcaryaField .form-control:focus {
+    box-shadow: none;
+}
+.amUserRequest-missCurrentLessons label .dhrtCheckboxView {
+    border-radius: 8px;
+    order: 1;
+    margin: 0;
+
+}
+.amUserRequest-missCurrentLessons input[type='checkbox']:checked + .dhrtCheckboxView {
+    border-color: $miss_less;
+    background-color: $miss_less;
+}
+.amUserRequest-missCurrentLessons .appItemDisabled input[type='checkbox']:checked + .dhrtCheckboxView {
+    border-color: #ccc;
+    background-color: #ccc;
+}
+.amUserRequest-missTitle {
+    font-size: 16px;
+    color: #434B56;
+    letter-spacing: -0.38px;
+    font-family: "SF Pro Display", Arial, sans-serif;
+}
+
+
+.amUserRequest-miss .multiselect__tags {
+    border-radius: 0;
+    padding: 0;
+    box-shadow: 0 1px 1px #00000029;
+    border-bottom: 0.5px solid #EAEAEA;
+    border-top: 0.5px solid #EAEAEA;
+    min-height: 39px;
+
+}
+.amUserRequest-miss .multiselect__single {
+    padding: 0;
+    margin: auto 43px;
+    color: #BCBCBC;
+}
+
+
+.amUserRequest-finishBtn {
+    background: $am_colorProfile;
+}
+.amUserRequest-finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.amUserRequest-finishText {
+    margin-bottom: 16px;
+}
+
+.amUserRequest-miss .appForm-mark::after {
+    content: "*";
+    color: $am_colorProfile;
+
+}
+
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:after {
+    box-shadow: 0 1px 1px $am_colorProfileLight, 0 -1px 0 $am_colorProfileLight;
+    background: $am_colorProfile;
+}
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:before {
+    background: $am_colorProfileLight;
+}
+
+.amMissingLessongs .appPageContentBody > .dhrtScroll-wrapperInner {
+    height: calc(100vh - 62px);
+}

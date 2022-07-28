@@ -1,0 +1,356 @@
+@import "mixins";
+
+.appUserList {
+    height: calc(100vh - 218px);
+
+    @media all and (min-width: 1024px) {
+        height: calc(100vh - 72px);
+    }
+
+    &-set1 {
+        width: 100%;
+    }
+    .appLang {
+        display: none;
+    }
+
+    .appTable-col {
+        flex-shrink: 0;
+        flex-grow: 0;
+
+    }
+
+    .appTable-row {
+        border-radius: 8px;
+
+        &.userWithPost {
+            border: 1px solid $link-green;
+
+        }
+
+    }
+
+    .appTable-head {
+        display: none;
+        border-bottom: 1px solid #ccc;
+
+        @media all and (min-width: 1024px) {
+            display: flex;
+        }
+
+        .msppIcons-align-left {
+            font-size: 11px;
+        }
+        .appTable-col {
+            align-items: flex-start;
+        }
+        .appTable-row {
+            width: 100%;
+        }
+
+        .appUserList-geo {
+            padding-left: 30px;
+        }
+
+
+        .appUserList-contact,
+        .appUserList-acarya {
+            justify-content: center;
+        }
+    }
+
+    &-telegram {
+        display: flex;
+    }
+
+    &-id {
+        width: 44px;
+        order: 0;
+        text-align: center;
+    }
+
+    &-avatar {
+        width: 42px;
+        order: 1;
+        padding-right: 0;
+
+    }
+
+    &-name {
+        width: calc(100% - 42px - 30px);
+        order: 2;
+        flex-grow: 1;
+
+        @media screen and (min-width: 768px) {
+            width: calc(100% - 489px);
+        }
+
+        &Post {
+            color: $link-green;
+            display: none;
+
+            @media all and (max-width: 767px),
+                   all and (min-width: 1200px) and (max-width: 1399px) {
+                display: block;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            width: calc(100% - 894px);
+        }
+
+        &Social,
+        &Spiritual {
+            @include textOverflowRow;
+        }
+
+
+    }
+
+    .admin &-name {
+        width: calc(100% - 44px - 42px - 30px);
+
+        @media screen and (min-width: 768px) {
+            width: calc(100% - 540px);
+        }
+        @media screen and (min-width: 1200px) {
+            width: calc(100% - 800px);
+        }
+        @media screen and (min-width: 1400px) {
+            width: calc(100% - 900px);
+        }
+    }
+
+    .appUserList-set1 &-name {
+
+        @media screen and (min-width: 1200px) {
+            width: calc(100% - 758px);
+        }
+        @media screen and (min-width: 1400px) {
+            width: calc(100% - 858px);
+        }
+    }
+
+    &-post {
+        display: flex;
+        width: 100px;
+        order: 3;
+        color: $link-green;
+
+        @media all and (max-width: 767px),
+               all and (min-width: 1200px) and (max-width: 1399px) {
+            display: none;
+        }
+    }
+
+    &-tools {
+        display: flex;
+        order: 3;
+        width: 30px;
+        padding-left: 0;
+        padding-right: 0;
+
+        @media screen and (min-width: 768px) {
+            order: 7;
+        }
+
+        @media screen and (min-width: 1200px) {
+            order: 10;
+        }
+
+        .dhrtDropdown {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .appIcons-more-vertical {
+            color: $txt-tools;
+        }
+    }
+
+    &-lesson {
+        width: 51px;
+        order: 4;
+        text-align: center;
+
+
+        &Value {
+            background: $margaVeryLT;
+            border-radius: 8px;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            color: $marga;
+            font-weight: bold;
+            padding: 4px;
+            width: 35px;
+        }
+
+        &Text {
+            margin-right: 6px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-acarya {
+        width: calc(100% - 116px - 51px);
+        order: 5;
+        @include flex-jl-ac;
+
+        @media screen and (min-width: 414px) {
+            width: 50%
+        }
+        @media screen and (min-width: 768px) {
+            width: 150px;
+        }
+
+        &Body {
+            display: none;
+
+            align-items: center;
+            flex-direction: row;
+            line-height: 12px;
+            justify-content: flex-start;
+            width: calc(100% - 28px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @media screen and (min-width: 375px) {
+                display: flex;
+            }
+        }
+
+        &Avatar {
+            position: relative;
+            border: 1px solid $border;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+
+    }
+
+    &-contact {
+        width: 116px;
+        order: 6;
+        @include flex-jl-ac;
+        @include child-mr8;
+
+        @media screen and (min-width: 1200px) {
+            order: 9;
+        }
+
+        &VK,
+        &Phone,
+        &Email,
+        &Telegram {
+            width: 16px;
+            font-size: 16px;
+            color: $txt_greyLt;
+            @include flex-jc-ac;
+        }
+
+        &Telegram {
+            width: 20px;
+        }
+        &VK {
+            a .msppIcons-vk {
+                color: $blue;
+            }
+        }
+        &Email {
+
+            a {
+                display: flex;
+            }
+
+            .appIcons-mail {
+                font-size: 16px;
+
+                &True {
+                    color: $blue;
+                }
+
+                &False {
+                    color: $txt_grey;
+                }
+            }
+        }
+        &Phone {
+            width: 28px;
+        }
+    }
+
+    &-geo {
+        width: calc(100% - 86px);
+        order: 7;
+        margin-right: 8px;
+        flex-direction: row;
+        align-items: center;
+
+        @media screen and (min-width: 768px) {
+            width: 250px;
+            order: 8;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 130px;
+            order: 6;
+        }
+
+        .msppIcons-map-pin {
+            width: 20px;
+            font-size: 16px;
+            color: $txt_greyLt;
+            margin-right: 2px;
+        }
+
+        &Set {
+            width: calc(100% - 22px);
+
+            & > * {
+                @include textOverflowRow;
+                line-height: 16px;
+            }
+        }
+    }
+
+    &-created {
+        width: 78px;
+        order: 8;
+
+        @media screen and (min-width: 768px) {
+            order: 10;
+        }
+        @media screen and (min-width: 1200px) {
+            order: 8;
+        }
+    }
+
+    &-role {
+        width: 100%;
+        order: 9;
+        align-items: flex-start;
+        @media screen and (min-width: 414px) {
+            width: 50%
+        }
+        @media screen and (min-width: 768px) {
+            order: 9;
+            width: calc(100% - 336px);
+        }
+        @media screen and (min-width: 1200px) {
+            order: 7;
+            width: 145px;
+        }
+
+        &Badges {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+

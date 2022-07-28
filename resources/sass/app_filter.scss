@@ -1,0 +1,228 @@
+@import "mixins";
+@import "colors";
+
+.appFilter {
+    margin-bottom: 16px;
+
+    &-tools {
+        margin-bottom: 16px;
+        margin-right: 1px;
+
+        @media all and (min-width: 768px) {
+            @include flex-jb-ac;
+        }
+
+        &Info {
+            margin-bottom: 16px;
+            order: 1;
+
+
+            &Item {
+                @include flex-jl-ac;
+                @include child-mr8;
+
+                &Values {
+                    @include flex-jl-ac;
+                    @include child-mr8;
+                    flex-wrap: wrap;
+                    color: #919191;
+                }
+
+                &Value:not(:last-child) {
+                    margin-right: 4px;
+
+                    &:after {
+                        content: ','
+                    }
+                }
+            }
+        }
+
+        &Button {
+
+            border-color: $border-button;
+            color: $txt_greyLt;
+
+            &s {
+                order: 2;
+                @include flex-jr-ac;
+                @include child-mr8;
+                margin-bottom: 16px;
+
+
+            }
+
+
+        }
+    }
+
+    &-body {
+
+        position: relative;
+        height: auto;
+        transition: height 2s linear;
+        border: 1px solid $txt_border;
+        border-radius: 8px;
+        margin: 16px 0;
+        padding: 16px 24px 32px;
+
+        &Tools {
+            @include flex-jb-ac;
+            @include child-mr16;
+            margin-bottom: 32px;
+
+            &Title {
+                color: $txt_greyLt;
+            }
+        }
+
+        &Content {
+            margin-right: -4px;
+            margin-left: -4px;
+
+            @media all and (min-width: 768px) {
+                @include flex-jb-ac;
+                flex-wrap: wrap;
+            }
+
+            .appFilter-item {
+                @include flex-jl-ae;
+                @include child-mr8;
+                line-height: 37px;
+                padding-left: 4px;
+                padding-right: 4px;
+
+                @media all and (min-width: 768px) {
+                    width: 33%;
+                }
+
+                @media all and (min-width: 1200px) {
+                    width: 25%;
+                }
+                @media all and (min-width: 1400px) {
+                    width: 20%;
+                }
+                &Title {
+                    color: $txt_greyMd;
+                }
+
+                &Value {
+                    flex-grow: 1;
+
+                    .multiselect__placeholder {
+                        min-height: 18px;
+                        height: 18px;
+                        margin-bottom: 0;
+                        padding-top: 0;
+                        line-height: 18px;
+                        font-size: 12px;
+                        color: $placeholder_color;
+                    }
+                    .multiselect__select {
+                        display: none;
+                    }
+                    .multiselect {
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                    .multiselect__tags {
+                        width: 100%;
+                        min-height: 32px;
+                        padding: 4px 40px 4px 8px;
+                        background: transparent;
+                        border-radius: 0;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                    }
+                    .multiselect__content-wrapper {
+                        z-index: 9999;
+                    }
+                    .multiselect__option {
+                        padding: 4px 16px;
+                        font-size: 12px;
+                        height: 24px;
+                        min-height: 24px;
+                        line-height: 16px;
+                    }
+                    .multiselect__input,
+                    .multiselect__single {
+                        font-size: 12px;
+                        margin-bottom: 0;
+                        background: transparent;
+                    }
+
+                    .dhrtDropdown {
+                        padding-right: 0;
+
+                        &-link {
+                            color: $txt_greyLt;
+                            width: 100%;
+                            border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+
+                            &.placeholder {
+                                color: $placeholder_color;
+                                font-size: 12px;
+                            }
+                        }
+
+
+                        &-menu  {
+
+                            max-width: 100%;
+
+                            & > *  {
+                                width: auto
+                            }
+                        }
+
+                    }
+
+
+
+                    &Field {
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid $filter_border;
+                        border-radius: 0;
+                        width: 100%;
+                        color: $txt_greyLt;
+                        font-size: 12px;
+                        padding-right: 16px;
+                        padding-left: 4px;
+                        position: relative;
+                        line-height: 31px;
+
+                        &:active,
+                        &:focus {
+                            box-shadow: none;
+                            outline: none;
+                        }
+
+                        & option {
+                            text-align: center;
+                        }
+                    }
+
+                    &Icon {
+                        position: absolute;
+                        right: 0;
+                        bottom: 4px;
+                        line-height: 27px;
+
+                        &:before {
+                            color: $txt_greyLt;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .appFilter-itemValueIcon {
+        cursor: pointer;
+    }
+
+}

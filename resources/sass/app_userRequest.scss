@@ -1,0 +1,226 @@
+.appUserRequest {
+    font-size: 14px;
+    color: $txt_grey;
+}
+
+.appUserLessons-none {
+    font-size: 16px;
+    color: $txt_grey;
+    text-align: center;
+}
+
+.appUserRequest-head {
+    font-size: 18px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $border;
+    margin-bottom: 24px;
+    color: $txt_greyMd;
+}
+.appPageContent .appUserRequest-miss .dhrtDropdown .dhrtDropdown-menu {
+    left: 0;
+    right: auto;
+}
+.appUserRequest-submit {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        padding: 8px 24px;
+        font-weight: 600;
+        background-color: $marga;
+        border: 2px solid transparent;
+        color: white;
+        border-radius: 8px;
+        font-size: 16px;
+
+        &:hover {
+            box-shadow: 0 0 5px $margaLt;
+        }
+    }
+}
+
+.appUserRequest-finish {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.appUserRequest-saveRequest {
+    text-align: center;
+    font-weight: 400;
+    color: $txt_greyMd;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.appUserRequest-firstHours {
+    margin-bottom: 24px;
+}
+
+.appUserRequest-firstHoursQuestion {
+    margin-bottom: 8px;
+    line-height: 18px;
+}
+
+.appUserRequest-firstHoursInput {
+    border: 1px solid $border;
+    border-radius: 8px;
+    padding: 4px;
+    width: 100%;
+}
+
+.appUserRequest-firstHoursInput:focus {
+    outline: none;
+}
+
+.appUserRequest-firstVariant {
+    margin-bottom: 24px;
+}
+
+.appUserRequest-firstVariantQuestion {
+    margin-bottom: 8px;
+}
+
+.appUserRequest-restBlock {
+    margin-bottom: 32px;
+}
+
+.appUserRequest-firstVariantInput,
+.appUserRequest-rest {
+    .dhrtCheckboxView:hover {
+        border-color: $marga;
+    }
+
+    .dhrtCheckbox a {
+        color: $marga;
+    }
+
+    input[type='checkbox']:checked + .dhrtCheckboxView {
+        background-color: $marga;
+        border-color: $marga;
+    }
+
+    .dhrtCheckbox label {
+        display: flex;
+        align-items: center;
+    }
+
+    .dhrtCheckboxView {
+        top: 0;
+    }
+}
+.appUserRequest-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+@media all and (min-width: 768px) {
+    .appUserRequest-btn {
+        justify-content: flex-start;
+        margin-top: 42px;
+    }
+
+}
+
+.appUserRequest-btnBack:hover {
+    box-shadow: 0 0 5px #919191;
+}
+.appUserRequest-btnBack {
+    margin-right: 32px;
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 115px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #646464;
+}
+.appUserRequest-btnSave:hover {
+    box-shadow: 0 0 5px rgba(255, 179, 78, 0.36);
+}
+.appUserRequest-btnSave {
+    border: 1px solid transparent;
+    background-color: #FFB34E;
+    color: white;
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 115px;
+    text-align: center;
+}
+.appUserRequest-restActions {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appUserRequest-restActionsButton {
+    background: $white;
+    border: 2px solid;
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: 4px 8px;
+    min-width: 240px;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.appUserRequest-restActionsNote {
+    color: $txt_greyLt;
+    font-size: 13px;
+}
+
+.appUserRequest-restHistory {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.appUserRequest-restHistoryItem {
+
+}
+
+.appUserRequest-restActionsButton {
+    border-color: $marga;
+    color: $marga;
+    cursor: pointer;
+
+}
+.appUserRequest-requirements {
+    margin: 16px 0;
+}
+
+.appUserRequest-restActionsButton:hover {
+    box-shadow: 0 0 5px $margaLt;
+}
+
+.appUserRequest .dhrtCheckbox.disabled {
+    opacity: 0.5;
+}
+
+.appUserRequest-rest .appUserRequest-submit {
+    margin-top: 16px;
+}
+
+
+
+@media screen and (min-width: 414px) {
+    .appUserRequest-head {
+        font-size: 22px;
+        padding-bottom: 6px;
+    }
+
+    .appUserRequest-missBack {
+        max-width: 414px;
+        margin: 0 auto;
+    }
+}

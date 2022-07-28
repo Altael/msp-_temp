@@ -1,0 +1,110 @@
+@import "mixins";
+@import "colors";
+
+.appMemberInfo .infoBlockModal-body {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+
+.appMemberInfo {
+
+
+    &-content {
+        padding: 32px;
+    }
+    &-main {
+        margin-bottom: 32px;
+    }
+    &-name {
+        &Spiritual {
+            color: #222;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        &Civil {
+            color: #808080;
+            font-size: 14px;
+        }
+        &Alias {
+            color: #222;
+            font-size: 12px;
+        }
+    }
+    &-item {
+        @include flex-jl-as;
+        @include child-mr16;
+        margin-bottom: 8px;
+
+
+
+        &.avatar {
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        &.name {
+            justify-content: center;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        &.helper &Value span:first-child {
+            color: $txt_green;
+        }
+
+        .appBadge {
+            font-size: 12px;
+        }
+
+
+        &Title {
+            color: $txt_greyLt;
+            font-size: 12px;
+            line-height: 16px;
+            white-space: nowrap;
+            text-align: left;
+            flex-grow: 0;
+            flex-basis: 0;
+
+            .lesson & {
+                padding-top: 4px;
+            }
+        }
+
+        &Value {
+
+            color: $txt_grey;
+            font-size: 14px;
+            line-height: 16px;
+            flex-grow: 1;
+            flex-basis: auto;
+
+            .withIcons {
+                @include flex-jl-ac;
+                @include child-mr4;
+            }
+
+            & > *:not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            .system {
+                font-weight: 600;
+
+                .appIcons {
+                    color: $marga;
+                }
+            }
+
+
+        }
+
+    }
+    &-lesson {
+        @include flex-jl-ac;
+        @include child-mr16;
+    }
+
+}

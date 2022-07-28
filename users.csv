@@ -1,0 +1,873 @@
+﻿manual;id;first_name;last_name;spiritual_name;receiving_date;name_ru;current_lesson;place
+0;1485;Валентин;Сергеевич;Враджендра;05.01.2020 08:27;Воронеж;1;ChIJE-h06FwvO0ERvWKn-w5M2Ug
+0;1498;Vasya;Chumachyov;Iishvara Krsna ;11.01.2020 15:01;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1499;Sergey;Vetchanov;Sanatan ;12.01.2020 05:27;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1494;Khachik;Yeghikyan;Haridev;13.01.2020 00:00;Ереван;1;ChIJW4v8uNqiakARalLah655FD0
+0;1512;Nevermind;N;Devashish;13.01.2020 10:13;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1513;Nikita;Gagarin;Nitesh ;13.01.2020 10:23;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1516;Igor;Klimanov;Atma Chetan;13.01.2020 14:29;Кострома;1;ChIJu8dkGfFPrUYRbkybvQThR-U
+0;1518;Ruslan;Bulatov;Rishi Deva;13.01.2020 15:47;Уфа;1;ChIJ4bwWkiU62UMRzJLaHpLA7qw
+0;1519;Alexander;Popov;;13.01.2020 16:03;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1527;Sergey;Prelov;Нет;14.01.2020 14:28;Зеленоград;1;ChIJi7CZBQQVtUYRxDA6JmsQBTs
+0;1532;Gena;Ustyuzhinsky;;15.01.2020 07:59;Архангельск;1;ChIJ4TLCVfczGEQRMZrIekPsPkA
+0;1533;okopny;ru;;15.01.2020 08:01;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1435;Denis;Girich;;15.01.2020 08:02;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1534;Вячеслав Штыков;;;15.01.2020 08:04;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1119;Фатулла;Зейналов;Priya Deva;20.01.2020 01:44;Баку;1;ChIJ-Rwh1mt9MEARa2zlel5rPzQ
+0;1538;Shamil;Masimov;Surya Deva;21.01.2020 09:46;Баку;1;ChIJ-Rwh1mt9MEARa2zlel5rPzQ
+0;1544;George Bedeladze;;Gurucharan;21.01.2020 10:43;Тбилиси;1;ChIJa2JP5tcMREARo25X4u2E0GE
+0;1549;Ihar;Bermant;Абхаендра;25.01.2020 13:05;Варшава;1;ChIJAZ-GmmbMHkcR_NPqiCq-8HI
+0;1561;Alexander;Mikhnovets;Амейа;25.01.2020 20:06;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1566;Руслан;Стёпин;Риши Дэв;26.01.2020 06:00;Новозыбков;1;ChIJ6YlBxSZj00YRgBMZXoKIK6o
+0;1591;VisioN 111;;Анил Кумар;18.02.2020 12:06;Арзамас;1;ChIJ171wqO94T0ER8KVSPbvsoRk
+0;1598;Максим;Пучин;;20.02.2020 05:20;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;1262;Александр;Кардашов;;20.02.2020 05:33;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;1600;Max;Peshkov;;20.02.2020 05:50;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;1577;Анастасия;Колендо;Аниндини;21.02.2020 00:00;Борисов;1;ChIJ6RkLsQ_42kYRVQpt1c8JjSY
+0;1603;Ваня;Косенко;;22.02.2020 07:07;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;1604;Ruslan;Nikankin;Расамрита ;22.02.2020 07:39;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1606;Pavel;Murashkin;Прачетан ;22.02.2020 07:49;Караганда;1;ChIJWQUt0lpGQ0IRM9RE0uBrC6k
+0;1608;Artyom;Bragin;Арунодая;22.02.2020 07:53;Междуреченск;1;ChIJQeIzK3ZC0UIRNlGFA2FbQ7Y
+0;1610;Pavel;Malay;Праматэш;22.02.2020 07:59;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;1612;Dmitry;Noskov;Дэваврата;22.02.2020 08:11;Омск;1;ChIJCwkB9uL9qkMRGpumYTjD714
+0;1611;Виталий Холин;;Вьемеш;22.02.2020 08:14;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1614;Иван;Чмир;Видьянатх;22.02.2020 08:32;Екатеринбург;1;ChIJS9tioOplwUMRIH9W99dDAtU
+0;1617;Александр;Захаров;Амарендра;22.02.2020 10:16;Барнаул;1;ChIJq-4ux-ih3UIRA7WHje-757A
+0;1619;Alexander;Melnik;Амитабха ;22.02.2020 10:21;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1214;Дмитрий Борисов;;Данэш;22.02.2020 10:22;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1620;Pavel;Dotsenko;Пранэш;22.02.2020 11:23;Семей;1;ChIJn32bFI5k8kIRz8OVmLIdWh4
+0;1623;Роман;Хардель;;22.02.2020 16:25;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;1624;Maxim;Chuprianov;Махаджйоти;23.02.2020 02:52;Братск;1;ChIJUwf0NPRO41wRDnJJ9UcI0yg
+0;1613;Vasyl;Semilyak;;23.02.2020 11:22;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;1630;Pavel;Sakovich;Правир;27.02.2020 17:28;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1597;Leopold;Staff;Юктатма;27.02.2020 18:09;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1651;Dmytro;Kovalevych;Дэватма;28.02.2020 10:58;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;1557;Elena;Avseenko;;29.02.2020 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2997;Жанна;Романчук;Каньчин;29.02.2020 00:00;Брест;1;ChIJdQljIwIMIUcRma5kH6SeMU0
+1;3065;Наталья;Краинова;Нандита;29.02.2020 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2188;Данияр;Фазылов;Дивьярупа;01.03.2020 00:00;Нур-Султан;1;ChIJCUa1fcSARUIRKJKx3Y0U-Zc
+0;1654;Прусов Петр;;Шринатх ;01.03.2020 16:57;Фаниполь;1;ChIJX9pB9QfY20YR9ClSVcSZW5I
+0;1655;Алексей;Андреевич;Атмадэв ;01.03.2020 17:13;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1657;Denis;Runec;Дэва Пракаш;02.03.2020 08:13;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1660;Александр;Матюшин;Iishvara Krsna ;03.03.2020 09:13;Рига;1;ChIJ7T0H5bDP7kYRMP7yaM3PAAQ
+1;1857;Елена;Мeдова;Виная;05.03.2020 00:00;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;1661;Jurijus;Griška;Yogaraja;06.03.2020 09:12;Вильнюс;1;ChIJ9QhkXPuT3UYRQNzpcIzRAAQ
+0;1662;RaMoon;As;Rama Prasada;06.03.2020 09:12;Вильнюс;1;ChIJ9QhkXPuT3UYRQNzpcIzRAAQ
+0;1663;AJ;AJ;"Aeka&#039;tman";06.03.2020 09:15;Вильнюс;1;ChIJ9QhkXPuT3UYRQNzpcIzRAAQ
+0;1349;Алёшка Здравствуйте;;Atman;06.03.2020 14:30;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;1667;;;Avinash ;07.03.2020 09:02;Рига;1;ChIJ7T0H5bDP7kYRMP7yaM3PAAQ
+0;1673;Pvils;Aronietis;Padmesh;08.03.2020 15:37;Юрмала;1;ChIJ0wSh6Afd7kYR3xZsbFh-U3g
+0;1674;Nikita;Khozhevets;Nityesh;08.03.2020 19:42;Рига;1;ChIJ7T0H5bDP7kYRMP7yaM3PAAQ
+0;1682;Mihhail;Kazönnov;Mahadev;10.03.2020 07:54;Estonia puiestee;1;EiJFc3RvbmlhIHB1aWVzdGVlLCBUYWxsaW5uLCBFc3RvbmlhIi4qLAoUChIJvUvw2Z-UkkYRlBTv3v5vqyESFAoSCce0P3a0lJJGEfBw_BhtswAF
+0;1683;Eduard;Soo;Adinath;10.03.2020 10:28;Таллин;1;ChIJvxZW35mUkkYRcGL8GG2zAAQ
+0;1685;Tero;Dorian;Devavrata;11.03.2020 09:46;Нарва;1;ChIJh7Bmi9c3lEYR9CF9TV8qSrk
+0;1684;Даниил;Дуденков;"Deva&#039;tma";11.03.2020 10:15;Таллин;1;ChIJvxZW35mUkkYRcGL8GG2zAAQ
+0;1678;Alex;Smith;Ameya;11.03.2020 10:16;Таллин;1;ChIJvxZW35mUkkYRcGL8GG2zAAQ
+0;1686;Kar;;Кавирадж;11.03.2020 16:44;Таллин;1;ChIJvxZW35mUkkYRcGL8GG2zAAQ
+0;1690;Alexey;Sokolov;Abheda ;14.03.2020 16:09;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1692;Ugcff;Ygf;Devamitram;14.03.2020 16:10;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1697;Pavel;Mamonov;Pradiip;14.03.2020 16:41;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1676;Ruslan;Mukhametshin;Равиндра;16.03.2020 11:24;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1510;Alexey;Sergeev;Лалитеш;17.03.2020 08:26;Люберцы;1;ChIJXRwVCyW2SkERZd3Fn0JSGM8
+0;928;Denis;Petrov;Devadatta ;17.03.2020 08:28;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1626;Evgeny;Alexeev;Виджай;17.03.2020 08:34;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1714;Anton;Putilov;Амритабху;17.03.2020 08:36;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1721;Egor;Filippov;Гьянеш;28.03.2020 03:28;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1724;Eugene;Bumagin;Вимал;28.03.2020 03:31;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1725;Valentin;Romanovich;Вишну Прэм;28.03.2020 03:35;Сочи;1;ChIJI0SDEeHU9UAR-F1daoZhb24
+0;1728;Андрей;Киреев;Анадинатх;28.03.2020 03:38;Орёл;1;ChIJ85rxeAkaMkERJJS_DFuVubA
+0;1730;Max;Marchenko;Madhumaya;28.03.2020 03:39;39/1;1;ChIJNehoFgDP1EARRBZDGmIKvAk
+0;1731;Сергей;Глазов;Satyamurti;28.03.2020 03:40;Обнинск;1;ChIJ98gRfsDSykYRrQirpg0x418
+0;1732;Павел Алякин;;Padmeshvara;28.03.2020 03:41;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1729;Alexander;Lobikov;Ashisha;28.03.2020 03:41;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1733;Igor;Nezamaevsky;Акхилеш;28.03.2020 03:43;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1733;Igor;Nezamaevsky;Акхилеш;28.03.2020 03:43;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1735;Alexander;Gurkin;Ананда Дэв;28.03.2020 03:44;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1737;Ilya;Pilikin;Адитья;28.03.2020 03:48;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1740;Sergey;Stekachev;Шивешвар;28.03.2020 04:07;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1904;Olga;Borodina;Arogyavati;29.03.2020 00:00;Великий Новгород;1;ChIJmXSFHazrvkYRXtoeLEr8GJ4
+1;2279;Natasha;Karpunina;Nitya Prema;30.03.2020 00:00;Симферополь;1;ChIJxRyZ397d6kARQAt4vC9CKZw
+0;1741;გიჟები;ჯიჰადის;Mayadhiisha;30.03.2020 15:24;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1745;Alexey;Nagornov;Asiim Kumar;31.03.2020 07:48;Белорецк;1;ChIJMUWJ0x-l0EMRdPBfSFAxvFE
+0;1552;Алексей;Цыбуля;Acyuta;29.04.2020 12:19;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;30;Maniis'a;Kinza;Маниша;30.04.2020 13:13;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1785;Анастасия;Зеленцова;Nishtha;12.05.2020 15:18;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;3223;Андрей;Долганов;Ананда Кумар;15.05.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1789;Андрей;Долганов;Ананда Кумар;15.05.2020 18:31;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1787;Евгений;Цыбуля;;15.05.2020 21:02;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;478;Nikolay;Grigoryev;Нирендра;16.05.2020 00:00;Ульяновск;1;ChIJ9bNCj182XUER5BsJRwj_UiE
+0;1705;Дмитрий;Назолин;Дэвапрасад;16.05.2020 10:26;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1794;Roman;Plyashnikov;Рамешвар;17.05.2020 22:16;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2680;Kamilla;Alatorceva;Камала;11.06.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1838;Sergey;Fedorov;Sarvesha;19.06.2020 15:43;Канск;1;ChIJY6Kz_wvT3lwR9nfPYFLtOO8
+0;1855;Егор;Пластинин;Йогешвар;28.06.2020 16:37;Йошкар-Ола;1;ChIJM-A0486UWUERg1gTZFfO69o
+0;1956;Yuriy;Rychenkov;Йогеш;28.06.2020 21:29;Новоалтайск;1;ChIJSVWAVuWt3UIRysMpf4FdNLY
+0;777;Artyom;Agapov;Арпан Кумар;30.06.2020 17:09;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+1;1962;Ivan;Koldunov;;11.07.2020 00:00;Томск;1;ChIJG0xdtrKTJkMRL-eKmB3xC88
+1;2003;Yana;Burgova;Vallakii;30.07.2020 00:00;Тула;1;ChIJ_cEx7YQ_NEERRZGjTF3ip6M
+1;2567;Наталья;Комарова;Nitii;01.08.2020 00:00;Городец;1;ChIJ_b4VpOfkUUERpxtVp4R04fw
+1;1995;Maria;Skrynnikova;Mohinii (Мохини);01.08.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1998;Valentina;Demyankova;;02.08.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1971;Даша;Аксёнова;Дакша;03.08.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2565;Евгения;Ковалева;Дживани;04.08.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2561;Наталия;Филатова;Nandadevii;05.08.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2763;Ирина;Морозова;Ista;05.08.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1813;Эмилия;Жюрайте;Etasha;05.08.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2009;Pavel;Biserov;;06.08.2020 08:02;Иркутск;1;ChIJZfbiU9M6qF0RTunYVhTN1jE
+0;2007;Гавриил;Засядьвовк;;06.08.2020 08:03;Иркутск;1;ChIJZfbiU9M6qF0RTunYVhTN1jE
+0;2010;Dmitry;Gusakov;Divakar;06.08.2020 08:07;Иркутск;1;ChIJZfbiU9M6qF0RTunYVhTN1jE
+0;2011;Mikhail;Berezhnoy;;06.08.2020 11:35;Иркутск;1;ChIJZfbiU9M6qF0RTunYVhTN1jE
+1;2487;Svetlana;Vlasova;Павитри;08.08.2020 00:00;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;2025;Alexey;Petrov;Adjaya;20.08.2020 00:00;Нижний Новгород;1;ChIJUTID7vnVUUERqleWhM_A0yg
+0;2044;Dionis;Naumko;;25.08.2020 15:12;Обухов;1;ChIJJZuNXGiX1EAR75RQAG5TlzE
+0;2040;Vlad;Vlad;;25.08.2020 15:13;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2043;Евгений;Коротков;;25.08.2020 20:35;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2038;Konstantin;Ponedelchenko;;25.08.2020 20:57;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2192;Александр;Дымский;Амиш;01.09.2020 00:00;Истра;1;ChIJLxDrZV9DtUYR2oXArM0ZtNg
+1;2026;Arina;Chayko;;02.09.2020 00:00;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2053;Сергей;Степанов;Surainjan;04.09.2020 09:14;Винница;1;ChIJiWRaGWVbLUcR_nTd7lnh1Ms
+0;2071;Максим;Срибный;;04.09.2020 09:30;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2055;Алексей;Гаврючков;;04.09.2020 09:53;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2048;Denys;Kotii;;05.09.2020 00:00;Новая Каховка;1;ChIJW-VT-fqPw0AR-Fld4_pJ3ec
+0;2073;Andrey;Albul;;05.09.2020 08:06;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2077;Dmitriy;Vlasiuk;;05.09.2020 08:11;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2081;Yaroslav;Vyhivskyi;;05.09.2020 08:13;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2097;Дмитрий;Робулец;;06.09.2020 00:00;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2045;Илья;Грязнов;Indranath;06.09.2020 00:00;Белгород;1;ChIJY1hcLfRqJkERSUZCjRPSz8Q
+1;2514;Darshan;Mangala;Дхармавир;07.09.2020 00:00;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2683;Мадхава;панфилов;Мадхава;08.09.2020 00:00;Городско́е поселе́ние го́род Новоа́ннинский;1;ChIJyfsPB0W8F0ERQhCgAhbfUyU
+1;2141;Андрей;Салихов;Indradev;10.09.2020 00:00;Волгоград;1;ChIJZ3ZbuHUzBUERQdpXzpwXDYg
+0;2103;Евгений;Кысса;;10.09.2020 13:15;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;1978;Екатерина;Царегородцева;;11.09.2020 00:00;Лысьва;1;ChIJMxcpdTFy6UMRWDhThoYH5vg
+1;2585;Екатерина;Царегородцева;Ka'tya'yanii;11.09.2020 00:00;Лысьва;1;ChIJMxcpdTFy6UMRWDhThoYH5vg
+1;2635;Ирина;Михайлова;Илина;11.09.2020 00:00;Екатеринбург;1;ChIJS9tioOplwUMRIH9W99dDAtU
+1;2805;Андрей;Симонов;Апараджит;11.09.2020 00:00;Хабаровск;1;ChIJyYo2sMbp-l4RUH-6Xw68l_o
+1;2170;Olga;Balaganina;Алока;12.09.2020 00:00;Тюмень;1;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2217;Karina;Tarakanova;Karynamaii;12.09.2020 00:00;Тюмень;1;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+0;2104;Igor;Fitisov;Акхилеша;13.09.2020 12:24;Днипро;1;ChIJj0YI_QPj20ARuhrB8tXzHAo
+1;2145;Роман;Демушкин;Рамачандра;14.09.2020 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;2115;Aleksandr;Nakonechnyi;;15.09.2020 12:16;Херсон;1;ChIJZ_mbXaIaxEAR_iExjoxHpfM
+0;2084;Roma;Nazarenko;;16.09.2020 13:53;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+1;2524;Сергей;Озеров;;17.09.2020 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2138;Mikhail;Aleschenko;Махеш;19.09.2020 00:00;Симферополь;1;ChIJxRyZ397d6kARQAt4vC9CKZw
+1;2148;Sergey;Volgin;Сагар;19.09.2020 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2157;Alexander;Dolzhansky;Ameya;19.09.2020 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;1808;Oleg;Misko;Omn'svarupa;19.09.2020 00:00;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;2207;Anna;Grineva;Арунаприя;20.09.2020 00:00;Сочи;1;ChIJI0SDEeHU9UAR-F1daoZhb24
+1;2587;Любовь;Николаевна;Радхарани;21.09.2020 00:00;Кореновск;1;ChIJA1WQ7j6f-kAR_aixnA8T1yE
+1;2574;Эмилия;Мецтли;Мад(х)ави;21.09.2020 00:00;Севастополь;1;ChIJ9USRZe8llUARzDRN_6-nLb0
+1;2608;Kadria;Kurmakaeva;Кальяника;21.09.2020 00:00;Ленинск;1;ChIJk-8DNFBcBUERTcKGQbhZN1Y
+0;2159;Андрей;Хорошун;;23.09.2020 20:39;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2206;Stas;Perepelitsa;Sutosha;24.09.2020 00:00;Калуга;1;ChIJOTC5ePy5NEERQi7gzTdEWMs
+1;2208;Зоя;Перепелица;Jyotsna;24.09.2020 00:00;Калуга;1;ChIJOTC5ePy5NEERQi7gzTdEWMs
+1;2015;Ivan;Fedulov;Vimal;24.09.2020 00:00;Улан-Удэ;1;ChIJyzBnbxnbr10RlsSuA4yS2jg
+1;2186;Stanislav;Khapsaev;Satish;24.09.2020 00:00;Подольск;1;ChIJNdz-5E6oSkERveDoUBY3YRQ
+1;2461;Борис;Тарасов;Бхактираджа;24.09.2020 00:00;Горячий Ключ;1;ChIJR2lxmMkZ8UARqdM3Mln_h7c
+0;2183;Yury;Pozdnyakov;;26.09.2020 15:42;Зеленоград;1;ChIJi7CZBQQVtUYRxDA6JmsQBTs
+0;2178;Василий;Грибуля;Васант;26.09.2020 15:43;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2180;Роман;Прохоров;Рамана;26.09.2020 15:44;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2179;Арсений;Черепинский;Арун;26.09.2020 15:45;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2187;Василий;Ильин;Ванджиромани;26.09.2020 15:46;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2742;Илья;Парахин;Индратеджас;27.09.2020 00:00;Ставрополь;1;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+1;2191;Igor;Agapov;;29.09.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2124;Dima;Zinchenko;;29.09.2020 23:08;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2221;Виктор;Горяинов;Викранта;04.10.2020 00:00;Ставрополь;1;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+0;2237;М;М;;09.10.2020 14:08;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2570;Alena;Radochina;Арадхана;12.10.2020 00:00;Челябинск;1;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+1;2252;?;?;;13.10.2020 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2278;Михаил;Михайлович;Майтрея;15.10.2020 00:00;Симферополь;1;ChIJxRyZ397d6kARQAt4vC9CKZw
+1;2243;Anton;Gridnev;;19.10.2020 00:00;Южно-Сахалинск;1;ChIJN1cZT2sBGV8RSzlJu-cqjIQ
+1;1671;Roman;Kovalchuk;;21.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2304;Владислав;Мастеров;;21.10.2020 20:20;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2260;Andrey;Lisyutin;Ананда Сагар;22.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2265;Andrey;Koparev;Abhinand;22.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2306;Роман;Царгуш;-;22.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2308;Dima;Margania;Дхананджая;22.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2311;Мукунда;Мукундов;Мукунда;22.10.2020 00:00;Геническ;1;ChIJt_QjDNje6UARdAacI1WyXzw
+1;2314;Дмитрий;Мирзоев;Деватма;22.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2321;Максим;Морозов;Мокшеш;22.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2287;Александр;Чернобривец;Абхаендра;22.10.2020 00:00;Королёв;1;ChIJc0Z46owttUYRYyy2b7HDfW0
+1;2267;Кибер;Панк;-;22.10.2020 00:00;Зарайск;1;ChIJ1WXtFvzwNUERcWPWw9-y8z4
+0;2263;Mark;Astrov;Маноджит;22.10.2020 22:04;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1581;Artem;Tikhonov;Амшумали;22.10.2020 22:08;Нижнекамск;1;ChIJ4SRhEa3sX0ERzOEk514K7GI
+0;2298;Андрей;Карпов;Ади Ишвара;22.10.2020 23:13;Тамбов;1;ChIJHQH-nDsUOUER_6c2nhi42oQ
+0;2297;Leonid;Rotar;Ритеш;22.10.2020 23:27;Сыктывкар;1;ChIJ_5CmnYbVCUQRiinONNU4e1g
+1;2096;Oksana;Orlova;Omkari;26.10.2020 00:00;Советская Гавань;1;ChIJDXxbp4tf4F4RdWvh3Q7EAIw
+1;1437;Mayya;Machaladze;майятита;26.10.2020 00:00;Тбилиси;1;ChIJa2JP5tcMREARo25X4u2E0GE
+1;2361;Ирина;Толстова;Аруни;26.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2363;Maria;Bizonova;Mrinaliká;26.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2372;Ирина;Турчина;;26.10.2020 00:00;Черновцы;1;ChIJBc324n8INEcRem15WfaWs8U
+0;2261;Дима;Маляр;;26.10.2020 10:50;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+0;2344;Андрей;Кропотин;;26.10.2020 10:57;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+0;2262;Vadim;Tanaseychuk;;26.10.2020 11:03;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+0;2257;Евгений;Згирдан;;26.10.2020 11:10;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+0;2271;Nikita;Goyan;;26.10.2020 11:16;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+0;2348;Владимир;Уманец;Видьядхар;26.10.2020 11:22;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+0;2258;Дмитрий;Ботушан;;26.10.2020 11:28;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+1;2275;Владислав;Майоров;;27.10.2020 00:00;Зеленоград;1;ChIJi7CZBQQVtUYRxDA6JmsQBTs
+1;2382;Иван;ани;;27.10.2020 00:00;Ивантеевка;1;ChIJfR6VgBcstUYRa2CBZBMcgT8
+1;2385;Эка;Мармеладзе;Yrmila;27.10.2020 00:00;Тюмень;1;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;1522;Олег;Дуненков;Атман;28.10.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2394;Олег;Стацевич;Амрит;28.10.2020 00:00;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2330;Александр;Скворцов;Amarnath;29.10.2020 14:04;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2328;Евгений;Данилов;Vishnumaya;29.10.2020 14:15;Гатчина;1;ChIJ_8Y8ln8blkYRSNyeP5aeVmI
+0;2332;Robert;Migranov;Rasa Vihari;29.10.2020 14:18;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2329;Никита;Аляска;Nitesh;29.10.2020 14:22;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2338;Anton;Zhirov;Atmabhyasa;29.10.2020 14:28;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2317;Евгений;Смирнов;Jiivanmukta;29.10.2020 14:42;Снежногорск;1;ChIJQxsPC1A-NEQRUSAJzJ-7fnY
+0;2341;Alexander;Cherkasov;Abhidharma;29.10.2020 14:44;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2331;Vitaly;Konichev;Vimuktatma;29.10.2020 14:52;Псков;1;ChIJI4K0_zoZwEYRf1G5X3H2oQ4
+0;2340;Сергей;Ершов;Śivamanthana;29.10.2020 15:01;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2333;Vladimir;Gavrilov;Vishuddhatma;29.10.2020 15:08;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2335;Даниил;Акинчиков;Devamadana;29.10.2020 15:12;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2327;Evgeniy;Solovyev;Jayanta;29.10.2020 15:18;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2349;Andrey;Eroshenko;Adhidaiva;29.10.2020 15:22;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2347;Денис;Величко;Devabhakta;29.10.2020 15:27;Выборг;1;ChIJu2w7IDIyl0YRVU5rM79qxMA
+0;2326;Andrey;Tofilevich;Amurtiman;29.10.2020 15:35;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2325;Антон;Гурский;Acintyarupa;29.10.2020 16:50;Шуя;1;ChIJpUYd8oTnoUYRtTiwwJRSsDM
+1;1698;Seule;Benedict;Бхайрава;30.10.2020 00:00;Алматы;1;ChIJq8vFFn1ugzgRdm2YrY9mRD0
+0;2404;Gleb;Moskalev;;30.10.2020 19:05;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1749;Tetiana;Tsybulia;Dhrti;02.11.2020 00:00;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;2268;Игорь;Савик;Akash;03.11.2020 00:00;Глубокое;1;ChIJHc-Re_Ks3EYRPFjogMzETTY
+1;2689;Nadezhda;Zagvozkina;Niiraja;04.11.2020 00:00;Казань;1;ChIJmc2sfCutXkERZYyttbl3y38
+1;2419;Марина;Посудиевская;Miirà;05.11.2020 00:00;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2543;Rishat;Sitdikov;Ramadvipa;06.11.2020 00:00;Набережные Челны;1;ChIJddz3hz4e4EMREFjjxJJxPqA
+1;2481;Sergey;Elenin;;06.11.2020 00:00;Тюмень;1;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2670;Дмитрий;Кулешов;Дхармамегха;07.11.2020 00:00;Салават;1;ChIJnQCnr_v_10MR693fFkI-B1Y
+1;2444;Sasha;Skridonenko;Agnika;08.11.2020 00:00;Тирасполь;1;ChIJv0w__egCyUARGEjjC-Ys_v8
+1;2426;Alina;Zalozna;Aloka;08.11.2020 00:00;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2415;Margo2150;Virsta;Шакти;09.11.2020 12:45;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2417;Мария;Колчерина;Мринали;09.11.2020 15:13;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2417;Мария;Колчерина;Мринали;09.11.2020 15:13;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2448;Тетяна;Хмельницкая;;09.11.2020 15:13;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2425;Olesya;Lisovskaya;Арундхати;09.11.2020 16:27;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2427;Таня;Кучмій;;09.11.2020 16:32;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2050;Nana;Tarasenko;Dipali;10.11.2020 14:34;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2432;Анна;Щербак;Gautamī;10.11.2020 14:35;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2432;Анна;Щербак;Gautamī;10.11.2020 14:35;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;1812;Marharyta;Dubnytska;Шримати;10.11.2020 14:36;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2414;Татьяна;Сиверская;Devakī;10.11.2020 14:39;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2457;Olga;Kravets;A’nandii;11.11.2020 00:00;Новокузнецк;1;ChIJ5Z4iV1fA0EIRQNl8enxpDiM
+0;2456;Виктория;Гончарова;Vibha'varii;11.11.2020 00:00;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+1;3201;Kristina;Kottselaynen;Krànti;14.11.2020 00:00;Петрозаводск;1;ChIJ5x-_1z3soUYR1IUEmtiwneQ
+0;2458;Жанна;Мирсанова;Janakii;14.11.2020 13:48;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2416;Juliana;B;Майтри;14.11.2020 19:07;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2421;Анна;Гуляева;Ашеша;15.11.2020 14:37;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2467;Elena;Kudryavtseva;Alola;16.11.2020 00:00;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2469;Вера;Благодарная;Рукмини;16.11.2020 15:29;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2488;Andrey;Plyaskin;;22.11.2020 00:00;Тюмень;1;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2489;Mikhail;Antonenko;;22.11.2020 00:00;Тюмень;1;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2168;Артём;Тихонов;Амшумали;22.11.2020 00:00;Нижнекамск;1;ChIJ4SRhEa3sX0ERzOEk514K7GI
+1;1712;Alexander;Rubanov;;24.11.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2500;Александр;Рубанов;;24.11.2020 00:00;Орск;1;ChIJPS9vPNv4f0ER5mBDG5Y5Hf4
+0;2462;Максим;Юрченко;Мокшеш;25.11.2020 12:36;Ангарск;1;ChIJ4YbwStKcB10Rb9FpyqY7dBo
+0;2502;Eduard;Gerasimov;Adhivasa (Высшая обитель всех существ);26.11.2020 21:23;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2508;Danil;Ketov;Дивьякету;27.11.2020 00:00;Екатеринбург;1;ChIJS9tioOplwUMRIH9W99dDAtU
+1;2509;Алексей;Захаров;Anantaśrī;27.11.2020 00:00;Екатеринбург;1;ChIJS9tioOplwUMRIH9W99dDAtU
+1;2495;Roman;Akhmetov;;27.11.2020 00:00;Челябинск;1;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+0;2513;Алексей;Филатов;;29.11.2020 18:47;Нижний Новгород;1;ChIJUTID7vnVUUERqleWhM_A0yg
+0;2518;Dmitry;Rysik;Deva Prasad;30.11.2020 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;2512;Igor;Legeyda;Abhidharma;30.11.2020 22:13;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2519;Дмитрий;Кужельный;;01.12.2020 00:00;Пермь;1;ChIJC_KG2OHG6EMRDop6uALKSps
+1;2839;Мария;Мазаева;Madhavi;06.12.2020 00:00;Хабаровск;1;ChIJyYo2sMbp-l4RUH-6Xw68l_o
+1;2534;Svetlana;Svetlana;;07.12.2020 00:00;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2540;Светлана;Богдашова;;07.12.2020 00:00;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2430;Victoria;Kravtsova;Васиштхи;07.12.2020 14:09;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2503;Ivan;Ivanov;;08.12.2020 12:41;Челябинск;1;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+0;2496;Rail;Gafiullin;;08.12.2020 12:42;Челябинск;1;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+0;2499;Timofey;Kheylik;Tarakadeva;08.12.2020 12:42;Челябинск;1;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+0;2497;Дмитрий;Жиглов;;08.12.2020 12:42;Челябинск;1;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+0;2449;А;Rublevska;;10.12.2020 14:29;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2538;Юлия;Лев;Сахадеви;10.12.2020 14:29;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2522;Полина;Салимова;Парвати;10.12.2020 14:29;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2431;Алина;Крез;;10.12.2020 14:33;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2506;Анна;Мотрич;;10.12.2020 14:34;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2423;Nadezhda;Koval'ova;;10.12.2020 14:35;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2440;Svetlana;Rogovaya;Mahadevi;10.12.2020 14:37;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2505;Grushenka;Dushenka;;10.12.2020 14:44;Полтава;1;ChIJa7rmJeQl2EARgsrkud9rPs8
+0;2546;Oleksandr;Perun;Ananda Dev;12.12.2020 16:48;Гдыня;1;ChIJidceB0Wh_UYRNmYjiZn54t4
+0;2547;Виктория;Косова;;13.12.2020 17:09;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2517;Таня;Шапетина;Дипика;14.12.2020 15:26;Кривой Рог;1;ChIJe6tUMeDf2kARbhhrfRc6-rA
+0;2428;Валерия;Хрони;;14.12.2020 15:26;Днипро;1;ChIJj0YI_QPj20ARuhrB8tXzHAo
+1;2573;Маркандеи;василенкова;Ma’rkandeyii;15.12.2020 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2562;Алина;Матузкова;Аинджу;15.12.2020 00:00;Новороссийск;1;ChIJ3xmnOLsD7kARo3pdg-FWiWI
+0;2551;Евгения;Фоменко;;15.12.2020 00:16;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2584;Людмила;Сазонова;;16.12.2020 19:37;Днипро;1;ChIJj0YI_QPj20ARuhrB8tXzHAo
+0;2583;Елена;Зинченко;;16.12.2020 19:37;Днипро;1;ChIJj0YI_QPj20ARuhrB8tXzHAo
+0;2590;Максим;Кайль;;17.12.2020 04:55;Владивосток;1;ChIJhdRJUrqcs18RNX6W3dQEZxg
+0;2155;Alexander;Skvortsov;Shivamurti;18.12.2020 21:41;Стокгольм;1;ChIJywtkGTF2X0YRZnedZ9MnDag
+0;2595;Ivan;Kozyrev;Avirbhava;18.12.2020 21:56;Вестерос;1;ChIJp6lbRYFCXkYRIEBl4rZdQbw
+1;2578;Katerina;Zhaborovskaya;Каушала;19.12.2020 00:00;Тюмень;1;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2603;Анна;Барышева;Анамика;20.12.2020 00:00;Феодосия;1;ChIJmx0o-4qF60ARPmWiiMqYHDw
+1;3071;Sergei;Orlovskij;Sam'bodha;21.12.2020 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2452;Татьяна;Бахметьева;TARA;22.12.2020 00:00;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2422;Ирина;Щербина;Anupamā;22.12.2020 00:00;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2701;Инна;Масжерина;Ишани;23.12.2020 00:00;Омск;1;ChIJCwkB9uL9qkMRGpumYTjD714
+0;2438;Виктория;Солнечная;;23.12.2020 11:47;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2441;Ирина;Лисовец;;23.12.2020 12:02;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2436;Эвелина;Александровна;;23.12.2020 12:02;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2588;Ксения;Полякова;;23.12.2020 12:04;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2453;Oksana;Donieva;Advaita;23.12.2020 12:05;Рени;1;ChIJu6Enay0Zt0ARE84wnuhO8HM
+0;2052;Ann;Dobrovolskaya;;23.12.2020 12:08;Южный;1;ChIJS1JECHEVxkARGKj_YlbY_Jk
+0;2442;Kristina;Tokarchyk;Gauri;23.12.2020 12:09;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2626;Jewgeni;Hauser;Джагьямая;25.12.2020 19:19;Штраубинг;1;ChIJsa33IqhldUcRq5fN7liw7eU
+0;2627;Александр;Воропаев;;26.12.2020 06:22;Иркутск;1;ChIJZfbiU9M6qF0RTunYVhTN1jE
+0;2339;олег;минавнин;Алока;26.12.2020 13:30;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2624;Yury;Martynov;;26.12.2020 13:32;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2628;Никита;Пермяков;Нирамайя;26.12.2020 13:40;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2617;Ivan;Kartashev;;26.12.2020 13:48;Томск;1;ChIJG0xdtrKTJkMRL-eKmB3xC88
+0;2554;Евгений;Пахомов;Лиламайя;26.12.2020 14:01;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2618;Сергей;Бадин;;26.12.2020 14:20;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2450;Даша;Заец;;28.12.2020 16:43;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;3155;Elena;Ostrozhinskaya;;29.12.2020 00:00;Симферополь;1;ChIJxRyZ397d6kARQAt4vC9CKZw
+1;3064;Артем;Любчук;Арджуна;29.12.2020 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2013;Oleg;Minavnin;;29.12.2020 13:10;Новосибирск;1;ChIJl03MkOHl30IRhenT4XMGOps
+0;2636;Артём;Любчук;;29.12.2020 13:11;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2528;Tetiana;Hunchak;-;02.01.2021 13:08;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;2557;Тетяна;Франчук;;02.01.2021 13:15;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;2529;Оксана;Лелеченко;Ума;02.01.2021 13:15;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;2537;Катерина;Шандигаєва;Каруна;02.01.2021 13:40;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;2581;Виктория;Викторовна;Вандана;03.01.2021 00:00;Владивосток;1;ChIJhdRJUrqcs18RNX6W3dQEZxg
+1;2704;Марія;Чиркова;;03.01.2021 00:00;Ужгород;1;ChIJ2eO2RLkZOUcRPCoEMAGupg0
+1;2807;Павел;Проскурин;Прабхат;03.01.2021 00:00;Советская Гавань;1;ChIJDXxbp4tf4F4RdWvh3Q7EAIw
+1;2661;Marusya;Svetlova;Малини;03.01.2021 00:00;Чебоксары;1;ChIJFekWffM3WkER2RHsYXcGdHE
+1;2511;Maria;Goenko;;03.01.2021 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2410;Maria;Rodionova;;04.01.2021 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;513;Pavel;Dzhaman;;04.01.2021 00:00;Красноярск;1;ChIJ4zf_ocmv11wR_0fWj0bhl9U
+1;2705;Елена;Джаббарова;;04.01.2021 00:00;Реутов;1;ChIJ0_kY2avLSkERGJ0uwIN45CA
+1;2713;Александр;Ларин;;04.01.2021 00:00;Задонск;1;ChIJb26_1cyHOkERy-vlVEjvCjE
+1;2799;Haydar;Rizaev;Hemanshu;05.01.2021 00:00;Берлин;1;ChIJAVkDPzdOqEcRcDteW0YgIQQ
+1;2564;Наталья;Перминова;Наавина;05.01.2021 00:00;Кушва;1;ChIJoT9nRMJR6kMR7l6JlSBCD70
+1;2717;Maria;Maximova;Манохара;05.01.2021 00:00;Челябинск;1;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+1;1773;Екатерина;Доброва;Yukta(Юта);06.01.2021 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2762;Виктор;Иванов;Vikash Dev;08.01.2021 16:35;Гамбург;1;ChIJuRMYfoNhsUcRoDrWe_I9JgQ
+0;2752;Игорь;Харчук;Akhilesh;10.01.2021 00:00;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2769;Андрей;Петрусенко;;10.01.2021 00:00;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2775;Эдгар;Соболев;;10.01.2021 15:41;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2770;Артем;Шаламов;;10.01.2021 15:57;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2754;Александр;Кузнецов;Алок;10.01.2021 16:09;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2767;Станислав;Сташевский;;10.01.2021 16:20;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2771;Александр;Давиденко;;10.01.2021 16:53;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2548;Сергей;Пономарёв;;10.01.2021 17:10;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2794;Roman;Meng;Ranaviira;11.01.2021 21:46;Мюнхен;1;ChIJ2V-Mo_l1nkcRfZixfUq4DAE
+0;2049;Виктория;Безрук;Vijayanti;12.01.2021 00:07;Днипро;1;ChIJj0YI_QPj20ARuhrB8tXzHAo
+0;2798;Niklas;Kobelev;NityaBhava;12.01.2021 17:54;Билефельд;1;ChIJ8xmb4RE9ukcRzsfHbHK1P0w
+0;2789;Artem;Kyselov;;12.01.2021 21:17;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2800;Alexander;Scheleg;Адитья;13.01.2021 02:39;Кассель;1;ChIJHWx6n04_u0cRRxciWD1jhC8
+1;1689;Sergi;Mazur;;14.01.2021 00:00;Чебоксары;1;ChIJFekWffM3WkER2RHsYXcGdHE
+0;2820;Андрей;Бубнов;Abhidharma;14.01.2021 19:30;Вена;1;ChIJn8o2UZ4HbUcRRluiUYrlwv0
+0;2815;Vasily;Kovyazin;Vishnu Dev;14.01.2021 19:30;Гамбург;1;ChIJuRMYfoNhsUcRoDrWe_I9JgQ
+0;2814;Andreas;Semencov;Anand Dev;14.01.2021 19:35;Мюнстер;1;ChIJ32D3mcO6uUcR6yjze6dM6yE
+0;2845;Iryna;Turchyna;Адвайта;15.01.2021 18:25;Черновцы;1;ChIJBc324n8INEcRem15WfaWs8U
+1;2877;Ekaterina;Porunova;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2878;Аида;Воронова;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2880;Ольга;Киршанова;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2880;Ольга;Киршанова;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2881;Марина;Беляй;Мадхурита;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2883;Ira;Safronova;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2884;Ирина;Федосеева;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2886;Apollinaria;Dobrova;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2887;Надежда;Хассан;;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2917;Aida;Voronova;Иштара;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;2920;Apollinaria;Dobrоva;Анандамаи;16.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;2855;Christian;Beregov;Крипаниддхи;16.01.2021 19:14;Мюнхен;1;ChIJ2V-Mo_l1nkcRfZixfUq4DAE
+0;2848;Андрей;Кузьменко;Anadi;16.01.2021 19:25;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2857;Vlad;Murin;Вишваншу;16.01.2021 19:36;Штутгарт;1;ChIJ04-twTTbmUcR5M-RdxzB1Xk
+0;2856;Роман;Харькин;Rasa Dev;16.01.2021 19:40;Мюльхаузен;1;ChIJGYeehmntpEcRMGw1dMGOIAQ
+0;2784;Татьяна;Йовенко;;18.01.2021 13:17;Обухов;1;ChIJJZuNXGiX1EAR75RQAG5TlzE
+0;2737;Лилия;Шафикова;Ранджана;18.01.2021 13:17;Ивано-Франковск;1;ChIJHTiwNGzBMEcRwkGe5ZQj09Y
+0;2864;Олена;Нежева;;18.01.2021 13:25;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2885;Александр;Скутарь;;19.01.2021 21:00;Кишинёв;1;ChIJoWm3KDZ8yUARPN1JVzDW0Tc
+0;2910;Александр;Киктенко;Амаленду;22.01.2021 22:55;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;2749;Илья;Баев;Ajaya;22.01.2021 22:56;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+1;2889;Mila;Elman;;23.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;2874;Ирина;Фирсова;Indradjiita;23.01.2021 11:26;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;2913;Алексей;Желавский;Арпан;23.01.2021 17:16;Кёльн;1;ChIJ5S-raZElv0cR8HcqSvxgJwQ
+0;2912;Pavel;Nigamatullin;Пранеш;23.01.2021 17:21;Нюрнберг;1;ChIJ0xy2ta5Xn0cRtyGMqYWvXd0
+0;2911;Evgeny;Egorov;Юктатма;23.01.2021 17:26;Дортмунд;1;ChIJEXrwv2AXuUcRUIdUMYHyJwQ
+0;2906;Александр;Кочнев;Амритеш;23.01.2021 17:32;Дармштадт;1;ChIJ2c1zEWRwvUcR8MWwKVBDIgQ
+0;2905;Ivan;Mayer;Anadinath;23.01.2021 17:38;Кёльн;1;ChIJ5S-raZElv0cR8HcqSvxgJwQ
+1;2879;Надежда;Лапикус;;24.01.2021 00:00;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;2928;Valentin;Pilipenko;;25.01.2021 23:31;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2935;Антон;Антон;;26.01.2021 21:28;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2952;Alexander;Vaymer;Sudev;29.01.2021 20:40;Линдау;1;ChIJnQ7J3jYMm0cRgC9hIfqqOEU
+0;2953;Alexej;Keil;Amshul;29.01.2021 20:41;Зевелен;1;ChIJtQu_SRAym0cRHFiHYqibFp4
+0;2951;Michael;Zelensky;Mantresha;29.01.2021 20:41;Цюрих;1;ChIJGaK-SZcLkEcRA9wf5_GNbuY
+0;2960;Ярослав;Болозович;;30.01.2021 21:22;Одесса;1;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2957;Victor;Decamp;Vishnu Deva;30.01.2021 21:30;Фрибур;1;ChIJL31ajc1ujkcRLsM3ufbR5bs
+1;1983;Anastasia;Rumyantseva;;02.02.2021 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2966;Юрий;Гавяда;;03.02.2021 22:24;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2926;Сергей;Румянцев;;03.02.2021 22:24;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2979;Евгений;Михайлов;;04.02.2021 00:00;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+1;2977;Ilya;Sokolov;;04.02.2021 00:00;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;2978;Писарев;Pisarev;;04.02.2021 00:00;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;2984;Danil;Mizin;Da’naviira;05.02.2021 00:00;Отрадная;1;ChIJj-mDQmaM90ARXLcmCASnZEg
+1;2530;Андрей Геннадьевич;Нафтаев;;05.02.2021 00:00;Нижний Ломов;1;ChIJ08WdhM8xR0ERQEdvg3OTHoI
+1;2986;Alexander;Kabanov;;05.02.2021 00:00;Лабинск;1;ChIJqavn5DBo90ARI0vGtAXuORE
+0;2988;Ilya;Sokolov;;05.02.2021 20:57;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;2978;Писарев;Pisarev;;05.02.2021 21:01;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;2989;Андрей;Нафтаев;;05.02.2021 21:08;Пенза;1;ChIJ0fAKpGIAQUERAanLoexs7bo
+0;2981;Владимир;Анисимов;;05.02.2021 21:13;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;2983;Арсен;Кеворков;Абхай;05.02.2021 21:19;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;2996;Аня;Каспер;;06.02.2021 14:35;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2991;Ina;Lipskaya;;06.02.2021 14:36;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2949;Vera;Kalenda;;06.02.2021 14:36;Борисов;1;ChIJ6RkLsQ_42kYRVQpt1c8JjSY
+0;2994;Natalya;Dominikevich;;06.02.2021 14:36;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2993;Tatyana;Chernyavskaya;;06.02.2021 14:39;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2974;Петро;Савчук;Пранай;07.02.2021 13:53;Ровно;1;ChIJ14l8LapsL0cRhOTE26uBdAI
+0;3001;Vasyl;Kruk;Васудева;07.02.2021 14:05;Львов;1;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;2990;Ervand;Khoshich;;07.02.2021 17:31;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;3002;Александр;Сорокин;Аджай;07.02.2021 20:59;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;2199;Анастасия;Бойправ;;08.02.2021 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3027;Bogdan;Zots;;10.02.2021 22:44;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;3019;Oleg;Vlassov;Akash Diip;11.02.2021 17:41;Кируна;1;ChIJK3wl5CqO0EURYIaM3gZFAwQ
+0;3017;Sergej;Glazunovs;Shantideva;11.02.2021 17:42;Стокгольм;1;ChIJywtkGTF2X0YRZnedZ9MnDag
+0;3021;Lilia;Vinnichek;;13.02.2021 13:49;Жлобин;1;ChIJM-iRfOq31kYRYwrMWES3dUA
+0;3039;Alesya;Bondarenko;;13.02.2021 13:54;Гомель;1;ChIJpfH6UJtp1EYRlhM20g-jzF4
+0;3040;Анна;Чикилева;;13.02.2021 14:24;Жлобин;1;ChIJM-iRfOq31kYRYwrMWES3dUA
+0;2979;Евгений;Михайлов;;14.02.2021 16:25;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3041;Evgeny;Smolin;;14.02.2021 17:07;Большой Сочи;1;ChIJd4n1hG8x9EARM7vIhhCxgVQ
+0;3043;Сергей;Вагнер;;14.02.2021 17:08;Сочи;1;ChIJI0SDEeHU9UAR-F1daoZhb24
+1;2735;Влад;Владимиров;Вишнумайя;15.02.2021 00:00;Большой Сочи;1;ChIJd4n1hG8x9EARM7vIhhCxgVQ
+1;3131;Буткевич;Татьяна;Таракешвари;15.02.2021 00:00;Новосергиевка;1;ChIJJfrpGcUbe0ERwDngpa8EC20
+1;3135;Nastyonka;Bervina;Аншула;16.02.2021 00:00;Орск;1;ChIJPS9vPNv4f0ER5mBDG5Y5Hf4
+1;3124;Таня;Апасова;Нитьясундари;16.02.2021 00:00;Оренбург;1;ChIJldRfmbD3e0ERo9YAcqDY2wA
+1;1551;Лилия;Машкова;Lokeshvarii;19.02.2021 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;3079;Artur;Starkov;;22.02.2021 00:00;Сухум;1;ChIJfQv5RA8iX0ARirxj6kUQGuA
+0;3089;Dima;Derunov;Turiiya;23.02.2021 18:28;Анапа;1;ChIJLS7bZb4L7kARFd0ZoQIG6hE
+0;3090;Константин;Суворов;;23.02.2021 18:29;Анапа;1;ChIJLS7bZb4L7kARFd0ZoQIG6hE
+0;3083;Dima;Sharsnyov;Devarishi;24.02.2021 15:06;Витебск;1;ChIJ53t8_ONzxUYR9P9KYtA3BkM
+0;2791;Суди;Кочйигит;;24.02.2021 15:07;Витебск;1;ChIJ53t8_ONzxUYR9P9KYtA3BkM
+0;3082;Дима;Воронцов;;24.02.2021 15:07;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;3099;Yuliana;Dulevskaya;;25.02.2021 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;3095;Alexander;Shmelev;;27.02.2021 00:00;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3088;Евгений;Савин;;27.02.2021 17:50;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;2940;Pavel;Kovalenko;;27.02.2021 18:08;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3105;Тарабукин;Виталий;Хитеша;27.02.2021 18:31;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3107;Sergey;Golub;;27.02.2021 18:54;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3106;Roman;Teplinsky;;27.02.2021 18:54;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3109;Александр;Несусвет;;27.02.2021 18:56;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3108;Олег;Драганюк;;27.02.2021 18:56;Краснодарский;1;ChIJS1DoBW5C8EAR-upfl6y4f7Y
+0;2909;Анатолий;Антипов;;27.02.2021 18:57;Полтавская;1;ChIJvws9aWPF70ARNB7fmaJXRPM
+0;3117;Dmitry;Morozov;;01.03.2021 12:31;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;3116;Vadim;Jogakobrin;Валмики;01.03.2021 19:59;Кобрин;1;ChIJM4QymI4gIUcRDg8_KQiFiiE
+0;3079;Artur;Starkov;;02.03.2021 13:59;Сухум;1;ChIJfQv5RA8iX0ARirxj6kUQGuA
+1;1456;Marina;Zhogina;Parii;03.03.2021 00:00;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;3056;Александр;Овсянников;;03.03.2021 13:03;Сухум;1;ChIJfQv5RA8iX0ARirxj6kUQGuA
+1;2739;Юлия;Буслаева;Вараги;05.03.2021 00:00;Нижний Новгород;1;ChIJUTID7vnVUUERqleWhM_A0yg
+0;3142;Максим;Мицкевич;Махадева;06.03.2021 00:00;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2968;Дарья;Попова;Narmada;06.03.2021 00:00;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;1627;Дима;Пархамович;;06.03.2021 00:00;Бобруйск;1;ChIJKQT9w3Ux10YR8hw5YAjEvvM
+1;3114;Fatima;Shmeleva;;06.03.2021 00:00;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+1;3067;Юлия;Анисимова;;06.03.2021 00:00;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;3113;Ekaterina;Kasianova;;06.03.2021 00:00;Ростов-на-Дону;1;ChIJ77a0w3fH40ARBE2L5FG0SII
+0;3144;Андрей;Корнилович;;06.03.2021 12:55;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2950;Олег;Разбойников;;06.03.2021 13:14;Минск;1;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;3151;Владимир;Заборонок;;06.03.2021 16:25;Бобруйск;1;ChIJKQT9w3Ux10YR8hw5YAjEvvM
+1;2556;Валерий;Дудак;;07.03.2021 00:00;Пермь;1;ChIJC_KG2OHG6EMRDop6uALKSps
+0;2819;Илья;Милашенко;;10.03.2021 13:19;Ставрополь;1;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+0;3166;Антон;Косов;;10.03.2021 13:30;Невинномысск;1;ChIJU0U_bxc_-EARye0zQ8EWQ7s
+0;3167;игорь;глубский;;10.03.2021 13:41;Невинномысск;1;ChIJU0U_bxc_-EARye0zQ8EWQ7s
+1;3085;Надежда;Ломако;Нандини;12.03.2021 00:00;Казань;1;ChIJmc2sfCutXkERZYyttbl3y38
+1;3180;Наталья;Данилова;Paramatmika;13.03.2021 00:00;Старый Оскол;1;ChIJu2RhqgAJJUERoAH63MV-eis
+0;695;Дмитрий;Бондарев;;13.03.2021 16:08;Ставрополь;1;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+0;3123;Maxim;Suetin;Madhukanta;13.03.2021 19:17;Мурманск;1;ChIJ1SIM7TAQNEQRpSHDyzC6xpg
+0;3122;Денис;Бусыгин;;13.03.2021 19:23;Ижевск;1;ChIJsSuOFCA54UMRUuGXgCTr4ac
+0;3103;Yunus;Karaev;;13.03.2021 19:24;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3120;Алексей;Мальцев;;13.03.2021 19:24;Мурманск;1;ChIJ1SIM7TAQNEQRpSHDyzC6xpg
+1;3121;Елена;Дорохова;;14.03.2021 00:00;Михайловка;1;ChIJPfFfz85DF0ERyk6E6vlrvtc
+0;3183;Виталий;Огарков;;14.03.2021 20:45;Ставрополь;1;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+1;3150;Екатерина;Мещерякова;;15.03.2021 00:00;Липецк;1;ChIJGaVKJYwUOkERyk3qvfb09Vk
+1;3128;Жанна;Тактарова;;15.03.2021 00:00;Подольск;1;ChIJNdz-5E6oSkERveDoUBY3YRQ
+1;2610;Анна;Нусс;;15.03.2021 00:00;Орехово-Зуево;1;ChIJA-mJjn4cS0ERx2onWRNYiSQ
+0;3091;Oleg;Medvedev;Omkaar;16.03.2021 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2606;Тимофей;Юдин;;16.03.2021 00:00;Орехово-Зуево;1;ChIJA-mJjn4cS0ERx2onWRNYiSQ
+0;661;Andrew;Chernyshov;;16.03.2021 14:39;Харьков;1;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+0;3189;Denis;Smolyakov;;16.03.2021 14:47;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2586;Богдан;Федорченко;;16.03.2021 14:55;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3154;Максим;Дудинов;;16.03.2021 15:03;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2591;Semyon;Danilov;Самкальп;16.03.2021 15:10;Щёлково;1;ChIJryRdHCHTSkERBLuWOXf_UJk
+0;2596;Михаил;Месропян;;16.03.2021 15:20;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;2229;Руслан;Батталов;;16.03.2021 15:40;Уфа;1;ChIJ4bwWkiU62UMRzJLaHpLA7qw
+0;2559;Artur;Suleimanov;;16.03.2021 15:50;Уфа;1;ChIJ4bwWkiU62UMRzJLaHpLA7qw
+0;3157;Роман;Кузовихин;;16.03.2021 16:00;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;3169;Andrey;Vorotnikov;;16.03.2021 16:13;Нижний Новгород;1;ChIJUTID7vnVUUERqleWhM_A0yg
+0;2796;Andrey;Davorsky;;16.03.2021 16:21;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3112;Артем;Гавришев;;16.03.2021 16:31;Тольятти;1;ChIJFc7MAOh4aEERagkNsSdpVQ8
+0;3054;Сергей;Ткачев;;16.03.2021 16:39;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2283;Евгений;Домашенкин;Джатиндра;16.03.2021 16:47;Раменское;1;ChIJu_L0awrASkER7yCl6FLZFLE
+0;2645;Руслан;Матвеев;Рутатит;16.03.2021 16:53;Липецк;1;ChIJGaVKJYwUOkERyk3qvfb09Vk
+0;2872;Андрей;Ермаков;Аниш;16.03.2021 17:14;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3153;Виктор;Добычин;;16.03.2021 17:20;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2622;Яков;Капустин;;16.03.2021 17:35;Рязань;1;ChIJn8gRF2ziSUERRxkK7t3K4D4
+0;3057;Александр;Жигайло;;16.03.2021 17:44;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2575;Alexey;Rakoed;Абхаджат;16.03.2021 17:53;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3110;Андрей;Худынцев;Амиш;16.03.2021 18:01;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2599;Дмитрий;Румянцев;Дипанкар;16.03.2021 18:08;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3115;Денис;Сидоркин;;16.03.2021 18:15;Первоуральск;1;ChIJ5QvaOE8owkMRcugV_NtLjpE
+0;3086;Иван;Дьяков;Indranath;16.03.2021 18:23;Казань;1;ChIJmc2sfCutXkERZYyttbl3y38
+1;2955;ДМИТРИЙ;Стариков;;17.03.2021 00:00;Удачный;1;ChIJQXxDygFlflsRZy83tWd5U34
+1;2156;Svyatoslav;Koshelev;Shaktidev;17.03.2021 00:00;Саратов;1;ChIJQbybBQnHFEER9jWQQ1ZRaBw
+1;3196;Alexander;Kaizer;;17.03.2021 00:00;Барнаул;1;ChIJq-4ux-ih3UIRA7WHje-757A
+1;2030;Maxim;Denisyuk;Moksha Dkharma;18.03.2021 00:00;Краснодар;1;ChIJszVFcWRF8EARtr7EVk95IPc
+0;2182;Дмитрий;Ткаченко;Даттатрея;18.03.2021 13:07;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;3206;Наталия;Сорокина;Kamalika;19.03.2021 00:00;Полтава;1;ChIJa7rmJeQl2EARgsrkud9rPs8
+0;2836;Владимир;Решетников;;19.03.2021 13:01;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;3171;Dmitry;Pavlov;Дваракадиш;19.03.2021 13:02;Зарайск;1;ChIJ1WXtFvzwNUERcWPWw9-y8z4
+0;3197;Руслан;Павленко;;19.03.2021 13:02;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;3160;Елена;Амшаринская;Лочана;21.03.2021 00:00;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2056;Alona;Voloshyna;Akalpá;21.03.2021 00:00;Киев;1;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;3062;Олег;Мальцев;Нет;22.03.2021 13:14;Москва;1;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;3221;Руслан;Малышев;;25.03.2021 00:00;Барнаул;1;ChIJq-4ux-ih3UIRA7WHje-757A
+1;2947;Антон;Замятин;;26.03.2021 00:00;Красноярск;1;ChIJ4zf_ocmv11wR_0fWj0bhl9U
+0;3217;Maksim;Pavlov;;26.03.2021 17:08;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;3215;Alexander;Romashin;Абхъяд;26.03.2021 17:18;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;3214;Vlad;Kolesnikov;Вишваджит;26.03.2021 17:26;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+1;1048;Lagutina;Ksenia;;28.03.2021 00:00;Санкт-Петербург;1;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;3220;Alexey;Tsybulsky;;28.03.2021 15:47;Калининград;1;ChIJqSF8S40940YR024SFgCWUFA
+0;1491;Антон;Худяков;Amogh Siddhi;06.01.2020 18:06;Сегежа;2;ChIJQQuIg0jsIEQRH9Md_qsx-Zk
+0;875;Ivan;Sherbovich;Ishvara Krsna;10.01.2020 13:40;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1495;Evgeny;Primorsky;Yogendra;11.01.2020 06:09;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1497;Alexander;Kod;Shanti Deva;11.01.2020 07:11;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1509;Vladislav;Valuysky;Vikash;13.01.2020 04:59;Тула;2;ChIJ_cEx7YQ_NEERRZGjTF3ip6M
+0;1515;Иван;Быков;Amrtabhu;13.01.2020 12:56;Нефтеюганск;2;ChIJGWwdszRldEMRMMnA8CDtvsA
+0;1509;Vladislav;Valuysky;Vikash;13.01.2020 19:20;Тула;2;ChIJ_cEx7YQ_NEERRZGjTF3ip6M
+0;1529;Дмитрий;Травников;Дэвамитра;14.01.2020 15:28;Балашиха;2;ChIJMQzHr3HMSkERlMR0p2xNoiY
+0;1514;Alexander;Vakurko;Amarendra;15.01.2020 08:01;Набережные Челны;2;ChIJddz3hz4e4EMREFjjxJJxPqA
+0;1502;Максим;Божко;Mahadeva;15.01.2020 08:03;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1601;Ivan;Semeshchenko;;20.02.2020 06:28;Киев;2;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;1605;Иван;Бахметов;Абхед;22.02.2020 07:48;Севастопольська площа;2;EjzQodC10LLQsNGB0YLQvtC_0L7Qu9GM0YHQutCw0Y8g0L_Qu9C-0YnQsNC00YwsIEt5aXYsIFVrcmFpbmUiLiosChQKEgkL9-ozt87UQBHO74AZVkYLhBIUChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;1615;Timur;Makhachev;Тапеш;22.02.2020 09:10;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1641;Dmitry;Andreychikov;Дхармамурти;27.02.2020 19:52;Гомель;2;ChIJpfH6UJtp1EYRlhM20g-jzF4
+1;1635;Yulia;Vostrikova;Sumálińi;29.02.2020 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1563;Илья;Глембоцкий;Амбарэш;01.03.2020 17:27;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1665;Evgeny;Kim;Yatindra;14.03.2020 16:10;Иваново;2;ChIJw6fpryMUTUERLq5HRZyrJQ4
+0;1691;Mikhail;Stolpovsky;Muktivrata;14.03.2020 16:10;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1693;Oleg;Zhukov;Airavata;14.03.2020 16:11;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1675;Andrey;Anashkin;Aparajiita;14.03.2020 16:16;Ярославль;2;ChIJObnsUaCRskYRRYWURBbmyVk
+0;1695;Dmitry;Melnik;Divyendu;14.03.2020 16:20;Зеленоград;2;ChIJi7CZBQQVtUYRxDA6JmsQBTs
+0;1664;Stanislav;Seryogin;Satish;16.03.2020 07:18;Одинцово;2;ChIJz7OEsFdRtUYRjGWEQgkA2J0
+0;1707;Maxim;Sokolov;Mantreshvar;16.03.2020 09:32;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1723;Плотников;Алексеевич;Сваруп;28.03.2020 03:29;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1736;Maxim;Chuzhanov;Mahavakya;28.03.2020 03:45;Симферополь;2;ChIJxRyZ397d6kARQAt4vC9CKZw
+0;1738;Игорь;Бобрик;Amrtabhu;28.03.2020 03:50;Тверь;2;ChIJ85RsHauHtkYRnLwz9JU6K_Q
+1;2285;Андрей;Киреев;Анадинатх;29.03.2020 00:00;Орёл;2;ChIJ85rxeAkaMkERJJS_DFuVubA
+0;1742;Alexey;Lukin;Acintya;30.03.2020 15:38;Кисловодск;2;ChIJeYsI3BErWEARyAUsYVbT-MQ
+0;1743;Alexander;Meshalkin;Sudiip;30.03.2020 20:27;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1744;Alexey;Anufriev;Om Prakash;31.03.2020 07:01;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1797;Артем;Зиновьев;АЧЬЮТ;29.04.2020 00:00;Новая Чара;2;ChIJyfwPVVkmP1wR0CEBtp8Q9AI
+0;1762;Tester;Tester;;02.05.2020 12:23;Львов;2;ChIJV5oQCXzdOkcR4ngjARfFI0I
+0;1762;Tester;Tester;;02.05.2020 12:29;Львов;2;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;2572;Шахло;Носирова;Шанта;16.05.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2755;Шахло;Носирова;Шанта;16.05.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;3020;Марианна;Горбатюк;;22.06.2020 00:00;Жлобин;2;ChIJM-iRfOq31kYRYwrMWES3dUA
+1;2568;Irina;Tokareva;Ишика;27.06.2020 00:00;Томск;2;ChIJG0xdtrKTJkMRL-eKmB3xC88
+1;2666;Владимир;Кудряшов;Вишвакарма;28.06.2020 00:00;Тверь;2;ChIJ85RsHauHtkYRnLwz9JU6K_Q
+0;1884;Igor;Semenov;Omn'kara;04.07.2020 00:00;Ставрополь;2;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+1;1955;Игорь;Семёнов;Omnkara;04.07.2020 00:00;Ставрополь;2;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+0;1969;Grigoriy;Ikhsanov;;15.07.2020 09:30;Глазов;2;ChIJ3RhkRaLz5EMRLUJ3t4_067M
+1;2215;Pavel;Novikov;;23.07.2020 00:00;Томск;2;ChIJG0xdtrKTJkMRL-eKmB3xC88
+1;1982;Anna;Terenteva;Абхати;31.07.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2571;Nadezhda;Mikhaltsova;Nayana;01.08.2020 00:00;Ступино;2;ChIJEZVKPqCeNUERlvz3FpNNQNE
+1;1993;Евгения;С.;Джая;01.08.2020 00:00;Нижний Новгород;2;ChIJUTID7vnVUUERqleWhM_A0yg
+1;1985;Alina;Livshits;;01.08.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2757;Яна;Левицкая;Юти;05.08.2020 00:00;Балашиха;2;ChIJMQzHr3HMSkERlMR0p2xNoiY
+1;2563;Anastasia;Odintsova;Нараяни;06.08.2020 00:00;Мытищи;2;ChIJ_c6vcr0xtUYRiLksnilGkaM
+0;2008;Pavel;Ivanov;Pranesh;06.08.2020 08:02;Иркутск;2;ChIJZfbiU9M6qF0RTunYVhTN1jE
+0;1958;Dmitriy;Tagakov;Дивьеш;08.08.2020 14:35;Новосибирск;2;ChIJl03MkOHl30IRhenT4XMGOps
+0;1976;Pavel;Novikov;PRAHLAD;09.08.2020 16:54;Томск;2;ChIJG0xdtrKTJkMRL-eKmB3xC88
+0;1795;Oleksandr;Polyakov;Amrit;23.08.2020 12:18;Сумы;2;ChIJYaRz_CACKUERKGyDazb2dNs
+1;2294;Vlad;Krutov;Vrajamohana;25.08.2020 00:00;Киев;2;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2042;Denis;Zakrevskyi;;25.08.2020 15:12;Киев;2;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+0;2035;Gleb;Romaev;;25.08.2020 20:48;Киев;2;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2146;Dmitry;Savin;Динакар;29.08.2020 00:00;Пенза;2;ChIJ0fAKpGIAQUERAanLoexs7bo
+1;1842;Александр;Дымский;Amish;01.09.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2091;Владимир;Скальский;Vikram;04.09.2020 00:00;Одесса;2;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+0;2089;Dmitriy;Brovko;Dhiiraja;05.09.2020 08:07;Запорожье;2;ChIJA7uF-j1n3EARSj9NB9lcZ34
+0;2079;Oleksandr;Dubrovskyi;Ashok;05.09.2020 08:11;Харьков;2;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+1;2037;Артем;Маковский;Abhaya;06.09.2020 00:00;Вишневое;2;ChIJM8wmjybK1EAR5CLzKWJ9lF8
+0;2087;Ростислав;Харченко;;07.09.2020 23:22;Киев;2;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2160;Илья;Теплухин;Иштадэв;09.09.2020 00:00;Волгоград;2;ChIJZ3ZbuHUzBUERQdpXzpwXDYg
+0;2047;Сергей;Раздорожный;Сурья Пракааш;09.09.2020 18:49;Одесса;2;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2111;Tatyana;Kuznetsova;Nityaprema;12.09.2020 00:00;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;2362;Venera;Bikmametova;Вибхасвати;16.09.2020 00:00;Симферополь;2;ChIJxRyZ397d6kARQAt4vC9CKZw
+1;2134;Lidia;Zhdanova;Sadhana;18.09.2020 00:00;Ростов-на-Дону;2;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;2135;Natalya;Faraponova;Punita;18.09.2020 00:00;Ростов-на-Дону;2;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;1863;Andrey;Клодчик;Анандагири;19.09.2020 00:00;Ростов-на-Дону;2;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;2128;Yuriy;Lozinski;Atmadhara;19.09.2020 00:00;Львов;2;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;2113;Антон;Смагин;Ананташри;19.09.2020 00:00;Севастополь;2;ChIJ9USRZe8llUARzDRN_6-nLb0
+1;3033;Andrey;Naumov;Амритачандра;21.09.2020 00:00;Сочи;2;ChIJI0SDEeHU9UAR-F1daoZhb24
+1;2589;Sergey;Shishkin;Сатьядхара;23.09.2020 00:00;Краснодар;2;ChIJszVFcWRF8EARtr7EVk95IPc
+1;3097;Vitaly;Sevostyanov;Ваджраяни;23.09.2020 00:00;Краснодар;2;ChIJszVFcWRF8EARtr7EVk95IPc
+0;2126;Vitaliy;Ivanov;Vinaya;23.09.2020 20:40;Львов;2;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;2677;Roman;Igutov;Раматиртха;24.09.2020 00:00;Ростов-на-Дону;2;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;2193;Zhanna;Shalaeva;Чанда;25.09.2020 00:00;Тюмень;2;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+0;2184;Dmitry;Ofitserov;Данаврата;26.09.2020 15:42;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2185;Виталий;Зайчиков;Вимукта;26.09.2020 15:43;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2177;Александр;Черепанов;Санатан;26.09.2020 15:45;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1582;Daniil;Rylskikh;;27.09.2020 00:00;Ставрополь;2;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+1;2210;Ilya;Parakhin;Индратеджас;27.09.2020 00:00;Ставрополь;2;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+1;1564;Олег;Космун;Акшайа;13.10.2020 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2230;NikMar;_by;Нирамая;13.10.2020 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2248;Николай;Нога;Kailash;13.10.2020 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2251;Максим;Миронов;Мантреш;13.10.2020 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;2264;Николай;Дубницкий;Нирмал;14.10.2020 19:11;Вишневое;2;ChIJM8wmjybK1EAR5CLzKWJ9lF8
+1;980;Elena;Butuzova;Витарага;16.10.2020 00:00;Орёл;2;ChIJ85rxeAkaMkERJJS_DFuVubA
+1;996;Maxim;Belenko;;17.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2309;Irisha;Ermakova;Урджа;21.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;2303;Сергей;Скальский;Суреш;21.10.2020 20:20;Одесса;2;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;1073;Дмитрий;Григориев;Дэвашиш;22.10.2020 00:00;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;2214;Игорь;Наволоцкий;Акхилеш;22.10.2020 00:00;Вологда;2;ChIJCaFNZyKYrkYRMVvFrEAau20
+1;2319;Никита;Чегодаев;Нарендра;22.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;871;Radiy;Khafzetdinov;Расадев;22.10.2020 00:00;Завьялово;2;ChIJL07DSZu55UIRAgU3m2A4g7w
+1;1012;Tatyana;Chakkieva;Tilottama;22.10.2020 00:00;Сегежа;2;ChIJQQuIg0jsIEQRH9Md_qsx-Zk
+0;2310;Павел;Андержанов;Прахлад;22.10.2020 22:28;Краснодар;2;ChIJszVFcWRF8EARtr7EVk95IPc
+0;2266;Nikolay;Bashkirtsev;Нирмал Кришна;22.10.2020 22:44;Барнаул;2;ChIJq-4ux-ih3UIRA7WHje-757A
+1;2281;Михаил;Погорелов;Мунидева;23.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2190;Andrey;Silyukov;Ananta;24.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;455;Anna;Borisova;Адха;24.10.2020 00:00;Ивантеевка;2;ChIJfR6VgBcstUYRa2CBZBMcgT8
+1;2337;Руслан;Булатов;Rishi Deva;24.10.2020 00:00;Уфа;2;ChIJ4bwWkiU62UMRzJLaHpLA7qw
+1;2312;Гагарин Игорь;Гагарин;Мулашанкар;24.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2350;Vasily;Ilyin;Vajramani;25.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1230;Alexander;Mamaev;Амал;26.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1709;Роман;Кожаев;Рамануджа;26.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1932;Valentin;Bardin;Враджендра;26.10.2020 00:00;Воронеж;2;ChIJE-h06FwvO0ERvWKn-w5M2Ug
+1;2181;Дмитрий;Захаров;Dayal;26.10.2020 00:00;Великий Новгород;2;ChIJmXSFHazrvkYRXtoeLEr8GJ4
+1;2021;Алексей;Петров;Ajaya;26.10.2020 00:00;Нижний Новгород;2;ChIJUTID7vnVUUERqleWhM_A0yg
+1;2074;Андрей;Бодрейший;Анагха;26.10.2020 00:00;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;2231;Andrey;Atlaskov;Адитья Дева;28.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2289;Natalya;Kosmacheva;Нандана;28.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2395;Dmitry;Tkachenko;Даттатрея;28.10.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2324;Андрей;Гунько;Анураг;29.10.2020 00:00;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1951;Evgeniy;Dotsenko;Вишал;29.10.2020 00:00;Таганрог;2;ChIJjXS7CY1X4UARJbMSaKgRHhE
+0;2343;Игорь;Шкредов;Ishtanishta;29.10.2020 15:40;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;855;Игорь;Мавлявов;Амегха;31.10.2020 00:00;Екатеринбург;2;ChIJS9tioOplwUMRIH9W99dDAtU
+1;1128;Ольга;Никитович;Атирия;05.11.2020 00:00;Львов;2;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;1340;Kateryna;Prokopenko;Gunaratna;05.11.2020 00:00;Одесса;2;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2247;Евгений;Сосновский;Йогешвар;05.11.2020 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;2429;Nataliia;Trytenichenko;;06.11.2020 00:00;Киев;2;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2459;Elena;Ten;Liilavatii;11.11.2020 00:00;Новосибирск;2;ChIJl03MkOHl30IRhenT4XMGOps
+1;2828;Alexander;Rotar;AgniDev;12.11.2020 00:00;Тольятти;2;ChIJFc7MAOh4aEERagkNsSdpVQ8
+1;2569;Софья;Чапкина;Санкальпа;18.11.2020 00:00;Томск;2;ChIJG0xdtrKTJkMRL-eKmB3xC88
+1;2875;Mihail;Col;Mahasiddha;18.11.2020 00:00;Кишинёв;2;ChIJoWm3KDZ8yUARPN1JVzDW0Tc
+1;3031;Evgeny;Mikhaylichenko;Екендрия;20.11.2020 00:00;Курган;2;ChIJ1eOHeaG-t0MRIqQuN3gYCNc
+1;2483;Nikolay;Timofeev;Нилакантха;20.11.2020 00:00;Тюмень;2;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2498;Даниил;Полунин;Девабхаша;24.11.2020 00:00;Златоуст;2;ChIJo8UsrRUyxUMR7GtObpj9Ttk
+1;2494;Alexander;Voroshilov;;24.11.2020 00:00;Гороховец;2;ChIJ_4cVrzFvTkERTKaTPGQ1XKg
+1;2531;Vyacheslav;Svetlov;Vyomesha;05.12.2020 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2516;Вика;Викторовна;Винити;14.12.2020 00:00;Днипро;2;ChIJj0YI_QPj20ARuhrB8tXzHAo
+1;2434;Виктория;Данилейко;;14.12.2020 00:00;Запорожье;2;ChIJA7uF-j1n3EARSj9NB9lcZ34
+1;2592;Rainjinii;Rainjinii;Ранджини;17.12.2020 00:00;Тюмень;2;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2696;Юлия;Катрич;Яшода;20.12.2020 00:00;Тюмень;2;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2620;Марія;Чиркова;Bhuvareshvarii;23.12.2020 00:00;Ужгород;2;ChIJ2eO2RLkZOUcRPCoEMAGupg0
+1;2691;Alfiya;Eseneeva;Ashraya;29.12.2020 00:00;Глазов;2;ChIJ3RhkRaLz5EMRLUJ3t4_067M
+1;2149;Антон;Худолий;Ананта;30.12.2020 00:00;Волгоград;2;ChIJZ3ZbuHUzBUERQdpXzpwXDYg
+1;1858;Sergey;Goltsev;Сумит;30.12.2020 00:00;Томск;2;ChIJG0xdtrKTJkMRL-eKmB3xC88
+1;156;დავით;ხალვაში;Devaprasad ;30.12.2020 00:00;Батуми;2;ChIJIdKiTjCGZ0ARZ6ku4alTMHo
+1;1493;Lara;Lebyodka;;04.01.2021 00:00;Новосибирск;2;ChIJl03MkOHl30IRhenT4XMGOps
+1;1398;Oleg;Laptev;Амбареш;05.01.2021 00:00;Йошкар-Ола;2;ChIJM-A0486UWUERg1gTZFfO69o
+1;2774;Anastasia;Kholostenko;Anandii;09.01.2021 00:00;Белгород;2;ChIJY1hcLfRqJkERSUZCjRPSz8Q
+1;2164;Александр;Костенко;Анируддха;09.01.2021 00:00;Умань;2;ChIJ17G7ibsN0kARUZkv1IAsMUg
+0;2793;Vitalij;Merenics;Shantimaya;11.01.2021 00:00;Венторф-Хамбург;2;ChIJCUJ_sj3ysUcRtn4O6RmM5Mc
+1;2806;Елена;Подугольникова;Анурага;13.01.2021 00:00;Хабаровск;2;ChIJyYo2sMbp-l4RUH-6Xw68l_o
+1;2657;Ирина;Женалина;Авабхаса;14.01.2021 00:00;Санкт-Петербург;2;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;454;Alexander;Vikberg;;16.01.2021 00:00;Байрсброн;2;ChIJHz1KUDcwl0cRsFbfpbdrHwQ
+1;1357;Ирина;Сологуб;;16.01.2021 00:00;Кривой Рог;2;ChIJe6tUMeDf2kARbhhrfRc6-rA
+1;1574;Alisa;Galkina;Аша;18.01.2021 00:00;Вильнюс;2;ChIJ9QhkXPuT3UYRQNzpcIzRAAQ
+1;1072;Dima;Chayka;Дэваврата;04.02.2021 00:00;Ростов-на-Дону;2;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;3143;Egor;Uktatma;;06.03.2021 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;3148;Артур;Ожуг;Арун Дэв;06.03.2021 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2253;Vlad;Shilov;Вираджа;09.03.2021 00:00;Минск;2;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;3174;Arseniy;Cherepinskiy;Арун;11.03.2021 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1531;Ilya;Ishkov;Абхидхьян;14.03.2021 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;3173;Anton;Falkov;АмогСиддхи;14.03.2021 00:00;Набережные Челны;2;ChIJddz3hz4e4EMREFjjxJJxPqA
+1;3149;Артур;Ожуг;Арун Дэв;22.03.2021 00:00;Москва;2;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1823;Анна;Козырева;Ванита;09.01.2020 00:00;Санкт-Петербург;3;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+0;1504;Andrey;Karmanov;Adideva;12.01.2020 19:24;Нижний Новгород;3;ChIJUTID7vnVUUERqleWhM_A0yg
+0;1520;Alexander;Ataev;;13.01.2020 16:39;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1507;Mikhail;Gorokhov;Manavendra;15.01.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1406;Ivan;Chmir;Видьянатх;21.02.2020 00:00;Екатеринбург;3;ChIJS9tioOplwUMRIH9W99dDAtU
+0;1609;Магомедрасул;Куртаев;Махадев;22.02.2020 07:58;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1607;Павел;Лукашин;Правир;22.02.2020 11:11;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;705;Arthur;Tyncherov;Адинатх;25.02.2020 11:10;Казань;3;ChIJmc2sfCutXkERZYyttbl3y38
+0;1556;Ruslan;Safonov;Раса Вихари;27.02.2020 19:07;Минск;3;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1694;Роман;Дьяконов;Ratnesh;14.03.2020 16:14;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;1718;Maxim;Proskurin;Muktatma;24.03.2020 08:50;Барнаул;3;ChIJq-4ux-ih3UIRA7WHje-757A
+0;1722;Дмитрий;Исаков;Дэвамитра;28.03.2020 03:30;Калининград;3;ChIJqSF8S40940YR024SFgCWUFA
+0;1734;Elmir;Pikhtovnikov;Амрит Дэв;28.03.2020 03:47;Калининград;3;ChIJqSF8S40940YR024SFgCWUFA
+0;1790;Aleksandr;Grishunin;Anandadev;15.05.2020 15:18;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+0;403;Ruslan;Urazgildiev;Рамендра;05.06.2020 14:49;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2054;Gennadiy;Gasanov;Gunatva;25.08.2020 00:00;Кропивни́цкий;3;ChIJZxtECCdD0EAR2OigSUHFKOg
+1;2105;Овчаренко;Дмитрий;Дхьянеш;09.09.2020 00:00;Днипро;3;ChIJj0YI_QPj20ARuhrB8tXzHAo
+1;2276;Vladimir;Biryukov;Vishvamshu;12.09.2020 00:00;Новомосковск;3;ChIJNYvM_a-dNkERvvCIzpRLqic
+1;2068;Igor;Hrabar;Akhil;12.09.2020 00:00;Харьков;3;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+1;2150;Oleg;Krakhmalev;Adhya'tma;14.09.2020 00:00;Калининград;3;ChIJqSF8S40940YR024SFgCWUFA
+1;2158;Никита;Хаврошин;Нирмал;14.09.2020 00:00;Калининград;3;ChIJqSF8S40940YR024SFgCWUFA
+1;2482;Igor;Sementovskii;Amrtapah;14.09.2020 00:00;Калининград;3;ChIJqSF8S40940YR024SFgCWUFA
+1;1966;Alex;Obolon;;24.09.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2174;Евгений;Грикуров;Шанкара;24.09.2020 00:00;Краснодар;3;ChIJszVFcWRF8EARtr7EVk95IPc
+1;1629;Василий;Viireshvara;Viireshvara - Воин света;16.10.2020 00:00;Минск;3;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;216;Dmitry;Lebed;;24.10.2020 00:00;Томилино;3;ChIJM4T86-i3SkERZX41LIgQJV4
+1;1715;Никита;Быковский;Нирмал;24.10.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;437;Grigory;Loyko;Гьянендра;24.10.2020 00:00;Тула;3;ChIJ_cEx7YQ_NEERRZGjTF3ip6M
+1;515;Mikhail;Saakyan;Манаджит;24.10.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;902;Valery;Karpets;Валерий;24.10.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1952;Timur;Ibragimov;Tapesh;26.10.2020 00:00;Смоленск;3;ChIJO1fmBTxUzkYRvcQc8HJOKds
+1;1764;Анастасия;Пойда;Анасуя;26.10.2020 00:00;Одесса;3;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;1864;Кирилл;Гладких;Карунамайа;26.10.2020 00:00;Хабаровск;3;ChIJyYo2sMbp-l4RUH-6Xw68l_o
+1;473;Ilya;Bashmakov;Alok;26.10.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;172;Tatyana;Em;;26.10.2020 00:00;Санкт-Петербург;3;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;415;Maxim;Silyanov;Махавир;27.10.2020 00:00;Электросталь;3;ChIJt2iRpiLcSkERyfCYNr4UoDE
+1;2364;Red;Elza;;27.10.2020 00:00;Санкт-Петербург;3;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;2383;Екатерина;Шокина;Карунамаи;27.10.2020 00:00;Казань;3;ChIJmc2sfCutXkERZYyttbl3y38
+1;582;Oksana;Vozniuk;Asitima;28.10.2020 00:00;Львов;3;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;392;Alexey;Ocheredko;Animesh ;28.10.2020 00:00;Иваново;3;ChIJw6fpryMUTUERLq5HRZyrJQ4
+1;435;Ekaterina;Krytsina;Нет ;28.10.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;371;Roman;Prshisovsky;Рупаранджан;29.10.2020 00:00;Санкт-Петербург;3;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;62;Василий;Акиньшин;Вишвамитра;30.10.2020 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1288;Nikolay;Geynbikhner;Ниранджан;03.11.2020 00:00;Нижний Тагил;3;ChIJ5-s3Grpk6kMRMh84IcV9-ck
+1;2411;Дарья;Давыдова;Деваратна;03.11.2020 00:00;Новосибирск;3;ChIJl03MkOHl30IRhenT4XMGOps
+1;640;Vika;Oleynik;Vikashinii;05.11.2020 00:00;Киев;3;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;1798;Сергей;Емельянов;Santosha;22.11.2020 00:00;Одесса;3;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;1411;Andrey;Skrabov;Уддава;24.11.2020 00:00;Калининград;3;ChIJqSF8S40940YR024SFgCWUFA
+1;2539;Elena;Voronina;Ишта;09.12.2020 00:00;Харьков;3;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+1;628;Ника;Нитика;Нитика;15.12.2020 00:00;Одесса;3;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2515;Anzhelika;Kornieva;Ашиша;21.12.2020 00:00;Одесса;3;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;1090;Mia;Gasanly;Nivedita;22.12.2020 00:00;Баку;3;ChIJ-Rwh1mt9MEARa2zlel5rPzQ
+1;404;Alexander;Antoschenko;;26.12.2020 00:00;Новосибирск;3;ChIJl03MkOHl30IRhenT4XMGOps
+1;1824;Denis;Zhilkin;Dhirendra;30.12.2020 00:00;Королёв;3;ChIJc0Z46owttUYRYyy2b7HDfW0
+1;2225;Irina;Malashkina;Амега;05.01.2021 00:00;Екатеринбург;3;ChIJS9tioOplwUMRIH9W99dDAtU
+1;1867;Dmitriy;Vlasov;;05.01.2021 00:00;Ташкент;3;ChIJw-l5wwyLrjgRmMulSjsyqaU
+1;2014;Valentina;Grinenko;Vijayantii;05.01.2021 00:00;Барнаул;3;ChIJq-4ux-ih3UIRA7WHje-757A
+1;2256;Григорий;Лойко;Jnanendra;08.01.2021 00:00;Тула;3;ChIJ_cEx7YQ_NEERRZGjTF3ip6M
+1;157;Marat;Shaykhutdinov;Махаджйоти;10.01.2021 00:00;Петрозаводск;3;ChIJ5x-_1z3soUYR1IUEmtiwneQ
+1;1905;Юлия;Протопопова;Viiryavatta;10.01.2021 00:00;Санкт-Петербург;3;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;2292;Maxim;Shut;Maheshvarah;12.01.2021 00:00;Севастополь;3;ChIJ9USRZe8llUARzDRN_6-nLb0
+1;912;Sofi;Sarala;;15.01.2021 00:00;Киев;3;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;1873;Alexey;Usenko;Atman;27.01.2021 00:00;Ростов-на-Дону;3;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;467;Anastasia;Morgunova;Anindita;27.01.2021 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;115;Pasha;Soroka;Пранакришна ;06.03.2021 00:00;Минск;3;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;1779;Александр;Иванов;Амритадхар;11.03.2021 00:00;Кропивни́цкий;3;ChIJZxtECCdD0EAR2OigSUHFKOg
+1;2972;Марат;Абубекеров;Муктиврата;18.03.2021 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1537;Igor;Gagarin;;18.03.2021 00:00;Москва;3;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;690;Игорь;Гребенюк;Акаш Дип;09.09.2020 00:00;Одесса;4;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;1765;Дмитрий;Пойда;Дивьямурти;25.09.2020 00:00;Одесса;4;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;89;Zorge;Zorge;Нилакантха;19.10.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1104;Евгений;Миронов;Дживанеш;22.10.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;390;Алексей;Кравчук;Атмаджьоти;22.10.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2315;Денис;Автамонов;Тапасви;22.10.2020 00:00;Ухта;4;ChIJt7oNqEXWdEQRhgJJedFiLig
+1;85;Ivan;Kulishov;Авинаш;24.10.2020 00:00;Мытищи;4;ChIJ_c6vcr0xtUYRiLksnilGkaM
+1;61;Alex;Fedorko;Сатиш Кумар;24.10.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;223;Вячеслав;Мыльников;Видьянатх;24.10.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;929;Александр;Поляков;Ашиш;24.10.2020 00:00;Сортавала;4;ChIJjf050j1lmUYRs-dsS3vjtlk
+1;1060;Vasily;Mantulin;Викаш;24.10.2020 00:00;Тула;4;ChIJ_cEx7YQ_NEERRZGjTF3ip6M
+1;990;Alexey;Mescheryakov;Абхай;24.10.2020 00:00;Раменское;4;ChIJu_L0awrASkER7yCl6FLZFLE
+1;418;Anton;Sagaydachny;Анирван;24.10.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;514;Georgy;Khachaturov;Киран Дев;24.10.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;311;Svetlana;Seldyusheva;Сварналата;26.10.2020 00:00;Новотроицк;4;ChIJcRcAGDryf0ERTclh2nwVjqQ
+1;310;Bogdan;Zaytsev;Бхавеш;26.10.2020 00:00;Одесса;4;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;2238;Иван;Касса;indranath;27.10.2020 00:00;Омск;4;ChIJCwkB9uL9qkMRGpumYTjD714
+1;841;Andrey;Shadrin;Ananda;27.10.2020 00:00;Ташкент;4;ChIJw-l5wwyLrjgRmMulSjsyqaU
+1;2377;Sergey;Emelyanov;Сурьяпракаш;27.10.2020 00:00;Иркутск;4;ChIJZfbiU9M6qF0RTunYVhTN1jE
+1;2375;Дмитрий;Рябцун;Дхармавир;27.10.2020 00:00;Красноярск;4;ChIJ4zf_ocmv11wR_0fWj0bhl9U
+1;239;Olga;Kosykh;Алека;27.10.2020 00:00;Кубинка;4;ChIJoUa3pDmiykYRn631L03NPO0
+1;2357;Денис;Комаров;Danesha;29.10.2020 00:00;Санкт-Петербург;4;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;828;Павел;Ануфриев;Pradiip;29.10.2020 00:00;Гатчина;4;ChIJ_8Y8ln8blkYRSNyeP5aeVmI
+1;2403;Elena;Petkovich;Lekha;30.10.2020 00:00;Химки;4;ChIJwZ0-GCI_tUYR3balko5EhWA
+1;2220;Игорь;Свиргунов;Адитья;30.10.2020 00:00;Тюмень;4;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;1853;Adam;Chepigin;Atman;31.10.2020 00:00;Санкт-Петербург;4;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;68;Александр Владимирович;Милюков;Адарша;01.11.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1687;Konstantin;Grouss;Кави;10.11.2020 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;957;Pavel;Efremov;Пурушоттам;22.12.2020 00:00;Ульяновск;4;ChIJ9bNCj182XUER5BsJRwj_UiE
+1;2719;Ирина;Остроухова;Эйлина;04.01.2021 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2698;Ovsyanka;Ovsyanova;;08.01.2021 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2069;Bogdan;Doublebubble;;09.01.2021 00:00;Одесса;4;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;507;Ilgiz;Sadretdinov;Ашок;14.01.2021 00:00;Москва;4;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;440;Natalia;Loyko;Nirainjana;16.01.2021 00:00;Тула;4;ChIJ_cEx7YQ_NEERRZGjTF3ip6M
+1;345;Alexander;Shemelin;Санджая;19.01.2021 00:00;Братск;4;ChIJUwf0NPRO41wRDnJJ9UcI0yg
+1;3080;Максим;Сильянов;Махавир;14.03.2021 00:00;Электросталь;4;ChIJt2iRpiLcSkERyfCYNr4UoDE
+1;1747;Филипп;Масалов;Прадип;21.08.2020 00:00;Барнаул;5;ChIJq-4ux-ih3UIRA7WHje-757A
+1;227;Vadim;Ponomaryov;Вибхаш;20.10.2020 00:00;Москва;5;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1246;Kirill;Egorov;Киртиван;21.10.2020 00:00;Санкт-Петербург;5;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1020;Vladimir;Kolobkov;Васудев;24.10.2020 00:00;Москва;5;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;60;Игорь;Рудник;Ajit;24.10.2020 00:00;Москва;5;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;91;Denis;Evstigneev;Danesh;24.10.2020 00:00;Москва;5;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;497;Anton;Davydov;Анудхъян;24.10.2020 00:00;Москва;5;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;372;Maxim;Kokurin;Муктатма;24.10.2020 00:00;Нижний Новгород;5;ChIJUTID7vnVUUERqleWhM_A0yg
+1;1822;Марина;Исаева;Мадхуприя;26.10.2020 00:00;Ставрополь;5;ChIJ99nVP9ap-UAR8ry1G6QgyCk
+1;82;Bakholdin;Pavel;;27.10.2020 00:00;Москва;5;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1860;Artur;Gimazov;Ashoka;27.10.2020 00:00;Уфа;5;ChIJ4bwWkiU62UMRzJLaHpLA7qw
+1;150;Denis;Tsvettsikh;Даял;27.10.2020 00:00;Новосибирск;5;ChIJl03MkOHl30IRhenT4XMGOps
+1;2384;Медыхат;Шамсутдинов;Mantresh;27.10.2020 00:00;Новосибирск;5;ChIJl03MkOHl30IRhenT4XMGOps
+1;161;Александр;Курочкин;Сувир;27.10.2020 00:00;Санкт-Петербург;5;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;2388;Дарья;Бортникова;Даянвита;27.10.2020 00:00;Барнаул;5;ChIJq-4ux-ih3UIRA7WHje-757A
+1;206;Ivan;Volontsevich;Ачьютдэв;29.10.2020 00:00;Санкт-Петербург;5;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1458;Дмитрий;Divyamurti;Divyamurti;02.11.2020 00:00;Одесса;5;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;381;Артемий;Букаевский;Арупдев;16.11.2020 00:00;Королёв;5;ChIJc0Z46owttUYRYyy2b7HDfW0
+1;2486;Evgeniy;Korolev;Гиридхар;20.11.2020 00:00;Тюмень;5;ChIJx7ijUV3hu0MRk2ejKmp7E5s
+1;2619;Евгений;Иванов;Дживеш;27.12.2020 00:00;Новосибирск;5;ChIJl03MkOHl30IRhenT4XMGOps
+1;738;Vartan;Babayanz;Винай;30.12.2020 00:00;Санкт-Петербург;5;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1825;Андрей;Карпенко;Anantarupa;30.12.2020 00:00;Томск;5;ChIJG0xdtrKTJkMRL-eKmB3xC88
+1;866;Oleg;Sandalov;Алок;30.12.2020 00:00;Челябинск;5;ChIJjTpKEMuSxUMRvxEXbSpKIu8
+1;262;Irina;Pronzhilo;Ишвари;30.12.2020 00:00;Ростов-на-Дону;5;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;1645;Zhenechka;Andreeva;Андала;03.01.2021 00:00;Минск;5;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;1937;Natalya;Lobanova;Niitika;05.01.2021 00:00;Омск;5;ChIJCwkB9uL9qkMRGpumYTjD714
+1;466;Vadim;Okhotsky;Вайрагья;05.01.2021 00:00;Минск;5;ChIJ02oeW9PP20YR2XC13VO4YQs
+1;1439;Alyona;Mishina;Амия ;08.01.2021 00:00;Москва;5;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;346;Komarovsky;Vladislav;Видьяпракаш;10.01.2021 00:00;Омск;5;ChIJCwkB9uL9qkMRGpumYTjD714
+1;417;Eugeny;Zakharov;Йогарадж;13.01.2021 00:00;Артем;5;ChIJF6IM-eexs18RdPK0TY-D3iI
+1;393;Andrey;Torn;Ишвара;17.01.2021 00:00;Иваново;5;ChIJw6fpryMUTUERLq5HRZyrJQ4
+1;137;Andrei;Tsishenka;Арунодая;19.02.2021 00:00;Минск;5;ChIJ02oeW9PP20YR2XC13VO4YQs
+0;1761;Илья;Игумнов;Амегха;30.04.2020 13:25;Барнаул;6;ChIJq-4ux-ih3UIRA7WHje-757A
+0;1746;Stanislav;Kosarzhevsky;;20.06.2020 17:53;Москва;6;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1474;Kirill;Ershov;Камал;27.08.2020 00:00;Ангарск;6;ChIJ4YbwStKcB10Rb9FpyqY7dBo
+1;1852;Елена;Паскевич;Сунити;27.09.2020 00:00;Пермь;6;ChIJC_KG2OHG6EMRDop6uALKSps
+1;41;Vladimir;Semenikhin;;16.10.2020 00:00;Барнаул;6;ChIJq-4ux-ih3UIRA7WHje-757A
+1;740;Roman;Mavlonov;Ramachandra;18.10.2020 00:00;Советская Гавань;6;ChIJDXxbp4tf4F4RdWvh3Q7EAIw
+1;421;Yaroslav;Pavlychev;Юктеш;24.10.2020 00:00;Ярославль;6;ChIJObnsUaCRskYRRYWURBbmyVk
+1;2345;Иван;Лазарев;Амритеш;24.10.2020 00:00;Москва;6;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;516;Alexander;Zabrodny;;24.10.2020 00:00;Москва;6;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;872;Vadim;Zinenko;Вишвамитра;24.10.2020 00:00;Москва;6;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;1308;Nataliia;Ks;Ниити;26.10.2020 00:00;Щёлкино;6;ChIJOaHg9C9Y6UARruHriVX6owQ
+1;23;Dada;Sadananda;Ачарья Садананда Авадхута;26.10.2020 00:00;Барнаул;6;ChIJq-4ux-ih3UIRA7WHje-757A
+1;72;One;Dollar;;26.10.2020 00:00;Москва;6;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2358;Galyna;Zhuravel;Гарима;26.10.2020 00:00;Дубай;6;ChIJRcbZaklDXz4RYlEphFBu5r0
+1;2355;Уроки;Медитации;;26.10.2020 00:00;Омск;6;ChIJCwkB9uL9qkMRGpumYTjD714
+1;2360;Александр;Лесничев;Амит;26.10.2020 00:00;Барнаул;6;ChIJq-4ux-ih3UIRA7WHje-757A
+1;213;Andrey;Sorokin;;26.10.2020 00:00;Санкт-Петербург;6;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1862;TATIANA;SHIN;Tapasya;27.10.2020 00:00;Бишкек;6;ChIJgcizkdy3njgRfeLefPW6Lkk
+1;2386;Elena;Maxim;Rakhii;27.10.2020 00:00;Омск;6;ChIJCwkB9uL9qkMRGpumYTjD714
+1;1841;П;Р;;27.10.2020 00:00;Одесса;6;ChIJQ0yGC4oxxkARbBfyjOKPnxI
+1;1464;Ded;Moroz;Авинаш;28.10.2020 00:00;Новокузнецк;6;ChIJ5Z4iV1fA0EIRQNl8enxpDiM
+1;2244;Олеся;Шмидт-Чепаноне;Амита;29.10.2020 00:00;Омск;6;ChIJCwkB9uL9qkMRGpumYTjD714
+1;1928;Юлия;Bezmaternykh;Сумана;29.10.2020 00:00;Барнаул;6;ChIJq-4ux-ih3UIRA7WHje-757A
+1;2356;Kiirtan;Planet;;30.10.2020 00:00;Омск;6;ChIJCwkB9uL9qkMRGpumYTjD714
+1;2165;Katerina;Evseeva;Гунавати;31.10.2020 00:00;Пермь;6;ChIJC_KG2OHG6EMRDop6uALKSps
+1;451;Александр;Вдовин;Амитабха;03.11.2020 00:00;Москва;6;ChIJybDUc_xKtUYRTM9XV8zWRD0
+1;2027;Dada;Yukteshvara;Dada Yukteshvara;10.11.2020 00:00;Киев;6;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2464;DENIS;YUDIN;;14.11.2020 00:00;Харьков;6;ChIJiw-rY5-gJ0ERCr6kGmgYTC0
+1;1945;Denis;Yudin;Devendra;14.11.2020 00:00;Хабаровск;6;ChIJyYo2sMbp-l4RUH-6Xw68l_o
+1;416;Didi;Shanta;;16.11.2020 00:00;Россия;6;ChIJ-yRniZpWPEURE_YRZvj9CRQ
+1;1767;Dada;Indrajjit;Acharya Indrajiit Brahmacarii;17.11.2020 00:00;Иркутск;6;ChIJZfbiU9M6qF0RTunYVhTN1jE
+1;2380;Dada;Yukteshvar;;18.11.2020 00:00;Киев;6;ChIJBUVa4U7P1EAR_kYBF9IxSXY
+1;2501;Александр;Тимофеев;Ашиш;24.11.2020 00:00;Калининград;6;ChIJqSF8S40940YR024SFgCWUFA
+1;2535;Тетяна;Цибуля;;07.12.2020 00:00;Львов;6;ChIJV5oQCXzdOkcR4ngjARfFI0I
+1;703;Andrey;Lashkov;Арнава;13.12.2020 00:00;Красноярск;6;ChIJ4zf_ocmv11wR_0fWj0bhl9U
+1;1936;Степан;Кротенко;ШантиМаи;23.12.2020 00:00;Владивосток;6;ChIJhdRJUrqcs18RNX6W3dQEZxg
+1;395;Andrey;Rudnev;Ананда Кумар;30.12.2020 00:00;Воронеж;6;ChIJE-h06FwvO0ERvWKn-w5M2Ug
+1;1370;Никита;Клишин;Натарадж;30.12.2020 00:00;Барнаул;6;ChIJq-4ux-ih3UIRA7WHje-757A
+1;1035;Anna;Tyatte;Индумати;31.12.2020 00:00;Санкт-Петербург;6;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;448;Ekaterina;Ershakova;;31.12.2020 00:00;Барнаул;6;ChIJq-4ux-ih3UIRA7WHje-757A
+1;261;Olga;Opekina;Алока;05.01.2021 00:00;Санкт-Петербург;6;ChIJ7WVKx4w3lkYR_46Eqz9nx20
+1;1859;Елена;Бакланова;Urmila;12.01.2021 00:00;Владивосток;6;ChIJhdRJUrqcs18RNX6W3dQEZxg
+1;1483;Roman;Karpenko;Рави;12.01.2021 00:00;Таганрог;6;ChIJjXS7CY1X4UARJbMSaKgRHhE
+1;2393;Ольга;Гамазова;;13.01.2021 00:00;Владивосток;6;ChIJhdRJUrqcs18RNX6W3dQEZxg
+1;2136;Irina;Nesterova;Aruna;15.01.2021 00:00;Белгород;6;ChIJY1hcLfRqJkERSUZCjRPSz8Q
+1;627;Dada;Siddhartha;Siddhartha;29.01.2021 00:00;Бишкек;6;ChIJgcizkdy3njgRfeLefPW6Lkk
+1;2982;Антон;Лисица;;05.02.2021 00:00;Ростов-на-Дону;6;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;2982;Антон;Лисица;;05.02.2021 00:00;Ростов-на-Дону;6;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;2982;Антон;Лисица;;05.02.2021 00:00;Ростов-на-Дону;6;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;3037;Ekaterina;Razgy;Sa’dhuta;10.02.2021 00:00;Мурманск;6;ChIJ1SIM7TAQNEQRpSHDyzC6xpg
+0;2982;Антон;Лисица;;10.02.2021 00:15;Ростов-на-Дону;6;ChIJ77a0w3fH40ARBE2L5FG0SII
+1;3156;Igor;Severov;Ачалеш;07.03.2021 00:00;Сочи;6;ChIJI0SDEeHU9UAR-F1daoZhb24
+1;2390;Alyona;Lysikova;Ashakirana;23.03.2021 00:00;Пятигорск;6;ChIJDQPjUCp2V0ARhJHwC0pvrV0

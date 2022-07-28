@@ -1,0 +1,173 @@
+@import "colors";
+@import "../mixins";
+
+
+.appBlogNewsModal-svadhyaya {
+    background-color: $amSvadhyaya-bg;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+
+    .iframeResponsive {
+        width: 100%;
+    }
+
+    .btnClose:after,
+    .btnClose:before {
+        background-color: $amSvadhyaya-tools;
+    }
+
+    &Title {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 600;
+        padding: 0 8px;
+        text-align: center;
+        display: block;
+    }
+
+    &Line {
+        width: 100%;
+        height: 3px;
+        /*background-color: $am_color;*/
+        background-color: transparent;
+        margin-right: 12px;
+        border-radius: 50px;
+
+        &Btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            margin: 0 auto;
+            background: $amSvadhyaya-bg;
+            z-index: 9;
+            padding: 16px;
+        }
+    }
+
+    &Text {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 16px 0;
+
+        div,
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    &Wrap {
+        padding: 16px 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: $amSvadhyaya-text;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: auto;
+        width: fit-content;
+
+    }
+
+    &Audio {
+        padding: 16px 0;
+
+        audio {
+            width: 100%;
+        }
+    }
+
+}
+
+
+.amSvadhyaya-content {
+    padding: 70px 16px 120px 16px;
+
+    &Head {
+        @include flex-jb-ac;
+
+        &Btn {
+            cursor: pointer;
+            color: $am_color;
+            font-size: 20px;
+        }
+
+        &Title {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            padding: 0 8px;
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+
+
+#amSvadhyayaLang {
+    display: flex;
+    align-items: center;
+    color: $amSvadhyaya-tools;
+    font-size: 14px;
+    line-height: 39px;
+}
+#amSvadhyayaLang .dhrtDropdown.menuWidthAuto .dhrtDropdown-menu {
+    min-width: 200px;
+}
+#amSvadhyayaLang .dhrtDropdown .dhrtDropdown-menu {
+    box-shadow: none;
+    top: 10px;
+}
+.amSvadhyayaLang-itemText {
+    width: calc(100% - 16px);
+    display: inline-block;
+}
+#amSvadhyayaLang .dhrtDropdown-item {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        margin-right: 4px;
+    }
+
+    span {
+        display: inline-block;
+    }
+}
+#amSvadhyayaLang .dhrtDropdown-link {
+    color: $amSvadhyaya-tools;
+    text-transform: uppercase;
+}
+#amSvadhyayaLang-toggle {
+    margin-left: 8px;
+}
+.appSvadhyayaLang-checked {
+    width: 16px;
+    height: 32px;
+    position: relative;
+}
+.appSvadhyayaLang-checked:after {
+    content: '\2713';
+    color: $am_color;
+    position: absolute;
+    right: 0;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+

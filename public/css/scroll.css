@@ -1,0 +1,30 @@
+ .dhrtScroll-noScroll.dhrtScroll-wrapperOuter {
+    overflow: auto;
+}
+
+
+.dhrtScroll-wrapperOuter {
+    width: 100%;
+    overflow: hidden;
+}
+.dhrtScroll-wrapperInner {
+    width: calc(100% + 17px);
+    padding-right: 17px;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none; /*Отключает масштабирование текста в горизонтальной ориентации.*/
+}
+
+.dhrtHorizontalScroll-wrapperOuter {
+    /*height: 0px; необходимо фиксированое значение высоты*/
+    overflow: hidden;
+
+}
+.dhrtHorizontalScroll-wrapperInner {
+    height: calc(100% + 17px);
+    padding-bottom: 17px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-text-size-adjust: none; /*Отключает масштабирование текста в горизонтальной ориентации.*/
+}

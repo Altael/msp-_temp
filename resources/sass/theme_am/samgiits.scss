@@ -1,0 +1,413 @@
+@import "../colors";
+@import "../theme_am/colors";
+@import "../theme_am/variables";
+@import "../mixins";
+
+$samgiitBtnSize: 36px;
+$colorCur: grey;
+
+.samgiits {
+    font-size: 18px;
+    line-height: 24px;
+
+
+    @include placeholder {
+        color: $colorCur;
+        opacity: 0.4;
+        font-size: 13px;
+    };
+
+    &-link {
+        color: $colorCur;
+    }
+
+    &-title {
+        margin-bottom: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-bottom: 1px solid $colorCur;
+        color: $colorCur;
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &-list {
+
+        margin-bottom: 32px;
+
+
+        &Title {
+            font-size: 16px;
+
+            &.amBlock-title {
+                border-bottom-color: $colorCur;
+                color: $colorCur;
+            }
+
+            &DaySamgiits {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+            }
+        }
+    }
+
+    &-tools {
+        @include flex-jc-ac;
+        @include child-mr8;
+        padding-bottom: 4px;
+
+        & > * {
+            cursor: pointer;
+        }
+
+    }
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 8px;
+        width: 100%;
+
+        &CopyLink {
+            cursor: pointer;
+        }
+
+
+        &Expand {
+            width: 100%;
+
+            .samgiits-itemTitleWrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            .samgiits-itemTitle {
+                margin-bottom: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 22px;
+                width: calc(100% - 24px);
+
+                &Sub {
+                    margin-bottom: 16px;
+                    margin-left: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid $colorCur;
+                    color: $colorCur;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                &.withSevronLeft:before {
+                    left: 4px;
+                    top: 5px;
+                    border-color: $colorCur;
+                }
+            }
+        }
+
+        &Favorite {
+            padding-left: 8px;
+            padding-top: 2px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            color: $colorCur;
+
+            .msppIcons-heart-empty {
+                display: inline;
+            }
+            .msppIcons-heart-full {
+                display: none;
+            }
+            &.marked {
+                .msppIcons-heart-empty {
+                    display: none;
+                }
+                .msppIcons-heart-full {
+                    display: inline;
+                }
+            }
+        }
+
+        &Title {
+            padding-left: 16px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: uppercase;
+            font-weight: 600;
+            width: calc(100% - 24px);
+
+            &.withSevronRight:before {
+                left: 0;
+                right: auto;
+                top: 5px;
+                border-color: $colorCur;
+            }
+        }
+
+        &Text {
+            padding: 0 0 16px 16px;
+
+            &,
+            p {
+                font-size: 17px;
+                line-height: 24px;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+        }
+
+        &Choose {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+
+
+            &Field {
+                border-radius: 24px;
+                border: 1px solid $colorCur;
+                color: $colorCur;
+                width: 100%;
+                padding: 8px 42px 8px 16px;
+                background: transparent;
+                line-height: 21px;
+                font-size: 16px;
+
+                &Wrapper {
+                    width: calc(100% - #{$samgiitBtnSize} * 2 - 16px);
+                    margin-right: 8px;
+
+
+                    .msppIcons-x,
+                    .msppIcons-search {
+                        position: absolute;
+                        right: 14px;
+                        top: 8px;
+                        font-size: 18px;
+                        color: $colorCur;
+                        opacity: 0.6;
+                        cursor: pointer;
+                    }
+                    .msppIcons-x {
+                        font-size: 22px;
+                        right: 8px;
+                        top: 8px;
+                    }
+                }
+            }
+
+
+
+
+
+            &Button {
+                border-radius: 100%;
+                border: 1px solid $colorCur;
+                color: $colorCur;
+                overflow: hidden;
+                padding: 4px;
+                width: $samgiitBtnSize;
+                height: $samgiitBtnSize;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+
+                &s {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                &.active {
+                    box-shadow: 1px 1px 5px rgba(0,0,0,0.3), -1px -1px 5px rgba(0,0,0,0.3);
+                }
+            }
+        }
+
+        &Copy,
+        &More {
+            border-radius: 20px;
+            border: 1px solid $colorCur;
+            color: $colorCur;
+            overflow: hidden;
+            padding: 4px;
+            margin-bottom: 32px;
+            margin-top: 16px;
+            height: $samgiitBtnSize;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
+.amSamgiits {
+    $colorCur: $am_colorPractices;
+
+    .samgiits {
+        padding: 0 32px;
+        color: $txt_greyMd;
+
+        @include placeholder {
+            color: $colorCur;
+        };
+
+        &-link {
+            color: $colorCur;
+        }
+
+        &-title {
+            border-bottom-color: $colorCur;
+            color: $colorCur;
+        }
+
+        &-list {
+            &Title {
+                &.amBlock-title {
+                    border-bottom-color: $colorCur;
+                    color: $colorCur;
+                }
+
+            }
+        }
+
+        &-item {
+            &Expand {
+                .samgiits-itemTitle {
+                    &Sub {
+                        border-bottom-color: $colorCur;
+                        color: $colorCur;
+                    }
+                    &.withSevronLeft:before {
+                        border-color: $colorCur;
+                    }
+                }
+            }
+            &Favorite {
+                color: $colorCur;
+            }
+            &Title {
+                &.withSevronRight:before {
+                    border-color: $colorCur;
+                }
+            }
+            &Choose {
+                &Field {
+                    border-color: $colorCur;
+                    color: $colorCur;
+                    &Wrapper {
+                        .msppIcons-x,
+                        .msppIcons-search {
+                            color: $colorCur;
+                        }
+                    }
+                }
+                &Button {
+                    border-color: $colorCur;
+                    color: $colorCur;
+                }
+            }
+            &Copy,
+            &More {
+                border-color: $colorCur;
+                color: $colorCur;
+            }
+        }
+    }
+
+}
+
+.amDharmacakra {
+    $colorCur: $amDC-dark;
+
+    .samgiits {
+        color: $amDC-dark;
+
+        @include placeholder {
+            color: $colorCur;
+        };
+
+        &-link {
+            color: $colorCur;
+        }
+
+        &-title {
+            border-bottom-color: $colorCur;
+            color: $colorCur;
+        }
+
+        &-list {
+            &Title {
+                &.amBlock-title {
+                    border-bottom-color: $colorCur;
+                    color: $colorCur;
+                }
+            }
+        }
+
+        &-item {
+            &Expand {
+                .samgiits-itemTitle {
+                    &Sub {
+                        border-bottom-color: $colorCur;
+                        color: $colorCur;
+                    }
+                    &.withSevronLeft:before {
+                        border-color: $colorCur;
+                    }
+                }
+            }
+            &Favorite {
+                color: $colorCur;
+            }
+            &Title {
+                &.withSevronRight:before {
+                    border-color: $colorCur;
+                }
+            }
+            &Choose {
+                &Field {
+                    border-color: $colorCur;
+                    color: $colorCur;
+                    &Wrapper {
+                        .msppIcons-x,
+                        .msppIcons-search {
+                            color: $colorCur;
+                        }
+                    }
+                }
+                &Button {
+                    border-color: $colorCur;
+                    color: $colorCur;
+                }
+            }
+            &Copy,
+            &More {
+                border-color: $colorCur;
+                color: $colorCur;
+            }
+        }
+    }
+}
+
+
+
+
+
+

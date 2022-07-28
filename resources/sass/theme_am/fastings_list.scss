@@ -1,0 +1,170 @@
+.amFastingBody {
+    font-family: "SF Pro Display", Roboto, Arial, sans-serif;
+}
+.amHandbookMissingLessons {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    font-family: "SF Pro Display", Roboto, Arial, sans-serif;
+}
+.amHandbookMissingLessons-Header {
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 99;
+}
+
+.amHandbookMissingLessons-timezone {
+    padding: 16px 45px;
+    display: none;
+}
+.amHandbookMissingLessons-timezoneWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    background: #7676801F;
+    border-radius: 9px;
+}
+.amHandbookMissingLessons-timezoneButton {
+    height: 32px;
+    width: 41px;
+    box-shadow: 0 3px 8px #0000001F;
+    border: 0.5px solid #0000000A;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 32px;
+    margin: 2px;
+    background: #FFFFFF;
+    font-size: 25px;
+    color: #bbb4b4;
+}
+.amHandbookMissingLessons-timezoneValue {
+    color: #434B56;
+    opacity: 0.8;
+    letter-spacing: -0.49px;
+    font-size: 18px;
+}
+.amHandbookMissingLessons-typeFasting {
+    display: flex;
+    padding: 16px 45px;
+    border-bottom: 0.5px solid #3C3C434D;
+}
+.amHandbookMissingLessons-typeFastingRadioView {
+    border: 1px solid #676E77;
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+input[type="radio"]:checked + .amHandbookMissingLessons-typeFastingRadioView:after {
+    background-color: #7695F6;
+    width: 12px;
+    height: 12px;
+    top: 8px;
+    left: 2px;
+}
+input[type="radio"]:checked + .amHandbookMissingLessons-typeFastingRadioView.dhrtRadioView {
+    border-color: #7695F6;
+}
+.amHandbookMissingLessons-typeFastingValue {
+    font-size: 17px;
+    color: #444C57;
+    letter-spacing: -0.49px;
+    opacity: 0.8;
+}
+.amHandbookMissingLessons-typeFasting label:first-child {
+    margin-right: 40px;
+}
+.amHandbookMissingLessons-list {
+    padding: 21px 20px 0;
+    background: #FFFFFF;
+    font-family: "SF Pro Display Light", Roboto, Arial, sans-serif;
+}
+.amHandbookMissingLessons-listItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 77px;
+    padding-left: 25px;
+}
+.amHandbookMissingLessons-listItem span:first-child {
+    font-size: 28px;
+    line-height: 34px;
+    color: #434B56;
+}
+.amHandbookMissingLessons-listItem span:last-child {
+    line-height: 19px;
+    font-size: 16px;
+    color: #707070;
+}
+.amHandbookMissingLessons-listItem span:last-child::first-letter {
+    text-transform: uppercase;
+}
+.amHandbookMissingLessons-listItem.nearest {
+    background: #406DF7;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.amHandbookMissingLessons-listItem.nearest+.amHandbookMissingLessons-listItem.nearest {
+    background: transparent;
+    opacity: 1;
+}
+
+.amHandbookMissingLessons-listItem.nearest span {
+    color: #FFFFFF;
+}
+.amHandbookMissingLessons-listItem.nearest+.amHandbookMissingLessons-listItem.nearest span {
+    color: inherit;
+}
+
+.appFastingsListTable {
+    margin-top: 26px;
+}
+
+//.appFastingsListTable-head .dhrtDropdown .dhrtDropdown-menu {
+//    right: auto;
+//    left: 74px;
+//    top: 15px;
+//    bottom: auto;
+//    transform-origin: 0 0;
+//}
+//
+//@media screen and (min-width: 768px) {
+//    .appFastingsListTable-head .dhrtDropdown .dhrtDropdown-menu {
+//        left: 74px;
+//    }
+//}
+
+.appFastingsListTable .appTable-col {
+    display: block;
+    width: 50%;
+}
+
+@media screen and (min-width: 414px) {
+    .appFastingsListTable .appTable-col {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .appFastingsListTable .appTable-col {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .appFastingsListTable .appTable-col {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .appFastingsListTable .appTable-col {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .appFastingsListTable .appTable-col {
+        width: 12%;
+    }
+}

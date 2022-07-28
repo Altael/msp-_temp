@@ -1,0 +1,366 @@
+@import "../mixins";
+@import "../colors";
+@import "colors";
+@import "../theme_am/variables";
+
+.amProfilePage-lang {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 16px;
+}
+.amProfileTop {
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-badge;
+    padding: 20px;
+
+    &-infoMessage {
+        margin: 24px 8px;
+        color: $am_colorProfile;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-left {
+        width: 12px;
+        height: 12px;
+    }
+
+    &-infoAvatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &-infoName {
+        font-size: 20px;
+        margin-top: 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &-infoRoles {
+        max-width: 180px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 18px;
+
+        span {
+            color: $txt_greyLt;
+            font-size: 12px;
+        }
+        span:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+
+    .appUser-copyInfo {
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+.amProfilePage {
+    .appProfileCard {
+        border-radius: 10px;
+    }
+    .amUserRequest-miss {
+        .amForm-group {
+            margin-right: 16px;
+            margin-left: 16px;
+            margin-bottom: 16px;
+        }
+    }
+    /*input[type='checkbox']:checked + .dhrtCheckboxView {
+        background-color: $am_colorProfile;
+        border-color: $am_colorProfile;
+    }*/
+    .amProfile-settingsTools {
+        @include flex-jr-ac;
+        @include child-mr8;
+        padding: 0 16px;
+    }
+    .amProfile-agreementLink {
+        color: $am_colorProfile;
+        cursor: pointer;
+    }
+    .dhrtModalWindow-footerSave {
+        background-color: $am_colorProfile;
+    }
+    .amToolbar-item.active {
+        color: $am_colorProfile;
+    }
+    .amUserRequest-miss .appForm-group {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .appProfile-agreement .appProfile-mark,
+    a.appCheck-telegramTerms,
+    .infoBlock-help,
+    .appProfile-mark::after {
+        color: $am_colorProfile;
+    }
+    .dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:after,
+    .dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:before {
+        background: $am_colorProfile;
+    }
+    .dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:after {
+        box-shadow: 0 1px 1px $am_colorProfileLight2, 0 -1px 0 $am_colorProfileLight2;
+    }
+    .dhrtSwitchSpinner:hover:before {
+        box-shadow: 0 0 5px 1px $am_colorProfileLight2;
+    }
+    input[type=checkbox]:checked + .dhrtCheckboxView {
+        background-color: $am_colorProfile;
+        border-color: $am_colorProfile;
+    }
+    .appForm-buttonMarga,
+    input[type=checkbox]:checked + .dhrtCheckboxView,
+    .dhrtCheckboxView,
+    input[type="radio"]:checked + .dhrtRadioView,
+    .dhrtRadioView,
+    .dhrtCheckboxView:hover,
+    .dhrtRadioView:hover,
+    .appQuestionsList-blockContentQuestion:hover,
+    .appQuestionsList-blockContentQuestion:active {
+        border-color: $am_colorProfile;
+    }
+    .appForm-buttonMarga,
+    input[type="radio"]:checked + .dhrtRadioView:after {
+        background-color: $am_colorProfile;
+    }
+    .appUserRequest-restActionsButton {
+        border-color: $am_colorProfile;
+        color: $am_colorProfile;
+    }
+    .msppIcons-chevron-right {
+        font-size: 20px;
+        color: $txt_tools;
+    }
+    .amUserRequest-missTitle .multiselect .multiselect__tags input {
+        padding: 0;
+        margin: auto 43px;
+        color: $am_diary_checkBorder;
+    }
+}
+
+
+.amProfileMenu {
+
+    /*background-color: $bg-profile;*/
+    top: -5px;
+
+    .amProfileMenuGroup {
+        border-radius: 10px;
+
+    }
+
+    &Group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        &Item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px 25px 18px 22px;
+            position: relative;
+            cursor: pointer;
+
+            &-name {
+                font-size: 14px;
+            }
+
+            &-underText {
+                font-size: 12px;
+                line-height: 16px;
+                color: $txt_greyLt;
+            }
+            &-icon {
+                font-size: 18px;
+                margin-right: 18px;
+                color: $am_colorProfile;
+
+                &:before {
+                    position: relative;
+                    top: 2px;
+                }
+
+                &.msppIcons-donation:before {
+                    top: -1px;
+                }
+            }
+
+            > div {
+                display: flex;
+                align-items: baseline;
+            }
+
+            &::after {
+                content: '';
+                border-bottom: 1px $txt_border solid;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 56px;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.amPage {
+
+
+    max-width: $amWidth;
+    margin: 0 auto;
+    font-family: "SF Pro Display", Arial, sans-serif;
+
+    .appUserRequest-content {
+        padding: 0 16px;
+
+        @media all and (min-width: 375px) {
+            padding: 0 45px;
+        }
+    }
+    .amLangPage & {
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         right: 0;
+         left: 0;
+         height: 100vh;
+    }
+
+    &-title {
+
+
+        .mspQuestions & {
+            display: none;
+        }
+
+
+    }
+
+    &-body {
+        padding: 16px;
+
+        & > * {
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            border-radius: 12px;
+            padding: 14px 30px;
+            box-shadow: 0 1px 0 #00000029;
+            border: 0.5px solid #EAEAEA;
+        }
+
+        .amPage-title {
+            display: none;
+
+            & + * {
+                margin-top: 0;
+                padding: 16px 0;
+            }
+        }
+
+        &Help {
+            margin-bottom: 13px;
+            display: flex;
+            align-items: center;
+            padding: 20px 40px 20px 35px;
+            background: white;
+            cursor: pointer;
+
+            &Icon {
+                font-size: 29px;
+                color: #5F5E5E;
+                opacity: 0.8;
+                margin-bottom: 32px;
+
+                .amPage-bodyHelp:nth-child(2) & {
+                    font-size: 34px;
+                }
+            }
+
+            &Text {
+                display: flex;
+                flex-direction: column;
+                margin-right: 6px;
+
+                &About {
+                    letter-spacing: -0.38px;
+                    color: #5F5E5E;
+                    opacity: 0.8;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                &Name {
+                    font-size: 16px;
+                    line-height: 18px;
+                    opacity: 0.8;
+                    color: #000000;
+                    font-weight: bolder;
+                    letter-spacing: -0.43px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+
+    }
+}
+
+.amProfileDonation {
+body.theme_am & .dhrtScroll-wrapperOuter,
+body.theme_am & .dhrtScroll-wrapperOuter .dhrtScroll-wrapperInner  {
+    height: calc(100vh - 120px);
+}
+.appPost-body {
+    font-size: 17px;
+    line-height: 21px;
+}
+
+p {
+    text-align: left;
+}
+.appPost-subtitle,
+.appPost-item,
+.appPost-published {
+    display: none;
+}
+}
+
+
+
+
+
+

@@ -1,0 +1,385 @@
+@import "mixins";
+@import "colors";
+
+.eventsReportPage {
+    .dhrtScroll-wrapperInner {
+        width: auto;
+        overflow: scroll;
+
+    }
+}
+.appEventsReport {
+
+    #appEventsReport-diagramWindow {
+        .dhrtModalWindow-content {
+            min-width: 90vw;
+            max-width: 90vw;
+
+            .appEventsReport-diagramBig {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    &-range {
+        font-size: 12px;
+        width: 260px;
+        flex-shrink: 0;
+        @include flex-jl-ac;
+        @include child-mr8;
+        white-space: nowrap;
+
+        input {
+            text-align: center;
+        }
+    }
+    &-period {
+
+        &Week {
+            margin-bottom: 16px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &Month {
+            margin-bottom: 16px;
+
+
+            @include flex-jl-ac;
+            @include child-mr16;
+            display: none;
+        }
+
+        &Title {
+            color: $txt_grey;
+            font-size: 13px;
+            font-weight: 500;
+
+            &.week {
+                text-align: right;
+            }
+        }
+    }
+    &-filters {
+        border-radius: 8px;
+        border: 1px solid $border_color;
+        padding: 16px;
+        margin-bottom: 16px;
+        background: $bg-odd;
+
+        &Head {
+            @include flex-jb-ac;
+            @include child-mr8;
+        }
+
+        &Title {
+            color: $txt_grey;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        &Item {
+            width: 25%;
+            padding: 4px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+
+            &Title {
+                color: $txt_greyMd;
+            }
+            &s {
+                @include flex-jb-ac;
+                @include child-mr8;
+
+                @media all and (min-width: 1024px) {
+                    margin-left: 64px;
+                }
+
+                .dhrtDropdown {
+                    width: 100%;
+                    font-size: 12px;
+                    height: 19px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        &Details {
+            @include flex-jb-ac;
+            @include child-mr16;
+
+            .dhrtSwitch.textLeft .dhrtSwitchSpinnerText {
+                line-height: 12px;
+                font-size: 12px;
+            }
+        }
+    }
+    &-expand {
+        padding: 8px 24px;
+        border-radius: 8px;
+        background: $pastel1-button-bg;
+        border: 1px solid $pastel1-button-bg-light;
+        color: white;
+
+        &Wrap {
+            display: flex;
+            justify-content: flex-end;
+            padding: 16px 0;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+    &-head {
+        @include flex-jl-as;
+        @include child-mr8;
+        padding: 8px 0;
+        font-weight: bold;
+
+        &Month {
+            padding: 0 4px;
+            border: 1px solid $pastel1-button-bg;
+            background: $marga;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+
+            &:hover {
+                background: $marga-hover;
+            }
+        }
+
+        &Row {
+            flex-shrink: 0;
+            flex-grow: 0;
+            padding: 4px 4px 4px 8px;
+
+            &.region {
+                width: 100px;
+            }
+
+            &.bhukti {
+                min-width: 200px;
+                flex-grow: 1;
+            }
+
+            &.unit {
+                width: 100px;
+            }
+
+            &.members {
+                width: 50px;
+            }
+
+            &.range {
+                width: 100px;
+            }
+
+            &.event {
+
+                @include textOverflowRow;
+                width: 50px;
+
+                &.three {
+                    width: 166px;
+
+                    .threeWrap {
+                        @include flex-jl-ac;
+                        @include child-mr8;
+
+                        .init,
+                        .notInit,
+                        .sum {
+                            width: 50px;
+                            font-size: 10px;
+                            color: $txt_greyMd;
+                        }
+                    }
+                }
+            }
+
+            &.diagram {
+                width: 166px;
+
+            }
+        }
+    }
+    &-region {
+        @include flex-jl-as;
+        @include child-mr8;
+        padding-bottom: 32px;
+
+        &.totalSummary {
+            padding-bottom: 0;
+            font-weight: bold;
+
+            .appEventsReport-regionContentBhuktiContentUnit,
+            .appEventsReport-regionContentBhukti {
+                background: $txt_blackLt;
+                color: white;
+            }
+            .appEventsReport-regionContentBhuktiInfo .bhuktiName {
+                color: white;
+            }
+        }
+
+        .diff {
+            font-size: 10px;
+            letter-spacing: -1px;
+            white-space: nowrap;
+            position: relative;
+            top: -7px;
+            left: -3px;
+        }
+        .red {
+            color: $pastel-red;
+        }
+        .green {
+            color: $pastel-green;
+        }
+
+        &Info {
+            width: 100px;
+            flex-shrink: 0;
+            padding-left: 4px;
+        }
+
+        &Content {
+            flex-grow: 1;
+            &Bhukti {
+                @include flex-jl-as;
+                @include child-mr8;
+
+                padding: 8px 0 8px 0;
+
+                &:nth-child(odd) {
+                    background: $bg-odd;
+                }
+
+                &Info {
+                    min-width: 200px;
+                    flex-grow: 1;
+                    padding: 8px;
+
+                    .bhuktiName {
+                        color: $pastel1-icon;
+                    }
+                    .bhuktiBP {
+                        color: $pastel1-button-bg;
+                    }
+                }
+
+                &Content {
+                    &Unit {
+                        @include flex-jl-as;
+                        @include child-mr8;
+                        padding: 8px;
+
+                        &:nth-child(even) {
+                            background: $border;
+                        }
+                        &:nth-child(odd) {
+                            background: $border-color;
+                        }
+
+
+
+                        &Info {
+                            @include flex-jl-as;
+                            @include child-mr8;
+                            &Name {
+                                width: 100px;
+                            }
+                            /*&MargiisActive {
+                                width: 50px;
+                            }*/
+                        }
+                        &Column {
+
+                            width: 50px;
+
+                            &.three {
+                                width: 166px;
+
+                                .threeWrap {
+                                    @include flex-jl-ac;
+                                    @include child-mr8;
+
+                                    .init,
+                                    .notInit {
+                                        color: $txt_greyLt;
+                                    }
+                                    .guests {
+                                        color: $txt_blue;
+                                        position: relative;
+                                        left: -2px;
+                                        bottom: -1px;
+                                        font-size: 8px;
+                                        letter-spacing: -1px;
+                                    }
+                                    .init,
+                                    .notInit,
+                                    .sum {
+                                        width: 50px;
+
+                                        @include flex-jl-ac;
+                                        @include child-mr8;
+                                    }
+                                }
+                            }
+
+                            &.diagram {
+                                width: 150px;
+
+
+                                .appEventsReport-diagramWrap {
+                                    cursor: pointer;
+
+                                    & > *:not(:last-child) {
+                                        margin-bottom: 24px;
+                                    }
+
+                                    canvas {
+                                        width: 130px !important;
+                                        height: 100px !important;
+
+                                    }
+                                }
+                            }
+
+                        }
+
+                        &Range {
+                            width: 100px;
+                            color: $txt_greyLt;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+    &-clear {
+        cursor: pointer;
+        padding: 4px 16px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
+    .appEventsReport-diagramBig {
+        @include flex-ja-ac;
+
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+
+        }
+    }
+
+
+}
+

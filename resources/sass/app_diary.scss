@@ -1,0 +1,292 @@
+.appDiary .appTable-col {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    line-height: 15px;
+    padding: 8px 0 8px 6px;
+}
+
+.appDiary-add a:hover,
+.appDiary-add a {
+    color: #fff;
+}
+.appDiary-add {
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: $marga;
+    color: $white;
+    cursor: pointer;
+    width: fit-content;
+}
+.appDiary-add:hover {
+    box-shadow: 0 0 5px 3px $margaLt;
+}
+
+.appDiary-navPanel {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.appDiary-navPanelName {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: $txt_greyMd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.appDiary-tableBody {
+    flex-direction: column;
+}
+
+.appDiary-tableHead {
+    margin-bottom: 14px;
+    display: none;
+}
+
+.appDiary-icon {
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.appDiary-headIcon {
+    font-size: 15px;
+    color: $txt_greyLt;
+}
+.appDiary-bodyIcon {
+    margin-right: 10px;
+    font-size: 15px;
+    width: 20px;
+    color: $txt_greyLt;
+    text-align: center;
+}
+
+.appDiary-tableBodyTitle {
+    color: $txt_greyLt;
+    font-weight: bold;
+}
+
+.appDiary-tableBodyText {
+    width: 50%;
+}
+
+.appDiary-colName {
+    display: none;
+}
+.appDiary-colMobileTitle {
+    width: 104px;
+    text-align: left;
+}
+
+.appDiary-tableBody .appDiary-tools {
+    align-self: flex-end;
+}
+
+.appDiary-tools .appDiary-bodyIcon {
+    font-size: 16px;
+    color: $txt_greyLt;
+    height: 18px;
+}
+
+
+.appDiary-tools .dhrtDropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+}
+
+
+.appForm-inline.appDiaryModal-notes {
+    align-items: flex-start;
+}
+.appDiaryModal-notesText {
+    width: calc(100% - 115px);
+    text-align: right;
+    font-size: 13px;
+}
+.appDiaryModal-halfBathText {
+    width: calc(100% - 115px);
+    text-align: right;
+}
+
+.appDiaryModal-checkboxField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appDiaryModal-inputDate {
+    text-align: center;
+}
+
+.appDiaryModal-switchDiary {
+    margin-bottom: 8px;
+}
+
+.appDiaryModal-svadhyayaTitle,
+.appDiaryModal-karmaYogaTitle {
+    margin-bottom: 0;
+}
+
+.appDiaryModal-vyapakaShaocHeight {
+    line-height: 16px;
+}
+
+.appDiaryEdit-name {
+    width: 130px;
+}
+.appDiaryEdit-points {
+    width: 180px;
+}
+.appDiaryEdit-time {
+    width: 190px;
+}
+.appDiaryEdit-fee {
+    width: 228px;
+}
+.appDiaryEdit-chooseName {
+    width: 250px;
+}
+.appDiaryEdit-practice {
+    margin-top: 32px;
+    font-size: 32px;
+    color: $txt_greyLt;
+}
+
+/*FlatPickr changes*/
+.appDiary {
+    .flatpickr-input {
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        color: #222;
+        width: 61px;
+    }
+    .flatpickr-calendar.static {
+        width: 120px;
+        left: -30px;
+    }
+    .flatpickr-calendar.static::before,
+    .flatpickr-calendar.static::after {
+        left: 60px;
+    }
+}
+/*/FlatPickr changes*/
+
+@media screen and (min-width: 414px) {
+    .appDiary .appTable-col {
+        padding: 8px;
+    }
+    .appDiary-colMobileTitle {
+        width: 130px;
+    }
+
+    .appDiary .appPageTools-wrap {
+        margin-top: 12px;
+    }
+    .appDiary-navPanelName {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 768px) {
+    .appDiary .appTable-head.appTable-row {
+        display: none;
+    }
+    .appDiary .appPageTools-wrap {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    .appDiary-navPanelName {
+        margin-bottom: 16px;
+    }
+    .appDiary-tableHead {
+        display: flex;
+    }
+    .appDiary .appTable-col {
+        text-align: center;
+    }
+    .appDiary {
+        .appTable-head.appTable-row {
+            display: flex;
+        }
+        .appTable-col {
+            justify-content: center;
+            width: calc((100% - 80px)/7);
+        }
+        .appDiary-tools {
+
+        }
+
+        .appDiary-bodyIcon {
+            display: none;
+        }
+
+        .appDiary-colMobileTitle {
+            display: none;
+        }
+
+        .appDiary-toolsIcon {
+            display: block;
+        }
+
+        .appDiary-tableBody {
+            flex-direction: row;
+        }
+
+        .appDiary-date {
+            width: 80px;
+        }
+        .appDiary-guru {
+            display: none;
+        }
+        .appDiary-pancajania {
+        }
+        .appDiary-diary {
+            display: none;
+        }
+        .appDiary-meditation {
+        }
+        .appDiary-lalita {
+        }
+        .appDiary-asanas {
+        }
+        .appDiary-kaosiki {
+            display: none;
+        }
+        .appDiary-tandava {
+            display: none;
+        }
+        .appDiary-shaoca {
+            display: none;
+        }
+        .appDiary-fullBath {
+            display: none;
+        }
+        .appDiary-svadhyaya {
+            display: none;
+        }
+        .appDiary-karmayoga {
+            display: none;
+        }
+        .appDiary-aharya {
+
+        }
+        .appDiary-dharmacakra {
+            display: none;
+        }
+        .appDiary-upavasa {
+            display: none;
+        }
+        .appDiary-tools .appDiary-bodyIcon {
+            display: block;
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "me.anandamarga.twa",
+        "sha256_cert_fingerprints": ["F2:10:61:92:58:9D:38:A1:DD:10:27:73:5E:AC:7F:6B:AD:59:19:97:BD:C0:4B:44:15:73:CE:78:FC:9D:89:AE"] }
+}, {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "org.meditationsteps.personal.twa",
+        "sha256_cert_fingerprints": ["A8:0E:B2:47:17:85:C7:0E:BA:76:64:8A:D9:52:B9:2E:FF:4F:61:2F:D0:83:84:E8:B7:BC:8F:71:67:9C:19:26"] }
+}]

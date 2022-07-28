@@ -1,0 +1,1070 @@
+@import "mixins";
+@import "colors";
+
+.appGEO {
+
+    &-title {
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: bold;
+        color: $txt_greyMd;
+        border-bottom: 1px solid $boder_color;
+    }
+
+    .appUser-name {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &-details {
+
+        @media screen and (min-width: 768px) {
+            margin-left: 16px;
+            width: 320px;
+            padding-top: 8px;
+        }
+    }
+
+    .appGEO-unitAcarya,
+    .appGEO-bhuktiAcarya {
+        font-size: 10px;
+        line-height: 12px;
+        color: $marga;
+        white-space: normal;
+    }
+
+    .appGEO-unitType {
+        font-size: 10px;
+        line-height: 12px;
+        color: $txt_greyLt;
+    }
+
+    &-bhukti {
+        padding: 22px 16px 4px;
+
+        @media all and (min-width: 768px) {
+            padding-top: 4px;
+            @include flex-jb-as;
+            @include child-mr16;
+        }
+
+
+
+        .appGEO-bhuktiAcaryaCurator {
+
+            font-size: 12px;
+            line-height: 18px;
+
+            .placeholder {
+                color: $placeholder_color;
+            }
+
+            .dhrtDropdown-link {
+                color: $marga;
+            }
+        }
+
+        &.cickabelno {
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 1px 1px 1px 3px rgb(36 36 36 / 1%), -1px -1px 1px 3px rgb(36 36 36 / 1%);
+                background: white;
+                border-radius: 8px;
+            }
+        }
+
+        &Tools {
+            width: 100%;
+
+            @media all and (min-width: 768px) {
+                width: 300px;
+            }
+        }
+        &BP {
+
+
+            &user {
+                @include flex-jl-ac;
+                @include child-mr16;
+
+                &Rank {
+
+                    width: 75px;
+                    flex-shrink: 0;
+
+                    .dhrtDropdown-link {
+                        text-align: right;
+                    }
+                }
+
+                &Name {
+                    width: calc(100% - 129px);
+
+                }
+            }
+
+            .appIcons {
+
+                width: 22px;
+                height: 22px;
+                font-size: 18px;
+                color: $marga;
+                cursor: pointer;
+                @include flex-jc-ac;
+                transition: .0s all linear;
+
+                &:hover {
+                    font-size: 20px;
+                }
+            }
+
+            &del {
+
+            }
+
+            &new {
+                width: 100%;
+                @include flex-jr-ac;
+                margin-top: 8px;
+            }
+        }
+
+        &NameLink {
+            width: 100%;
+            @include flex-jb-as;
+            @include child-mr16;
+
+            @media all and (min-width: 768px) {
+                width: calc(100% - 316px);
+                padding-top: 12px;
+            }
+        }
+
+        &Name {
+            line-height: 16px;
+            flex-shrink: 0;
+            width: calc(100% - 36px);
+
+            @media all and (min-width: 768px) {
+                @include flex-jl-as;
+                @include child-mr16;
+            }
+            &Acarya {
+                width: 100%;
+
+                @media all and (min-width: 768px) {
+                    width: calc(100% - 116px);
+                }
+            }
+            &Text {
+                width: 100%;
+                @include textOverflowRow;
+
+
+
+
+
+
+            }
+
+            &Units {
+                @include flex-jl-as;
+                @include child-mr4;
+                font-size: 12px;
+                width: 100%;
+                white-space: nowrap;
+                line-height: 16px;
+
+
+                .appIcons {
+                    color: $link-orange;
+                }
+
+                &Reg {
+                    color: $txt_greyLt;
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+
+                @media all and (min-width: 768px) {
+                    width: 100px;
+                }
+
+            }
+        }
+
+        &Link {
+            color: $app_link;
+            width: 20px;
+            font-size: 16px;
+            padding-top: 2px;
+        }
+
+        &s {
+
+            &Info {
+                @include flex-jr-ac;
+                @include child-mr8;
+                font-size: 12px;
+                color: $txt_greyMd;
+
+
+
+                &Bhuktis {
+                    @include flex-jl-ac;
+                    @include child-mr4;
+
+                }
+
+
+                &Units {
+                    @include flex-jl-ac;
+                    @include child-mr4;
+
+
+                    &Main {
+                        @include flex-jl-ac;
+                        @include child-mr4;
+
+                        .appIcons {
+                            color: $marga;
+                            line-height: 39px;
+                        }
+                    }
+
+                    &Reg {
+                        @include flex-jl-ac;
+                        @include child-mr4;
+                        color: $txt_greyLt;
+
+                        & > div {
+                            @include flex-jl-ac;
+                            @include child-mr4;
+                        }
+
+                        &.notEmpty:before {
+                            content: '/ '
+                        }
+
+                        &.notEmpty:after {
+                            content: ' /'
+                        }
+
+                        & > *:not(:last-child):after {
+                            content: ', ';
+                        }
+                    }
+
+
+                }
+            }
+
+            &Country {
+                padding-left: 8px;
+                padding-right: 8px;
+
+                &Head {
+                    @include flex-jb-ac;
+                    @include child-mr16;
+                    color: $txt_greyMd;
+                    padding: 0 16px;
+                    cursor: pointer;
+                    height: 39px;
+                    line-height: 39px;
+                    margin-bottom: 8px;
+                    font-weight: 600;
+
+                    &:hover {
+                        box-shadow: 1px 1px 1px 3px rgb(36 36 36 / 1%), -1px -1px 1px 3px rgb(36 36 36 / 1%);
+                        background: white;
+                        border-radius: 8px;
+                    }
+
+                    &.opened {
+                        border-bottom: 1px solid $boder_color;
+                    }
+
+
+
+
+
+                }
+
+                &Body {
+
+                }
+            }
+        }
+
+    }
+
+    &-bhuktisCountryBody,
+    &-unitListBhuktiBody {
+        margin-left: 16px;
+
+        @media all and (min-width: 768px) {
+            margin-left: 64px;
+        }
+    }
+
+    &-unitList,
+    &-bhuktis {
+        padding: 24px 16px;
+        background: $pastel1-bg-contrast-2;
+        font-size: 14px;
+        height: 128px;
+        overflow: hidden;
+        margin-bottom: 32px;
+
+        &.open {
+            overflow: auto;
+        }
+
+        &.open {
+            height: auto;
+            transition: top 1s ease-out 0.5s;
+
+        }
+
+        .appTable-filterIcon {
+            color: $txt_greyLt;
+            cursor: pointer;
+        }
+
+        &Filter {
+            width: 150px;
+            margin-bottom: 32px;
+        }
+
+        &Bhukti {
+            margin-bottom: 16px;
+        }
+
+        &Tools {
+            @include flex-jb-ac;
+            margin-bottom: 16px;
+
+            &Count {
+                font-size: 12px;
+                color: $txt_greyMd;
+
+                span {
+                    display: none;
+
+                    @media all and (min-width: 768px) {
+                        display: inline-block;
+                    }
+                }
+            }
+
+
+
+            &Button {
+
+                cursor: pointer;
+                border: 1px solid $border-marga;
+                padding: 8px 24px;
+                border-radius: 8px;
+                white-space: nowrap;
+            }
+
+
+        }
+    }
+
+
+
+    &-unitList {
+
+        background: $pastel1-bg-contrast-1;
+
+        &Bhukti {
+            padding-right: 8px;
+            padding-left: 8px;
+
+            &Head {
+                @include flex-jb-ac;
+                @include child-mr16;
+                color: $txt_greyMd;
+                padding: 0 16px;
+                cursor: pointer;
+                height: 39px;
+                line-height: 39px;
+                margin-bottom: 8px;
+                font-weight: 600;
+
+                &:hover {
+                    box-shadow: 1px 1px 1px 3px rgb(36 36 36 / 1%), -1px -1px 1px 3px rgb(36 36 36 / 1%);
+                    background: white;
+                    border-radius: 8px;
+                }
+
+                &.opened {
+                    border-bottom: 1px solid $boder_color;
+
+                    .msppIcons-chevron-down {
+                        display: none;
+                    }
+                    .msppIcons-chevron-up {
+                        display: block;
+                    }
+                }
+
+                .msppIcons-chevron-up {
+                    display: none;
+                }
+
+            }
+
+            &Name {
+                line-height: 16px;
+            }
+
+        }
+
+
+        &Officer {
+            $widthChange: 1200px;
+
+            width: 100%;
+            margin-bottom: 8px;
+
+
+
+            @media all and (min-width: 768px) {
+                @include flex-jl-ac;
+                @include child-mr16;
+                padding-left: 100px;
+
+            }
+
+            &Name {
+                @include textOverflowRow;
+            }
+            &Post {
+                color: $txt_green;
+                font-size: 13px;
+            }
+
+            &Roles {
+                width: 200px;
+                flex-shrink: 0;
+                display: none;
+                color: $txt_greyMd;
+
+                @media all and (min-width: $widthChange) {
+                    & {
+                        display: block;
+                    }
+                }
+            }
+
+            &Info {
+                @include flex-jl-as;
+                @include child-mr8;
+                width: calc(100% - 28px);
+
+                @media all and (min-width: $widthChange) {
+                    width: calc(100% - 466px);
+                }
+
+                &Text {
+                    width: calc(100% - 34px);
+
+
+                    & > * {
+                        @include textOverflowRow;
+                        line-height: 16px;
+                    }
+                }
+
+
+                &Roles {
+                    color: $txt_greyMd;
+
+                    @media all and (min-width: $widthChange) {
+                        & {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &Item {
+            border-bottom: 1px dashed #919191;
+            padding: 8px;
+
+            &Link {
+                color: $app_link;
+                font-size: 16px;
+                padding-top: 2px;
+            }
+
+            &Title {
+
+                cursor: pointer;
+                margin: 8px -8px;
+                padding: 8px 8px;
+                border-radius: 8px;
+                line-height: 18px;
+
+                &:hover {
+                    background: white;
+                }
+
+
+                @media all and (min-width: 414px) {
+                    & {
+                        @include flex-jl-as;
+                    }
+                }
+            }
+
+            &Dash {
+                display: none;
+
+                @media all and (min-width: 414px) {
+
+                    & {
+                        display: block;
+                    }
+
+                }
+
+            }
+
+            &Name {
+                font-weight: 500;
+                /*display: flex;*/
+            }
+
+            &Structure {
+                color: #919191;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 100px;
+                line-height: 16px;
+                padding-top: 2px;
+
+                &Wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-grow: 1;
+                    flex-basis: fit-content;
+                }
+
+                @media all and (min-width: 414px) {
+
+                    & {
+                        padding-left: 0;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .dhrtDropdown-link {
+        color: $txt_greyMd;
+    }
+
+    &-structure {
+
+        padding: 16px;
+        background: $pastel1-bg-contrast-2;
+
+        &Item {
+
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 8px;
+            }
+
+            &Wrap > input[type=checkbox]:checked + & &ContentItem {
+                display: flex;
+            }
+
+            &Header {
+
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding: 8px 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 16px;
+
+                &Menu {
+                    display: flex;
+                    align-items: center;
+
+                    .appIcons {
+                        cursor: pointer;
+                        padding: 8px;
+                    }
+
+                    & button,
+                    & button:focus,
+                    & button:hover {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+                &Text {
+                    display: flex;
+                    align-items: center;
+
+                    & *:first-child {
+                        margin-right: 8px;
+                    }
+
+                }
+            }
+
+            &Content {
+
+                &UserPhone {
+                    margin-left: 22px;
+                }
+
+                &Warning {
+                    margin: 16px 0;
+                }
+
+                &User {
+                    @include flex-jr-ac;
+                    flex-wrap: wrap;
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                    padding: 8px;
+                    line-height: 24px;
+
+                    @media all and (min-width: 768px) {
+                        flex-wrap: nowrap;
+                        @include child-mr16;
+
+                        & > * {
+                            flex-shrink: 0;
+                            flex-grow: 0;
+                        }
+                    }
+
+                    &:nth-child(odd) {
+                        background: rgba(91, 91, 91, 0.1);
+                    }
+
+                    & > * {
+                        margin-bottom: 8px;
+                    }
+
+                    &Name {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+
+                        @media all and (min-width: 768px) {
+                            width: calc(100% - 400px);
+                        }
+
+                        .appGEO-telegram {
+                            font-size: 16px;
+                            margin: 4px 8px;
+                        }
+
+                        .appUser-telegramIcon {
+                            margin: 4px 6px;
+                        }
+                    }
+
+                    &Tools {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+
+                        @media all and (min-width: 768px) {
+                            width: 150px;
+                        }
+                    }
+
+                    &Secretary {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+
+                        @media all and (min-width: 414px) {
+                            width: 218px;
+                        }
+
+                        &Button {
+                            cursor: pointer;
+                            padding: 8px 24px;
+                            border: 1px solid $border-marga;
+                            border-radius: 8px;
+                            width: auto;
+                        }
+
+
+
+                        &Post {
+                            border: 1px solid $border-marga;
+                            display: inline-block;
+                            width: 100%;
+                            padding: 8px 24px;
+                            height: 30px;
+                            border-radius: 8px;
+                            line-height: 14px;
+                            text-align: right;
+
+
+                        }
+
+
+
+                    }
+
+                }
+
+                &Item {
+                    border: 1px solid $border;
+                    display: none;
+                    background: white;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                    justify-content: space-between;
+                    padding: 8px 16px;
+                    color: black;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 39px;
+                    align-items: center;
+                    width: 100%;
+
+                    &Name {
+                        &Info {
+                            @include flex-jl-ac;
+                            @include child-mr8;
+                            line-height: 16px;
+                        }
+                    }
+
+                    & button,
+                    &:focus button,
+                    &:hover button,
+                    &Menu:hover {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    &:hover {
+                        color: black;
+                        background: $bg-item;
+                    }
+
+                    &.active {
+                        border-color: $marga;
+                        display: flex;
+                    }
+
+                    &Count {
+                        font-size: 12px;
+                    }
+
+                    &Notes {
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: $txt_greyLt;
+                    }
+                }
+
+            }
+
+            &Unit {
+
+                &Filter {
+                    margin-bottom: 32px;
+
+                    @media all and (min-width: 414px) {
+                        width: 250px;
+
+                        &Wrap {
+                            @include flex-jl-ac;
+                        }
+                    }
+                }
+            }
+
+            &Unit {
+
+                &Header {
+                    @media screen and (min-width: 1024px) {
+                        margin-bottom: 4px;
+                    }
+
+                    &Text {
+                        @include flex-jl-ac;
+                        @include child-mr8;
+                    }
+                }
+
+
+
+                &Content {
+                    display: flex;
+                    flex-direction: column;
+
+                    @media screen and (min-width: 1024px) {
+                        margin-left: 14px;
+                    }
+
+                    &User {
+                        @media screen and (min-width: 1200px) {
+
+                            grid-template-columns: minmax(max-content, 1fr) minmax(max-content, 1fr) minmax(max-content, 1fr) minmax(max-content, 1fr);
+
+                        }
+
+                        &Name {
+                            @media screen and (min-width: 1200px) {
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                width: 200px;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        &Phone {
+                            @media screen and (min-width: 1200px) {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+        &UnitInfo {
+            width: calc(100% - 24px);
+
+            &Main {
+                @include flex-jb-ac;
+                @include child-mr8;
+            }
+        }
+
+
+    }
+
+    &-districtEdit {
+        &Switch {
+            @include flex-jb-ac;
+            @include child-mr16;
+
+            &Btn {
+                cursor: pointer;
+                @include flex-jc-ac;
+                @include child-mr8;
+                padding: 8px 24px;
+                border: 1px solid $border-marga;
+                border-radius: 8px;
+                color: $txt_greyMd;
+
+                .appIcons {
+                    color: $marga;
+                }
+
+                .appHotkeys {
+                    position: absolute;
+                    top: 0;
+                    margin: 0;
+                    opacity: 0.5;
+                }
+
+                &.left .appHotkeys {
+                    left: 4px;
+                }
+
+                &.right .appHotkeys {
+                    right: 4px;
+                }
+            }
+        }
+
+        &Notice {
+            font-size: 11px;
+            color: $txt_greyLt;
+        }
+    }
+
+}
+.appGEO-detailHeader {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.appGEO-detailContentTitle {
+    @include flex-jl-ac;
+    @include child-mr8;
+
+}
+
+.appGEO-detailContentTitle *:not(:last-child) {
+    margin-right: 8px;
+}
+
+.appGEO-detailContent {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    padding: 8px 16px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 39px;
+}
+
+.appGEO-detailContent {
+    flex-direction: column;
+    display: flex;
+}
+
+.appGEO-detailContentTitleType {
+    color: $txt-greyLt;
+    font-weight: normal;
+    font-size: 12px;
+    width: 55px;
+    text-align: right;
+}
+
+.appGEO-iconPlus {
+    color: $txt_grey;
+    font-size: 14px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.appGEO-iconPlus:hover {
+    text-decoration: none;
+    color: $marga;
+}
+
+.appGEO-detailContentTitleNameType {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 24px);
+}
+
+
+.appGEO-detailContentItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 1em;
+    height: 24px;
+    align-items: center;
+}
+
+.appGEO-detailContentItemName {
+    color: $txt-greyLt;
+
+}
+
+.appGEO-detailContentItems {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 16px;
+}
+
+.appGEO-detailContentItemValue > *:not(:last-child) {
+    margin-right: 4px;
+}
+.appGEO-detailContentItemValue .appIcons-plus-circle {
+    color: $txt-greyLt
+}
+.appGEO-detailContentItemValue {
+    display: flex;
+    align-items: center;
+
+}
+.appGEO-detailContentItemValue > * {
+    cursor: pointer;
+}
+
+
+.appGEO-detailContentTitle{
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.appGEO-detailContentTitleName {
+  max-width: calc(100% - 55px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.appGEO-detailContentStaff {
+  margin: 4px 0;
+}
+.appGEO-detailContentStaffAvatarWrap {
+  overflow: visible;
+}
+.appGEO-telegram.connected {
+    color: $telegram;
+}
+.appUser-telegramFalse {
+    font-size: 14px;
+    color: $txt_greyMd;
+}
+
+
+
+
+
+.appGEO-detailContentStaffAvatar {
+  position: relative;
+  border: 1px solid $border;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.appGEO-detailContentItemAdd {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid $border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+}
+.appGEO-detailContentItemAdd span {
+  color: $border;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.appGEO-AreaNameInput.is-valid {
+  border: 1px solid $green;
+}
+.appGEO-AreaNameInput.is-invalid {
+  border: 1px solid $red;
+}

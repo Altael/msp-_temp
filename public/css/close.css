@@ -1,0 +1,41 @@
+/*
+<span class="btnClose"></span>
+*/
+
+.btnClose {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btnClose:before,
+.btnClose:after {
+    position: absolute;
+    left: 11px;
+    content: ' ';
+    height: 28px;
+    width: 3px;
+    background-color: #818181;
+    border-radius: 15px;
+}
+.btnClose:before {
+    transform: rotate(45deg);
+}
+.btnClose:after {
+    transform: rotate(-45deg);
+}
+
+.btnClose-size14 {
+    width: 14px;
+    height: 14px;
+}
+.btnClose-size14:after,
+.btnClose-size14:before {
+    width: 2px;
+    height: 14px;
+    left: 7px;
+    top: 4px;
+}

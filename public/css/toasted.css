@@ -1,0 +1,39 @@
+/*
+    Notifications
+*/
+
+.toasted-container .toasted a.action:hover {
+    text-decoration: none;
+    border-color: #FFB34E;
+    background: #FFB34E;
+    color: #fff;
+}
+.toasted-container .toasted a.action {
+    border: 2px solid #E6E6E6;
+    border-radius: 8px;
+    padding: 12px 58px;
+    color: rgba(34, 34, 34, 0.41);
+    margin: 16px 8px 0;
+}
+.toasted > div {
+    width: 100%;
+    color: rgba(34, 34, 34, 0.41);
+}
+.toasted .primary.show,
+.toasted.toasted-primary.show,
+.toasted .primary.info,
+.toasted.toasted-primary.success,
+.toasted .primary.success,
+.toasted.toasted-primary.info,
+.toasted .primary.info,
+.toasted.toasted-primary.info {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 24px;
+}
+.toasted-container .toasted  {
+    flex-wrap: wrap;
+    justify-content: center!important;
+    align-items: center;
+}

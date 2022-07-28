@@ -1,0 +1,161 @@
+.appLogin-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.appWelcomeScreen-name {
+    padding: 16px;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    color: $marga;
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    /*.appWelcomeScreen-name {
+        display: block;
+    }*/
+}
+.theme_msp .appLogin-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/images/logo_um_black_big.png);
+  background-position: calc(50% - 40px) center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.02;
+}
+
+.appLogin-bg-animation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    background: linear-gradient(45deg, white, white, white, $margaMd, white, white, white);
+    background-size: 900% 600%;
+    animation: gradient 12s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.appLogin {
+  background-color: $white;
+  border-radius: 8px;
+  padding: 24px 48px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.appLogin-title {
+  font-size: 20px;
+  color: $txt_grey;
+  font-weight: 600;
+  text-align: center;
+}
+
+.appLogin-buttonsButton:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.appLogin-buttonsButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 16px;
+  /*border: 2px solid $marga;*/
+  border-radius: 19px;
+  padding: 4px 64px;
+  margin: 8px auto;
+  text-align: center;
+  border: 1px solid $border;
+  &[data-social="Yandex"] {
+    &:hover {
+      color: #000;
+    }
+    color: #000;
+  }
+  &[data-social="Yandex"] .appLogin-buttonsButtonIcon {
+    height: 10px;
+    overflow: visible;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #f80000;
+    position: relative;
+  }
+  &[data-social="Mailru"] {
+    &:hover {
+      color: $white;
+    }
+    stroke: #f89a00;
+    fill: #f89a00;
+    background-color: #005cf2;
+    svg {
+      position: relative;
+    }
+  }
+  &[data-social="Vkontakte"] {
+    &:hover {
+      color: $white;
+    }
+    stroke: $white;
+    fill: $white;
+    background-color: #4f7db3;
+    svg {
+      bottom: 2px;
+      position: relative;
+    }
+  }
+  &[data-social="Facebook"] {
+    &:hover {
+      color: $white;
+    }
+    stroke: $white;
+    fill: $white;
+    background-color: #3e5790;
+    svg {
+      position: relative;
+    }
+  }
+  &[data-social="Google"] svg {
+      width: 24px;
+  }
+  &[data-social="Google"] {
+    &:hover {
+      color: $white;
+    }
+
+    background-color: #D34836;
+    stroke: $white;
+    fill: $white;
+    font-weight: 600;
+    color: $white;
+  }
+  svg {
+    position: relative;
+  }
+}
+
+.appLogin-buttonsButtonIcon {
+  margin-right: 8px;
+}

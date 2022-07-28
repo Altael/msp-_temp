@@ -1,0 +1,18 @@
+
+
+.appMediaTools-filters,
+.appMediaTools-files {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    & > *:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+.appMediaTools-filters {
+    justify-content: space-between;
+}
+.appMedia-filterFileName {
+    width: calc(100% - 214px);
+}

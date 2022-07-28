@@ -1,0 +1,250 @@
+.appInitiationsList .appTable-head.appTable-row {
+    display: flex;
+}
+
+
+.appTable-head .appInitiations-name {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.appTable-head .appInitiations-name .appTable-filter {
+    width: 100%;
+}
+.appTable-head .appInitiations-city,
+.appTable-head .appInitiations-phone,
+.appTable-head .appInitiations-lesson,
+.appTable-head .appInitiations-profession {
+    width: 50%;
+    margin-bottom: 12px;
+}
+.appTable-head .appInitiations-lesson {
+    justify-content: space-between;
+}
+
+.appTable-head .appInitiations-lesson .appTable-filter_listFilter {
+    width: 100%;
+}
+
+.appInitiations-lessonText {
+    margin-right: 12px;
+}
+
+.appInitiations-tools .appIcons-more-vertical {
+    color: $txt-tools;
+}
+
+.appInitiations-avatar {
+    width: 42px;
+    padding-right: 0;
+    order: 1;
+}
+
+.appInitiations-name {
+    width: calc(100% - 42px - 30px);
+    order: 2;
+}
+
+.appInitiations-tools {
+    display: flex;
+    width: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    order: 3;
+}
+
+.appInitiations-profession {
+    width: calc(100% - 40px - 75px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    order: 4;
+}
+
+.appInitiations-lesson {
+    width: 75px;
+    order: 5;
+}
+
+.appInitiations-language {
+    width: 40px;
+    color: $green;
+    order: 6;
+}
+
+
+.appInitiations-status {
+    width: 40px;
+    order: 7;
+}
+
+.appInitiations-city {
+    width: 100px;
+    order: 8;
+}
+
+.appInitiations-phone {
+    width: calc(100% - 100px - 40px);
+    order: 9;
+}
+
+.appInitiations-receiving {
+    width: 50%;
+    order: 10;
+}
+.appInitiations-roles {
+    width: 50%;
+    order: 11;
+}
+
+
+.appInitiations-languageNo {
+    color: $red;
+}
+
+.appInitiations-lessonValue {
+    background: $margaVeryLT;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $marga;
+    font-weight: bold;
+    padding: 4px;
+    width: 35px;
+    margin: 0 auto;
+}
+
+.appInitiations-statusBtn {
+    cursor: pointer;
+}
+.appTable-head .appTable-col.appInitiations-receiving {
+    white-space: normal;
+}
+
+@media screen and (min-width: 414px) {
+    .appTable-head .appInitiations-city,
+    .appTable-head .appInitiations-phone,
+    .appTable-head .appInitiations-lesson,
+    .appTable-head .appInitiations-profession {
+        width: 175px;
+    }
+    .appTable-head .appInitiations-name .appTable-filter {
+        width: 124px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .appTable-head .appInitiations-name .appTable-filter {
+        width: 100%;
+    }
+
+    .appInitiationsList .appTable-head .appTable-col {
+        flex-direction: column;
+    }
+
+    .appTable-head .appInitiations-avatar,
+    .appTable-head .appInitiations-roles,
+    .appTable-head .appInitiations-language,
+    .appTable-head .appInitiations-status,
+    .appTable-head .appInitiations-receiving,
+    .appTable-head .appInitiations-tools {
+        display: flex;
+    }
+
+    .appInitiations-avatar {
+        width: 42px;
+    }
+    .appTable-head .appInitiations-name,
+    .appInitiations-name {
+        width: calc(100% - 42px - 85px - 120px - 75px - 40px - 56px - 40px - 110px - 20px);
+        margin-bottom: 0;
+    }
+    .appTable-head .appInitiations-city,
+    .appInitiations-city {
+        width: 85px;
+        order: 3;
+        margin-bottom: 0;
+    }
+    .appTable-head .appInitiations-phone,
+    .appInitiations-phone {
+        width: 120px;
+        order: 4;
+        margin-bottom: 0;
+    }
+    .appInitiations-roles {
+        width: 75px;
+        order: 5;
+    }
+    .appInitiations-language {
+        width: 40px;
+        order: 6;
+    }
+    .appTable-head .appInitiations-lesson,
+    .appInitiations-lesson {
+        width: 56px;
+        order: 7;
+        margin-bottom: 0;
+    }
+    .appInitiations-status {
+        width: 40px;
+        order: 8;
+    }
+    .appTable-head .appInitiations-profession,
+    .appInitiations-profession {
+        width: 110px;
+        order: 9;
+        margin-bottom: 0;
+    }
+    .appInitiations-tools {
+        width: 20px;
+        order: 10;
+    }
+    .appInitiations-receiving {
+        order: 11;
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+
+    .appTable-head .appInitiations-name,
+    .appInitiations-name {
+        width: calc(100% - 42px - 110px - 130px - 80px - 45px - 60px - 45px - 125px - 20px - 90px);
+    }
+
+    .appTable-head .appInitiations-city,
+    .appInitiations-city {
+        width: 110px;
+    }
+    .appInitiations-roles {
+        width: 80px;
+    }
+    .appTable-head .appInitiations-phone,
+    .appInitiations-phone {
+        width: 130px;
+    }
+    .appInitiations-language {
+        width: 45px;
+    }
+    .appTable-head .appInitiations-lesson,
+    .appInitiations-lesson {
+        width: 60px;
+    }
+    .appInitiations-status {
+        width: 45px;
+    }
+    .appTable-head .appInitiations-profession,
+    .appInitiations-profession {
+        width: 125px;
+    }
+    .appInitiations-receiving {
+        order: 10;
+        width: 90px;
+    }
+    .appInitiations-tools {
+        order: 11;
+    }
+}

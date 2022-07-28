@@ -1,0 +1,201 @@
+::placeholder {
+    color: $placeholder_color;
+    font-size: 12px;
+}
+.appForm-textarea,
+.appForm-input {
+    width: 100%;
+    border: 1px solid $border-element;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.appForm-input.html {
+    border: none;
+    padding: 0;
+}
+
+.appForm-textareaFixed {
+    resize: none;
+}
+
+.appForm-inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number],
+input[type=time] {
+    -moz-appearance: textfield;
+}
+.appForm-inputSpinnerWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.appForm-inputSpinnerBody {
+    display: flex;
+    align-items: center;
+}
+.appForm-inputSpinnerBody.withBorder {
+    border-bottom: 1px solid $border;
+}
+.appForm-inputSpinner {
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    color: $txt_grey;
+    width: 61px;
+}
+.appForm-inputSpinner[type='number'] {
+    width: 20px;
+}
+.appForm-inputSpinner[type='time']::-webkit-clear-button {
+    display: none;
+}
+.appForm-inputSpinner[data-type='time'] {
+    width: 54px;
+    text-align: center;
+}
+
+.appForm-inputSpinnerBtn {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid $txt_border;
+    color: $txt_greyMd;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.appForm-inputSpinnerBtn::selection {
+    background-color: transparent;
+}
+
+.appForm-inputSpinnerBtn:first-child,
+.appForm-inputSpinnerBtn:last-child {
+    font-size: 12px;
+}
+
+.appForm-inputSpinnerNote {
+    font-size: 10px;
+    color: $txt_greyLt;
+}
+
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:hover:before {
+    box-shadow: 0 0 5px 1px $border-color;
+}
+.dhrtSwitchSpinner:hover:before {
+    box-shadow: 0 0 5px 1px $marga-hover;
+}
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:before {
+    background: $margaLt;
+}
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:after {
+    left: 15px;
+    background: $marga;
+}
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:after {
+    box-shadow: 0 1px 1px $margaLt,
+                0 -1px 0 $margaLt;
+}
+
+.appForm-group {
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+.appForm-group.inline {
+    display: flex;
+    align-items: center;
+}
+
+.appForm-group.inline input[type="checkbox"] {
+    width: auto;
+    margin-left: 8px
+}
+.appForm-groupTitle {
+    color: $txt_greyMd;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+.appForm-groupSubtitle {
+    color: $txt_greyLt;
+    font-size: 12px;
+    line-height: 14px;
+}
+.appForm-group.inline .appForm-groupTitle {
+    margin-bottom: 0;
+}
+.appForm-mark::after {
+    content: '*';
+    color: $marga;
+    position: relative;
+    top: -4px;
+    left: 2px;
+}
+
+.appForm-button {
+    padding: 8px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 115px;
+    text-align: center;
+    border: 1px solid $border-button;
+    background-color: $white;
+    color: $txt_greyMd;
+    white-space: nowrap;
+}
+
+.appForm-button:hover {
+    box-shadow: 0 0 5px $txt_greyLt;
+    color: $txt_greyMd;
+}
+
+.appForm-buttonMarga {
+    background-color: $marga;
+    color: $white;
+    border: 1px solid $border-marga;
+}
+
+.appForm-buttonMarga:hover,
+.appForm-buttonMarga:focus,
+.appForm-buttonMarga:active {
+    color: $white;
+}
+
+.appForm-textEllipse {
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+}
+
+.appForm-groupRow {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+

@@ -1,0 +1,24 @@
+@import "../colors";
+@import "colors";
+@import "../theme_am/variables";
+
+.appUserRequest-rest input[type=checkbox]:checked + .dhrtCheckboxView {
+    background-color: $am_colorProfile;
+    border-color: $am_colorProfile;
+}
+.appUserRequest-btnSave {
+    background-color: $am_colorProfile;
+}
+.appUserRequest-finishText {
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.appUserRequest-acaryaForeign {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 32px;
+    color: #646464;
+}
+

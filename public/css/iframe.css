@@ -1,0 +1,38 @@
+/*<div class="iframeResponsive">
+     <iframe src="https://drive.google.com/file/d/1-10UgDHeW4oE2aQoGKE5xLrae1mvqu5f/preview"></iframe>
+     <video controls :src="'media/' + media.path"></video>
+</div>*/
+.videoResponsive video,
+.videoResponsive iframe,
+.iframeResponsive video,
+.iframeResponsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.videoResponsive,
+.iframeResponsive {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.ratio16x9 {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.ratio4x3 {
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+.ratio3x2 {
+    padding-top: 66.66%; /* 3:2 Aspect Ratio */
+}
+.ratio8x5 {
+    padding-top: 62.5%; /* 8:5 Aspect Ratio */
+}
+.ratio1x1 {
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+}

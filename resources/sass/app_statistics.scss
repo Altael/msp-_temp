@@ -1,0 +1,233 @@
+@import "mixins";
+@import "colors";
+
+.appStatistics {
+    &-form {
+        @include flex-jr-ac;
+        @include child-mr16;
+
+        margin-bottom: 16px;
+
+        &Group {
+            @media screen and (min-width: 768px) {
+                font-size: 13px;
+            }
+
+            label {
+                color: #495057;
+                margin-right: 2px;
+            }
+
+            input {
+                width: 100px;
+                text-align: center;
+            }
+
+            input[type='date'].appForm-input {
+                transform: scale(1);
+                position: relative;
+                width: 125px;
+
+                @media all and (min-width: 768px) {
+                    width: 135px;
+                }
+            }
+
+        }
+    }
+
+    &-btn {
+        font-size: 12px;
+        padding: 6px 8px;
+        background: #6c757d;
+        color: $white;
+        cursor: pointer;
+
+        @media screen and (min-width: 414px) {
+            padding: 6px 12px;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 13px;
+        }
+
+        &Group {
+            display: inline-flex;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 16px;
+
+            &Form {
+                @media screen and (min-width: 768px) {
+                    @include flex-jb-as;
+                    @include child-mr16;
+                    align-items: flex-start;
+                    margin-bottom: 12px;
+                }
+            }
+
+        }
+
+        &.active {
+            background: $marga;
+        }
+    }
+
+    &Diagram {
+        max-width: 100%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            max-width: 50%;
+        }
+    }
+
+    &-summary {
+        &Lesson {
+            background: $pastel1-bg-contrast-1;
+
+            padding: 0;
+            border-radius: 8px;
+            margin-bottom: 32px;
+
+            .lessons-period {
+                text-align: right;
+            }
+
+            .appTable-row {
+                width: 100%;
+                align-items: flex-start;
+            }
+
+            &Head {
+                @include flex-jb-ac;
+                @include child-mr16;
+                border-bottom: 1px solid $border-color;
+                padding-bottom: 8px;
+
+                &Wrapper {
+                    padding: 16px 32px;
+                }
+
+                &Title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: $txt_greyMd;
+                }
+
+                &Tools {
+                    .appIcons {
+                        cursor: pointer;
+                        font-size: 16px;
+
+                        &.msppIcons-file-excel {
+                            color: $link-green;
+                        }
+                    }
+                }
+
+
+            }
+
+            &Body {
+                .appTable-row {
+                    justify-content: space-between;
+                }
+                .lessons-acarya {
+                    width: calc(100% - 100px);
+
+                    @media all and (min-width: 768px) {
+                        width: 150px;
+                    }
+                }
+
+                .lessons-value {
+                    width: 100px;
+
+                    @media all and (min-width: 768px) {
+                        @include flex-jr-ac;
+                        flex-wrap: wrap;
+                        width: calc(100% - 150px);
+                    }
+                }
+
+                .lessons-period {
+                    width: 100px;
+                    @include flex-jb-ac;
+                    @include child-mr16;
+                    white-space: nowrap;
+
+                    @media all and (min-width: 768px) {
+                        justify-content: flex-end;
+                        width: 60px;
+                    }
+
+                    .period {
+                        white-space: nowrap;
+
+                        @media all and (min-width: 768px) {
+                            display: none;
+                        }
+                    }
+
+                }
+
+                .appTable-head {
+                    display: none;
+
+                    @media all and (min-width: 768px) {
+                        display: flex;
+                    }
+                }
+
+                .appTable-row {
+                    padding: 4px 32px;
+                }
+                .all_column {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #FFB34E;
+
+                }
+                .appTable-row.all_row {
+                    font-weight: 600;
+                    background: #6c757d;
+                    color: white;
+                    font-size: 16px;
+
+                    &,
+                    .all_column {
+                        color: white;
+                    }
+
+
+                }
+            }
+
+
+        }
+    }
+
+    &-period {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .lessons-period {
+            text-align: right;
+        }
+    }
+
+    &-type {
+        text-align: right;
+
+        @media all and (min-width: 768px) {
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+
+

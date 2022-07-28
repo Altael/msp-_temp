@@ -1,0 +1,43 @@
+@import "mixins";
+@import "colors";
+
+.appUser-tools {
+
+    @include flex-jr-ac;
+    @include child-mr8;
+    flex-shrink: 0;
+
+    width: 100%;
+
+    @media all and (min-width: 768px) {
+        width: 250px;
+    }
+
+    &Btn {
+        cursor: pointer;
+        padding: 2px;
+        @include flex-jc-ac;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    .vk {
+        color: #2ca5e0;
+
+        &.disabled {
+            color: #222;
+        }
+    }
+}
+
+.appUser-acarya {
+    @include flex-jl-ac;
+    @include child-mr8;
+
+    .appAvatar {
+        width: 24px;
+        height: 24px;
+    }
+}
+

@@ -1,0 +1,1461 @@
+@import "colors";
+@import "mixins";
+@import "theme_am/variables";
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Roboto-light';
+    src: url('fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url('fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
+    $f-min: strip-unit($f-min);
+    $f-max: strip-unit($f-max);
+    $w-min: strip-unit($w-min);
+    $w-max: strip-unit($w-max);
+
+    $k: ($f-max - $f-min)/($w-max - $w-min);
+    $b: $f-min - $k * $w-min;
+
+    $b: $b + $units;
+
+    @return calc( #{$k} * 100vw + #{$b} );
+
+    /*font-size: calcFluidFontSize(16, 48, 480, 1280);*/
+}
+audio {
+    z-index: -1;
+}
+body p {
+    margin-bottom: 0;
+}
+.appRewardEditor .dhrtModalWindow-content {
+    min-width: 90vw;
+    max-width: 90vw;
+}
+.appLink {
+    cursor: pointer;
+}
+
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-play-button {
+
+}
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-toggle-closed-captions-button,
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-seek-back-button {
+    display: none;
+}
+
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+body {
+    background: $bg;
+    font-family: 'Roboto', sans-serif;
+    color: $txt-grey;
+    font-size: 12px;
+    overscroll-behavior-x: none;
+}
+iframe {
+    border: none;
+}
+[v-cloak] {
+    display: none;
+    opacity: 0;
+}
+body.noScroll,
+body.modalOpen {
+    overflow: hidden;
+    //padding-right: 16px;
+}
+
+div {
+    position: relative;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: $txt_grey;
+}
+
+.appPageLogin .appBrand-content,
+*:focus {
+    outline: none;
+}
+
+#app {
+    width: 100%;
+
+    .dhrtWaitAnimateLoader-inner.dhrtWaitAnimateLoader-one,
+    .dhrtWaitAnimateLoader-inner.dhrtWaitAnimateLoader-two,
+    .dhrtWaitAnimateLoader-inner.dhrtWaitAnimateLoader-three {
+        border-color: $app_link;
+    }
+
+    .appWaitAnimateLoader {
+        .dhrtWaitAnimateLoader {
+            top: calc(50% - 31px);
+        }
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.1);
+    }
+}
+
+.appLogin-support {
+    display: none;
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    z-index: $zindex-tooltip;
+}
+
+.appLogin-support .appMenu-item .msppIcons,
+.appLogin-support .appMenu-item {
+    color: $txt_greyLt;
+}
+
+.appLogin-support .appMenu-itemIcon {
+    margin-right: 4px;
+}
+
+.appLogin-support .appMenu-item:hover .msppIcons,
+.appLogin-support .appMenu-item:hover {
+    background: transparent;
+    color: $marga;
+}
+
+.appPageLogin .appHeaderTools {
+    display: none;
+}
+
+.appBrand {
+    margin-bottom: 16px;
+}
+
+.appBrand,
+.appBrand-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appName {
+    font-size: 18px;
+    line-height: 16px;
+    color: $marga;
+
+    span:first-child {
+        font-family: Roboto-medium;
+    }
+    span:last-child {
+        font-family: Roboto-light;
+    }
+}
+
+#appLogo {
+    width: 60px;
+    height: 70px;
+
+    path {
+        fill: $txt_grey;
+    }
+}
+
+.appLogoMain img {
+    width: 100%;
+}
+
+.appLogoMain {
+    width: 57px;
+    height: 70px;
+    flex-shrink: 0;
+    margin: 0 4px;
+
+}
+
+.appName {
+    display: flex;
+    flex-direction: column;
+}
+
+.appMenu .dhrtScroll-wrapperInner {
+    height: calc(100vh - 120px);
+    padding-bottom: 64px;
+}
+
+.app,
+#app {
+    min-height: 100vh;
+}
+
+label {
+    margin-bottom: 0;
+}
+.appBtn {
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 115px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #646464;
+}
+.appBtnLink {
+    cursor: pointer;
+}
+.appBtn:hover {
+    box-shadow: 0 0 5px #919191;
+    color: #646464;
+}
+.appBtn-main {
+    border: 1px solid transparent;
+    background-color: #FFB34E;
+    color: white;
+}
+.appBtn-main:hover {
+    box-shadow: 0 0 5px rgba(255, 179, 78, 0.36);
+    color: white;
+}
+.appBtn-link.disabled,
+.appBtn.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.appBtn-link.disabled:hover,
+.appBtn.disabled:hover {
+    box-shadow: none;
+}
+.amPageHeader {
+    display: none;
+}
+.appPageContent {
+    overflow: hidden;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+}
+.appPageContentBody {
+    flex-grow: 1;
+
+}
+.appPageContentBody > div {
+    height: 100%;
+}
+.appPageLogin-support {
+    display: none;
+}
+.appPageLogin-supportLink {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.appMobileMenu-wrapper {
+    margin-right: 16px;
+}
+
+.appMobileMenu-icon {
+    width: 34px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.appMobileMenu-bar1,
+.appMobileMenu-bar2,
+.appMobileMenu-bar3 {
+    width: 34px;
+    height: 2px;
+    background-color: $brand-menu;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.appBrandMenu {
+    width: 100%;
+    flex-shrink: 0;
+    margin-right: 32px;
+    padding-top: 8px;
+}
+
+#appMobileMenu-chk {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+/* Rotate first bar */
+#appMobileMenu-chk:checked + .appBrandMenu .appMobileMenu-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+    background: $txt_greyLt;
+}
+
+/* Fade out the second bar */
+#appMobileMenu-chk:checked + .appBrandMenu .appMobileMenu-bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+#appMobileMenu-chk:checked + .appBrandMenu .appMobileMenu-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+    background: $txt_greyLt;
+}
+
+#appMobileMenu-chk:checked + .appBrandMenu .appMenu {
+    transform: scale(1);
+}
+
+.appMenu {
+    position: absolute;
+    /*left: 16px;
+    right: 16px;*/
+    width: 100%;
+    height: calc(100vh - 156px);
+    margin-bottom: 16px;
+    margin-top: 16px;
+    z-index: 1030;
+    background: $bg;
+}
+
+.appContent {
+    width: 100%;
+    /*min-height: 100vh;*/
+    //Не снимать комментарий, проблема на странице "вопросы" (С) Дхрити
+    padding: 8px 0;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.app-textEllipse {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.app {
+    padding: 16px;
+    width: 100%;
+    background: $bg;
+}
+
+.appPageSupport.appIcons-telegram-nobg {
+    position: fixed;
+    bottom: 22px;
+    left: 30px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.1s linear;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.appPageSupport.appIcons-telegram-nobg::after {
+    content: "";
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #FFB34E;
+    position: absolute;
+    z-index: -1;
+    top: -12px;
+    right: -13px;
+    box-shadow: inset 0 0 8px #fff;
+    border: 1px solid white;
+}
+
+.appPageSupport.appIcons-telegram-nobg:hover {
+    opacity: 0.9;
+}
+
+.appSupportButton-text {
+    font-size: 15px;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+//multiselect styles
+
+.app .multiselect__tags {
+    min-height: 44px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100px;
+    overflow-y: scroll;
+    padding: 8px 40px 8px 8px;
+
+    .multiselect__tags-wrap {
+        width: 100%;
+    }
+    .multiselect__placeholder,
+    .multiselect__single {
+        margin-bottom: 0;
+        height: 28px;
+        line-height: 28px;
+        color: $placeholder_color;
+        font-weight: normal;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .multiselect__tag {
+        background-color: $marga;
+        line-height: 22px;
+    }
+
+    .multiselect__input {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .multiselect__tag-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .multiselect__tag-icon:hover {
+        background: $margaLt;
+    }
+
+    .multiselect__tag-icon:after {
+        content: "\D7";
+        color: $white;
+        font-size: 14px;
+    }
+
+    .multiselect__input {
+        position: absolute;
+        /*transform: scale(0);*/
+        overflow: hidden;
+    }
+
+    .multiselect__option--selected.multiselect__option--highlight {
+        background-color: $border;
+        color: $txt_grey;
+        opacity: 1;
+    }
+
+    .multiselect__option--selected::after {
+        background: #f3f3f3;
+    }
+
+    .multiselect__option--selected.multiselect__option--highlight:after {
+        background-color: $border;
+        color: $txt_grey;
+        opacity: 1;
+    }
+
+    .multiselect__option--highlight {
+        background-color: $border;
+        color: $txt_grey;
+        opacity: 1;
+    }
+
+    .multiselect__option--highlight:after {
+        background-color: $border;
+        color: $txt_grey;
+        opacity: 1;
+    }
+
+    /*.multiselect__option--highlight:after {
+        background-color: $border;
+        color: $txt_grey;
+        opacity: 1;
+    }*/
+    .multiselect__option--highlight:after {
+        display: none;
+    }
+}
+
+
+
+#appDCSettingsLanguage img,
+#appPageHeaderLanguage img {
+    margin-right: 4px;
+}
+#appPageHeaderLanguageLink img {
+    margin-bottom: 2px;
+}
+.appSettings .dhrtModalWindow-footer,
+#amDCPageModal-settings .dhrtModalWindow-footer {
+    display: none;
+}
+.appSettings .dhrtScroll-wrapperInner,
+#amDCPageModal-settings .dhrtScroll-wrapperInner {
+    max-height: none;
+    padding: 0;
+}
+.appSettings .dhrtModalWindow-footerButton,
+#amDCPageModal-settings .dhrtModalWindow-footerButton {
+    margin-top: 16px;
+}
+
+.appLang {
+    @include flex-jl-ac;
+    @include child-mr8;
+
+    &Dropdown {
+
+
+        .dhrtDropdown-link {
+            @include flex-jl-ac;
+            @include child-mr4;
+
+        }
+        .dhrtDropdown-item {
+            img {
+                margin-right: 4px;
+            }
+        }
+    }
+
+}
+
+.appAvatar {
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+}
+
+.appUser {
+    border-radius: 8px;
+    background: $bg-item;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    z-index: 1031;
+
+    &-avatarImg {
+        width: 42px;
+        height: 42px;
+    }
+
+    &-avatar {
+        width: 42px;
+        height: 42px;
+        margin-right: 8px;
+    }
+
+    &-copyInfo {
+        position: absolute;
+        bottom: 4px;
+        right: 8px;
+        color: $marga;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all .5s linear;
+
+        &:hover {
+            font-size: 18px;
+        }
+    }
+}
+
+.appProfile-avatar {
+    width: 96px;
+    height: 96px;
+}
+
+
+
+.appUserQuestion-avatarImage,
+.appQuestion-avatarImage,
+.appLists-avatarImage {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.widthMoreHeight img {
+    height: 100%;
+    width: auto;
+}
+.note-editor.note-airframe .note-editing-area .note-editable {
+    min-height: 200px;
+}
+
+#appProfileModal-error .appModal-confirm,
+#appProfileModal-success .appModal-confirm {
+    padding: 48px 0;
+}
+
+#appProfileModal-error .appModal-confirm div:first-child {
+    margin-bottom: 16px;
+    color: $red;
+}
+
+.appUser-nameRole {
+    width: calc(100% - 50px);
+}
+
+#appUserInfoBoss-dropdown {
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    width: calc(100% - 51px);
+}
+
+#appUserBossLink {
+    width: 100%;
+}
+
+.appUserList-nameSocial {
+    line-height: 16px;
+}
+
+.appUserList-nameSpiritual {
+    color: $txt_greyLt;
+    line-height: 16px;
+}
+
+
+.appUser {
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: $txt_grey;
+        position: relative;
+        @include textOverflowRow;
+
+        &Icon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+
+        &Social {
+            color: $txt_subtitle;
+            font-size: 12px;
+            font-weight: 500;
+            width: 100%;
+        }
+
+
+
+    }
+
+    &-role {
+        font-size: 11px;
+        line-height: 13px;
+        color: $txt_greyLt;
+        width: 100%;
+    }
+
+}
+
+
+
+
+[class*="appUser-icon"] {
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+
+    &::before {
+        background-color: $txt_greyMd;
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+        border-radius: 50%;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+    }
+}
+
+
+
+.appUser-iconGoogle::before {
+    background-color: $google;
+    font-size: 13px;
+}
+
+.appUser-iconFacebook::before {
+    background-color: $facebook;
+    font-weight: bold;
+}
+
+.appUser-iconVK::before {
+    background-color: #4f7db3;
+}
+
+.appUser-iconMailru::before {
+    background-color: $mailru;
+    font-weight: bold;
+}
+
+.appUser-iconYandex::before {
+    background-color: $white;
+    color: $yandex;
+    font-weight: bold;
+}
+
+
+.appMenu-groupTitle {
+    display: none;
+}
+
+.appMenu-groupCombo .appMenu-groupTitle {
+    color: #919191;
+    display: block;
+    font-size: 13px;
+    padding: 8px 8px 8px 42px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #9191;
+}
+
+.appMenu-groupCombo {
+    border: 1px solid #9191;
+    border-radius: 8px;
+    padding-bottom: 8px;
+}
+
+.appMenu-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.appMenu-item.active .appMenu-itemIcon {
+    color: white;
+}
+
+.appMenu-item.active:hover {
+    background: $marga;
+    color: white;
+    opacity: 0.8;
+}
+
+.appMenu-item.active {
+    background: $marga;
+    color: white;
+}
+
+.appMenu-item:hover {
+    background: $bg-item;
+    color: $txt_grey;
+}
+
+.appMenu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $txt_grey;
+    text-decoration: none;
+}
+
+.appMenu-itemBadge {
+    color: white;
+    background: $marga;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+}
+
+.appMenu-itemIcon {
+    margin-right: 8px;
+    font-size: 18px;
+    color: $txt_greyMd;
+}
+
+.appPageContent {
+    padding: 0 8px 64px;
+
+    & > .dhrtScroll-wrapperOuter > .dhrtScroll-wrapperInner {
+        height: calc(100vh - 280px);
+
+        body.appDocs-terms &,
+        body.appDocs-newsletter &,
+        body.appDocs-policy & {
+            height: calc(100vh - 300px);
+        }
+
+        body.appAMLayout & {
+            height: 100%;
+        }
+
+        @media all and (min-width: 1024px) {
+            height: calc(100vh - 97px);
+
+            body.appDocs-terms &,
+            body.appDocs-newsletter &,
+            body.appDocs-policy & {
+                height: calc(100vh - 120px);
+            }
+
+            body.appAMLayout & {
+                height: 100%;
+            }
+        }
+    }
+
+}
+.appHotkeys {
+    color: $txt_tools;
+    font-size: 12px;
+    line-height: 14px;
+}
+.appActionNotice {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: $marga;
+    background: rgba(0,0,0,0.3);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: $zindex-tooltip;
+
+    &-content {
+        text-align: center;
+        padding: 64px;
+        font-size: 50px;
+        line-height: 56px;
+    }
+
+
+}
+
+.appPageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 24px;
+}
+
+.appPageHeader h2 {
+    line-height: 32px;
+}
+
+.appHeaderTools {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.appIcons-more-vertical {
+    color: $txt-tools;
+}
+
+.appIcons-check::before,
+.appIcons-x::before,
+.appIcons-minus::before {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.appTable {
+    font-size: 13px;
+    width: 100%;
+}
+
+.appUser-bossNameSingle {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.appUser-boss > *:first-child {
+    font-size: 13px;
+}
+
+.appUser-boss {
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+}
+
+.appLanguageItemIcon {
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+.dhrtDropdown-item {
+    cursor: pointer;
+}
+
+#appPageHeaderLanguage .dhrtDropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.appUserInfo-dropdown .dropdown-toggle {
+    padding-left: 0;
+}
+
+.appPageTools-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-direction: column-reverse;
+}
+
+.appPageTools-total {
+    color: $txt_grey;
+    font-size: 12px;
+    margin-top: 16px;
+    text-align: right;
+}
+
+.appPageTools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.appPageTools-btnText {
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.appPageTools-btn:hover .appPageTools-btnText {
+    background-color: $marga-hover;
+    border-radius: 4px;
+    color: white;
+}
+
+.appPageTools-btn.active .appPageTools-btnText {
+    background-color: $marga;
+    color: white;
+    border-radius: 4px;
+}
+
+.appPageTools-btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.appPageTools-btn:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.appPageTools-btn {
+    cursor: pointer;
+    background-color: $bg-item;
+}
+
+.appItemHidden {
+    display: none;
+}
+
+.appTable-sortFilter {
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.appTable {
+    &-head {
+        .appTable-col {
+            border: none;
+            padding: 0 8px;
+            color: $txt_greyLt;
+            line-height: 16px;
+            margin-bottom: 8px;
+        }
+    }
+    &-colTop {
+        display: flex;
+        align-items: center;
+    }
+    &-sort {
+        margin-left: 4px;
+    }
+
+}
+
+
+.appUser-telegramIcon {
+    font-size: 20px;
+}
+.appUser-telegramIcon.msppIcons-telegram-nobg {
+    font-size: 16px;
+}
+.appRequests .appUser-telegramIcon {
+    font-size: 14px;
+}
+.appUserList-userInfoTelegram {
+    display: flex;
+    align-items: center;
+}
+.appUser-telegramTrue {
+    color: $blue;
+}
+.appUser-initDate {
+    color: $pastelGreenDark;
+}
+.appUser-telegramFalse {
+    color: $txt_grey;
+}
+
+
+select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    overflow: hidden !important;
+    padding-right: 20px;
+    width: 100%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+}
+body #app .appItemHidden {
+    display: none;
+}
+.appDiary-tools {
+    padding: 4px;
+}
+
+
+.appTable-row {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.appTable-col {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.appTable-body .appTable-row:hover,
+.appTable-body .appTable-row:nth-child(2n) {
+    background: $bg-item;
+}
+
+.appPageHeader {
+    padding: 4px 0;
+}
+
+.appTable-head .appTable-col .dhrtDropdown {
+    height: 22px;
+    line-height: 22px;
+    border-bottom: 1px solid $filter_border;
+    border-radius: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.appTable-head .dhrtDropdown.withArrow > a,
+.appTable-head .dhrtDropdown-link {
+    line-height: 22px;
+    height: 22px;
+    color: $txt_greyLt;
+    width: 100%;
+    display: flex;
+}
+
+.appBadge {
+    padding: 4px 16px;
+    border-radius: 20px;
+    background-color: $bg-badge;
+    color: $txt_badge;
+    margin: 2px 2px 4px 0;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.appBadge:first-child {
+    margin-left: 0;
+}
+
+.appBadge-acarya {
+    background-color: $bg-badge-acarya;
+    color: $txt_badge_acarya;
+}
+
+.appBadge.appUnreadMessages,
+.appBadge.appUnreadSpiritualName {
+    background-color: $marga;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    color: $white;
+    font-size: 12px;
+}
+
+.appBadge.appUnreadMessages {
+    border-radius: 100%;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+}
+.appProfile-gender .dhrtRadio label span {
+    color: #646464;
+}
+.active .appBadge.appUnreadMessages,
+.active .appBadge.appUnreadSpiritualName {
+    background-color: $white;
+    color: $marga;
+}
+.appStatusesFilter-note {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+
+    & > *:first-child {
+        margin-right: 8px;
+    }
+}
+.appProfile-eula .dhrtCheckboxView {
+    margin-right: 8px;
+}
+
+.appHandbookNames .dhrtModalWindow-footerButton {
+    max-width: 160px;
+    font-size: 14px;
+}
+.appModal-warning .dhrtModalWindow-content {
+    min-width: 260px;
+}
+@media (min-width: 768px) {
+    .appModal-warning .dhrtModalWindow-content {
+        max-width: 60%;
+        min-width: auto;
+    }
+
+}
+@media screen and (min-width: 414px) {
+    .appPageTools-wrap {
+        flex-direction: row;
+        align-items: center;
+    }
+    .appPageTools-total {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .appPageTools-btnText {
+        padding: 16px;
+    }
+    .appUser-boss > *:first-child {
+        display: flex;
+    }
+
+    .appHandbookNames .dhrtModalWindow-footerButton {
+        max-width: 180px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .appMSPLayout .appProfile {
+        display: flex;
+        justify-content: space-between;
+    }
+    .appBrandMenu {
+        max-width: 260px;
+        width: 100%;
+    }
+    .appBrand-content {
+        justify-content: flex-start;
+    }
+    .app {
+        display: flex;
+        justify-content: space-between;
+    }
+    .appMobileMenu-wrapper {
+        display: none;
+    }
+    .effectScale > .effectScale-target.appMenu {
+        right: auto;
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    .appPageSupport.appIcons-telegram {
+        left: 34px;
+    }
+}
+
+.appDoc-content a {
+    color: $marga;
+}
+
+.appDoc-content p {
+    text-align: left;
+}
+
+.appTelegram .appTelegramConnected .appForm-button {
+    opacity: 0.5;
+}
+.appTelegram .appForm-button {
+    background: $telegram;
+    color: $white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 24px;
+    text-align: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appTelegram .appForm-button:hover {
+    box-shadow: 0 0 5px $txt_tools;
+    color: $white;
+}
+.appTable-filter {
+    width: 100%;
+
+    &Field {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $filter_border;
+        border-radius: 0;
+        width: 100%;
+        color: $txt_greyLt;
+        font-size: 12px;
+        padding-right: 16px;
+        padding-left: 4px;
+        position: relative;
+
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+
+        & option {
+            text-align: center;
+        }
+    }
+
+    &_listIcon {
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+    }
+}
+
+.appLang .dhrtDropdown-item img {
+    margin-right: 4px;
+}
+
+
+.appTelegram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.appTelegram .appIcons {
+    margin-right: 8px;
+    color: $white;
+    padding: 0;
+}
+.appTelegram.connected .appIcons {
+    color: #222;
+}
+.appTelegram .disabled {
+    background: $txt_tools;
+    border: none;
+}
+
+.appTelegram .disabled:hover {
+    box-shadow: none;
+    color: $white;
+}
+
+.dhrtDropdown.alignRight {
+    width: 100%;
+}
+
+.dhrtDropdown.alignRight .dhrtDropdown-link {
+    position: absolute;
+    right: 0;
+}
+
+
+.appStatusesFilter-item {
+    display: flex;
+    align-items: center;
+
+    &s {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    input {
+        margin-right: 8px;
+    }
+}
+
+
+.appBlock {
+    margin-bottom: 16px;
+}
+.appBlock-title {
+    font-size: 18px;
+    margin: 8px 0 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.appButton {
+    padding: 4px 16px;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slim div {
+    position: initial;
+}
+.appRolesCheat {
+    position: fixed;
+    top: 8px;
+    right: 16px;
+    z-index: 1040;
+
+    .appIcons {
+        cursor: pointer;
+        color: $link-orange;
+        font-size: 16px;
+    }
+}
+
+@import 'app_profile';
+@import 'app_initiations';
+@import 'app_userList';
+@import 'app_GEO';
+@import 'app_questionsList';
+@import 'app_login';
+@import 'app_userRequest';
+@import 'app_userLessons';
+@import 'app_userConversations';
+@import 'app_userNewQuestion';
+@import 'app_materials';
+@import 'app_diary';
+@import 'app_statistics';
+@import 'app_geoReport';
+@import 'app_formElements';
+@import 'app_docs';
+@import 'app_easter';
+@import 'app_handbooks';
+@import 'app_home';
+@import 'app_requestList';
+@import 'app_media';
+@import 'app_filter';
+@import 'app_user';
+@import 'app_infoblock';
+@import 'app_memberInfo';
+@import 'app_unitEvents';
+
+
+

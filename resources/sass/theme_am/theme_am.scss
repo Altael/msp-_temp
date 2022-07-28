@@ -1,0 +1,380 @@
+@import "colors";
+@import "variables";
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src:  url('fonts/SFPro-display/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'SF Pro Display Light';
+    src:  url('fonts/SFPro-display/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'SF Pro Display Medium';
+    src:  url('fonts/SFPro-display/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    src:  url('fonts/SFPro-Text/SFProText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'SF Pro Text Medium';
+    src:  url('fonts/SFPro-Text/SFProText-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'amps';
+    src:  url('fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.withSevronLeft.bigSize:before,
+.amPage-title .withSevronLeft:before {
+    top: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    border-width: 2px;
+    border-color: $txt_grey;
+}
+body {
+    overscroll-behavior-x: none;
+}
+.appPageContentBody {
+    background-color: $bg-profile;
+}
+
+.dhrtScroll-wrapperInner {
+    padding-bottom: 100px;
+}
+
+body.appAMLayout .app {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+body.appAMLayout.noScroll,
+body.appAMLayout.modalOpen {
+    padding-right: 0;
+}
+body.appAMLayout .appPageContent {
+    padding: 0;
+    background: #F9f9f9;
+}
+body.appAMLayout.amProfilePage .appPageContent {
+    background: #F5F6F8;
+}
+@media screen and (min-width: 1024px) {
+    .appAMLayout .app {
+        display: block;
+    }
+}
+.appName {
+    font-family: 'amps', Arial, sans-serif;
+    color: $amps;
+    display: grid;
+    grid-template-columns: auto auto;
+    white-space: nowrap;
+
+    &Value {
+        font-size: 11px;
+    }
+
+    .appNameAM {
+        font-size: 23px;
+        line-height: 23px;
+        &:first-child {
+            margin-right: 6px;
+        }
+
+    }
+}
+
+.theme_am {
+    .appLogin-bg {
+        display: none;
+    }
+
+    .amPageHeader {
+        display: block;
+        font-size: 1.8rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        flex-grow: 1;
+    }
+}
+.amPage {
+    &-title {
+        height: $pageTitleHeight;
+        background: $bg-profile;
+        display: flex;
+        align-items: center;
+        line-height: 22px;
+        font-size: 20px;
+        color: $am_text_grey;
+        letter-spacing: -0.58px;
+        cursor: pointer;
+        padding-left: 40px;
+        position: fixed;
+        top: 0;
+        z-index: $zindex-fixed;
+        width: 100%;
+        max-width: $amWidth;
+
+        &.withoutLink {
+            padding-left: 32px;
+            pointer-events: none;
+            cursor: none;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: calc(50% - 6px);
+            transform: rotate(45deg);
+            width: 14px;
+            height: 14px;
+            border-bottom: 3px solid $am_text_grey;
+            border-left: 3px solid $am_text_grey;
+            border-radius: 2px;
+        }
+
+        &.withoutLink:before {
+            border: none;
+        }
+
+    }
+
+    &-title + * {
+        margin-top: $pageTitleHeight;
+    }
+
+    &-body a {
+        color: $am_colorProfile;
+    }
+
+    &-content {
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+}
+.amCategories-content {
+    margin-top: $pageTitleHeight;
+}
+.appBlogList-itemVideo {
+    margin-top: 16px;
+
+    .videoResponsive,
+    .iframeResponsive {
+        width: 100%;
+    }
+}
+body.toolbarNone .amToolbar {
+    display: none;
+}
+.amToolbar {
+    background: $am_bg;
+    height: $amToolBar;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.amWidth,
+.appBlogNewsModal-svadhyaya,
+.amFastingBody,
+.appBlogNews,
+.appPageContentBody,
+.appDiaryRecordEdit-summary,
+.amToolbar-items,
+.amProfile,
+.amUserRequest-miss,
+.appDiaryRecord-progress,
+.appDiaryRecord-toolsItems,
+.appDiaryRecordPageWrapper {
+    width: 100%;
+    max-width: $amWidth;
+    margin: 0 auto;
+}
+.amToolbar-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 8px 16px;
+
+    a.disabled {
+        opacity: 0.3;
+    }
+}
+.amToolbar-item:hover {
+    cursor: pointer;
+}
+.amToolbar-item {
+    text-align: center;
+    color: #999;
+}
+.amToolbar-item .amToolbar-itemText {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 4px;
+}
+.appItemDisabled,
+.appItemDisabled * {
+    pointer-events: none;
+    cursor: none;
+    color: $disabled;
+}
+
+#app .appItemDisabled:before,
+#app .appItemDisabled *:before,
+#app .appItemDisabled,
+#app .appItemDisabled * {
+    color: $disabled;
+}
+
+.amToolbar-item:hover > * {
+    /*text-shadow: 1px 1px 3px rgba(0,0,0,0.1);*/
+    filter: opacity(0.9);
+}
+.amToolbar-item .appIcons {
+    font-size: 28px;
+}
+.amToolbar-item.active {
+    color: $am_color;
+}
+
+.dhrtWaitAnimateLoader-inner.dhrtWaitAnimateLoader-one {
+    border-bottom-color: $marga;
+}
+
+.dhrtWaitAnimateLoader-inner.dhrtWaitAnimateLoader-two {
+    border-right-color: $marga;
+}
+
+.dhrtWaitAnimateLoader-inner.dhrtWaitAnimateLoader-three {
+    border-top-color: $marga;
+}
+
+.amModal {
+    .dhrtModalWindow-content {
+        width: 100%;
+        max-width: $amWidth;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+    .dhrtModalWindow-contentTools,
+    .dhrtModalWindow-footer {
+        display: none;
+    }
+    .dhrtModalWindow-head:before {
+        content: '';
+        position: absolute;
+        left: 16px;
+        top: calc(50% - 6px);
+        transform: rotate(45deg);
+        width: 9px;
+        height: 9px;
+        border-bottom: 1px solid #939393;
+        border-left: 1px solid #939393;
+    }
+    .dhrtModalWindow-head {
+        height: 70px;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        white-space: normal;
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 32px;
+        cursor: pointer;
+    }
+    &.dhrtModalWindow-scroll .dhrtModalWindow-body,
+    &.dhrtModalWindow-scroll .dhrtScroll-wrapperInner {
+        height: calc(100vh - 70px);
+        max-height: calc(100vh - 70px);
+    }
+    .dhrtModalWindow-bodyContent {
+        padding-left: 32px;
+    }
+}
+
+.amScroll {
+    position: fixed;
+    bottom: 92px;
+    right: 30px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: $am_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    z-index: 999999999;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+    &.show {
+        opacity: 1;
+    }
+}
+
+
+.amButton {
+    padding: 4px 16px;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.amBlock {
+    margin-bottom: 16px;
+}
+.amBlock-title {
+    font-size: 18px;
+    margin: 8px 0 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+.infoBlockModal {
+    &.withText {
+        color: $am_text_grey;
+    }
+}
+
+/*@import "am_diary";*/
+@import "am_education";
+@import "svadhyaya";
+@import "dailyQuote";
+@import "audioPlayer";
+@import "am_langPage";
+@import "unit_statistics";
+
+@import 'theme_am/audioPlayer';
+

@@ -1,0 +1,73 @@
+.dhrtSwitch {
+    position: relative;
+    width: auto;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+
+}
+.dhrtSwitch.textLeft .dhrtSwitchSpinner {
+    order: 2;
+}
+.dhrtSwitch.textLeft .dhrtSwitchSpinnerText {
+    margin-right: 8px;
+    margin-left: 0;
+    order: 1;
+    color: #646464;
+}
+.dhrtSwitch .dhrtSwitchSpinnerText {
+    margin-left: 8px;
+}
+.dhrtSwitch-noView {
+    opacity: 0;
+}
+.dhrtSwitchSpinnerText {
+    display: inline-block;
+}
+.dhrtSwitchSpinnerCheckbox {
+    left: -9999px;
+    z-index: -9;
+    position: absolute;
+}
+.dhrtSwitchSpinner {
+    position: relative;
+    flex-shrink: 0;
+    width: 34px;
+    height: 18px;
+    display: inline-block;
+}
+.dhrtSwitchSpinner:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    border-radius: 13px;
+    background: #CDD1DA;
+    /*box-shadow: inset 0 2px 3px rgba(0,0,0,.2);*/
+    height: 12px;
+    width: 32px;
+    top: 3px;
+    cursor: pointer;
+}
+.dhrtSwitchSpinner:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3), 0 -1px 0 rgba(0,0,0,.1);
+    transition: all .2s;
+    left: 0;
+    cursor: pointer;
+}
+.dhrtSwitchSpinner:hover:before {
+    box-shadow: 0 0 5px 3px rgb(209, 209, 209);
+    cursor: pointer;
+}
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:before {
+    background: rgb(233, 233, 233);
+}
+.dhrtSwitchSpinnerCheckbox:checked + .dhrtSwitchSpinner:after {
+    left: 15px;
+    background: rgb(67, 67, 67);
+}

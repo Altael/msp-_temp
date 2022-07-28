@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check device</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            height: 100vh;
+            color: #333;
+            font-size: 18px;
+            padding: 32px;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+        #getSize:after {
+            content: "css: media height меньше 550px";
+            display: block;
+            padding-top: 32px;
+
+        }
+
+        @media all and (min-height: 550px) {
+            #getSize:after {
+                content: "css: media height больше 550px";
+
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+</head>
+<body>
+    <div id="getSize">
+    </div>
+
+    <script>
+        var sizeFunction = function(event) {
+            w = window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
+            h = window.innerHeight
+                || document.documentElement.clientHeight
+                || document.body.clientHeight;
+
+            brdr = 550;
+
+            let detect = new MobileDetect(window.navigator.userAgent)
+
+            document.getElementById('getSize').innerHTML = "<table>" +
+                "<tr><td>innerHeight:</td><td>" + window.innerHeight + "</td></tr>" +
+                "<tr><td>screen.height:</td><td>" + screen.height + "</td></tr>" +
+                "<tr><td>screen.height:</td><td>" + document.body.clientHeight + "</td></tr>" +
+                "<tr><td>h:</td><td>" + h + "</td></tr>" +
+                "<tr><td>matchMedia:</td><td>" + (window.matchMedia("(min-height: " + brdr + "px)").matches ?  ">=" + brdr + "px" : "< " + brdr + "px") + "</td></tr>" +
+                "<tr><td>clientHeight div'а:</td><td>" + document.getElementById('getSize').clientHeight + "px</td></tr>"+
+                "<tr><td>offsetHeight div'а:</td><td>" + document.getElementById('getSize').offsetHeight + "px</td></tr>"+
+                "<tr><td colspan='2'></td></tr>"+
+                "<tr><td>Mobile:</td><td>" + detect.mobile() + "</td></tr>" +
+                "<tr><td>Phone:</td><td>" + detect.phone() + "</td></tr>" +
+                "<tr><td>Tablet:</td><td>" + detect.tablet() + "</td></tr>" +
+                "<tr><td>OS:</td><td>" + detect.os() + "</td></tr>" +
+                "<tr><td>Устройство:</td><td>" + detect.userAgent() + "</td></tr>" +
+                "</table>";
+
+        };
+        window.addEventListener("load", sizeFunction, false);
+        window.addEventListener("resize", sizeFunction, false);
+
+
+    </script>
+</body>
+</html>

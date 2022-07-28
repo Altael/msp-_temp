@@ -1,0 +1,1219 @@
+/*
+.theme_am.appDiaryRecord - для страницы дневника
+.appDiaryRecord.appDiaryRecord-edit - для режима редактирования дневника
+
+*/
+@import "../colors";
+@import "../theme_am/colors";
+
+body.appDiaryRecord {
+    font-family: 'SF Pro Display', Arial, sans-serif;
+}
+
+.appDiaryRecord-tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    color: $am_text;
+    height: 44px;
+    background: $am_bg;
+}
+.appCheckbox-label {
+    padding-left: 0;
+    color:#ffffff;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    //margin-top: 3px;
+    //border: 2px solid #ffffff;
+}
+@media screen and (min-width: 768px) {
+    .appCheckbox-label {
+        font-size: 20px;
+    }
+}
+
+//.appCheckbox-label-bottom {
+//    margin: 4px 0;
+//    padding-left: 0;
+//    color:#ffffff;
+//    font-size: 22px;
+//    line-height: 30px;
+//    display: flex;
+//    align-items: center;
+//    opacity: 1;
+//    margin-top: 270px;
+//}
+
+//nikitin
+
+.appDiaryRecordPage-title {
+    font-size: 20px;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+@media screen and (min-width: 375px)  {
+    .appDiaryRecordPage-title {
+        font-size: 22px;
+    }
+}
+
+//continue button
+.appDiaryRecordPage-buttonRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 66px;
+}
+
+@media screen and (min-height: 667px) {
+
+    .appDiaryRecordPage-morningAll {
+        margin-top: 32px;
+    }
+    .appDiaryRecordPage-title {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-height: 736px) {
+    .appDiaryRecordPage11 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage12 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage7 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage6 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage5 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage4 .appDiaryRecordPage-buttonRight {
+        margin-top: 16px;
+    }
+    .appDiaryRecordPage-morningAll {
+        margin-top: 64px;
+    }
+    .appDiaryRecordPage-title {
+        margin-bottom: 32px;
+    }
+    .appDiaryRecordPage-helpLink {
+        right: 16px;
+        top: 16px;
+    }
+}
+
+@media screen and (min-height: 812px) {
+    .appDiaryRecordPage11 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage12 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage7 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage6 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage5 .appDiaryRecordPage-buttonRight,
+    .appDiaryRecordPage4 .appDiaryRecordPage-buttonRight {
+        margin-top: 66px;
+    }
+}
+//Under Label Strip
+
+//.appUnderLabelStrip {
+//    position: static;
+//    width: 100px;
+//    height: 2px;
+//    color: black;
+//}
+
+
+//checkbox
+
+.appCheckbox-noView, .appRadio-noView {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+
+.appCheckboxView, .appRadioView {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 8px;
+    cursor: pointer;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 100%;
+}
+
+
+
+.appCheckboxView:hover, .appRadioView:hover {
+    border-color: #fff;
+}
+.appCheckbox-input[type=checkbox]{
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -16px;
+}
+
+.appCheckboxView:after, .appRadioView:after {
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    border-right: 2px solid #f69b3f00;
+    border-top: 2px solid #f69b3f00;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 5px;
+    left: 2px;
+    top: 9px;
+}
+input[type='checkbox']:checked + .appCheckboxView,
+input[type='radio']:checked + .appRadioView {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+input[type='checkbox']:checked + .appCheckboxView:after,
+input[type='radio']:checked + .appRadioView:after {
+    border-color: #f6993f;
+    position: absolute;
+    left: 4px;
+    top: 10px;
+}
+input[type='checkbox'] + .appCheckboxView:after,
+input[type='radio'] + .appRadioView:after {
+    animation: none;
+}
+input[type='checkbox']:focus:not(checked) + .appCheckboxView:after,
+input[type='checkbox']:focus:checked + .appCheckboxView:after,
+input[type='radio']:focus:not(checked) + .appRadioView:after,
+input[type='radio']:focus:checked + .appRadioView:after {
+    animation: check 0.8s;
+}
+.theme_am.appDiaryRecord .appCheckboxView:after {
+    border-right-color: $am_bg;
+    border-top-color: $am_bg;
+}
+.theme_am.appDiaryRecord .appCheckboxView label {
+    color: inherit;
+}
+.theme_am.appDiaryRecord .appCheckboxView {
+    border-radius: 100%;
+    background-color: $am_bg;
+    border-color: $am_diary_checkBorder;
+}
+.theme_am.appDiaryRecord .appDiaryRecord-edit .appDiaryRecordPage .appCheckboxView:after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.theme_am.appDiaryRecord .appDiaryRecord-edit .appDiaryRecordPage .appCheckboxView {
+    border-color: white;
+    background-color: transparent;
+}
+.theme_am.appDiaryRecord input[type='checkbox']:checked + .appCheckboxView {
+    background-color: $am_diary_check;
+    border-color: $am_diary_check;
+}
+.theme_am.appDiaryRecord input[type='checkbox']:checked + .appCheckboxView:after {
+    border-top-color: white;
+    border-right-color: white;
+}
+.theme_am.appDiaryRecord .appDiaryRecord-edit input[type='checkbox']:checked + .appCheckboxView {
+    background-color: $white;
+    border-color: $white;
+}
+.theme_am.appDiaryRecord .appDiaryRecord-edit input[type='checkbox']:checked + .appCheckboxView:after {
+    border-top-color: $am_color;
+    border-right-color: $am_color;
+}
+.appDiaryRecordEdit-summaryMorningPractices .appCheckbox label .appCheckboxView {
+    margin-right: 4px;
+}
+
+//radioView
+input[type="radio"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+//.appRadioView {
+//    border: 1px solid #e6e6e6;
+//    height: 16px;
+//    width: 16px;
+//    min-width: 16px;
+//    border-radius: 100%;
+//    display: inline-block;
+//    position: relative;
+//    left: 0;
+//    top: 0;
+//    margin-right: 8px;
+//    transition-duration: 0.2s;
+//}
+
+//.appRadio-noView {
+//    opacity: 0;
+//}
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    display: none;
+}
+/*.appRadio:hover .appRadioView{
+    background: #fff;
+}*/
+.appRadio label {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+}
+//.appRadio label .appRadioView {
+//    margin-right: 8px;
+//}
+.appRadio input[type=radio] {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -16px;
+}
+//input[type="radio"]:checked + .appRadioView:after {
+//    content: '';
+//    position: absolute;
+//    top: 7px;
+//    left: 2px;
+//    display: block;
+//    width: 10px;
+//    height: 10px;
+//    border-radius: 100%;
+//    background-color: #ffffff;
+//    transform: translateY(-50%);
+//}
+//.appRadioView:hover {
+//    border-color: #ffffff;
+//}
+//input[type="radio"]:checked + .appRadioView:after {
+//    background-color: #ffffff;
+//}
+//input[type="radio"]:checked + .appRadioView {
+//    border-color: #ffffff;
+//}
+
+
+
+//nikitin.
+
+.appDiaryRecord-toolsItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.appDiaryRecord-toolsLeft .msppIcons-chevron-left {
+    font-size: 30px;
+    position: relative;
+    left: -12px;
+}
+.appDiaryRecord-toolsRight {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    font-size: 16px;
+}
+.appDiaryRecord-toolsRight.ready {
+    /*color: #F68B5F;*/
+    font-size: 36px;
+}
+.appDiaryRecord-toolsCenter {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 14px;
+}
+.appDiaryRecord.appDiaryRecord-edit {
+    background: $amDiary-progressBg;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.appDiaryRecord-edit .appDiaryRecord-content {
+    border-radius: 14px 14px 0 0 ;
+}
+.appDiaryRecord-content {
+    background: $am_color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.appDiaryRecord-content div {
+}
+.appDiaryStatus-super .appDiaryRecordPageWrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.appDiaryRecord-content.appDiaryStatus-super {
+    background: $amDiary-barColor-super;
+}
+.appDiaryRecordEdit-summaryContent {
+    /*height: 190px;
+    max-height: 190px;*/
+    margin-top: 16px;
+}
+@media screen and (min-height: 736px) {
+    .appDiaryRecordEdit-summaryContent {
+        /*height: 235px;
+        max-height: 235px;*/
+    }
+}
+.appDiaryRecordEdit-summary.summaryEdit .appDiaryRecordEdit-summaryContent {
+    height: 323px;
+    max-height: 323px;
+}
+.appDiaryRecordEdit-summary.summaryEdit + .appDiaryRecordPage1-button {
+    display: none;
+}
+.appDiaryRecordEdit-summaryEndingStageLink {
+    line-height: 24px;
+}
+.appDiaryRecordPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+@media screen and (min-height: 736px) {
+    .appDiaryRecordPage {
+        justify-content: center;
+    }
+    .appDiaryRecordEditing .appDiaryRecordPage {
+        justify-content: flex-start;
+    }
+    .appDiaryRecordEdit-summaryContent {
+        /*height: 250px;
+        max-height: 250px;*/
+    }
+    .appDiaryRecordEdit-summary.summaryEdit .appDiaryRecordEdit-summaryContent {
+        height: 420px;
+        max-height: 420px;
+    }
+    .appDiaryRecordEdit-summaryEndingStageLink {
+        line-height: 32px;
+    }
+
+    .appDiaryRecordEdit-summary.summaryEdit .appDiaryRecordPage {
+        justify-content: center;
+    }
+}
+@media screen and (min-height: 736px) {
+    .appDiaryRecordEdit-summary.summaryEdit + .appDiaryRecordPage1-button {
+        display: block;
+        margin-top: 32px;
+    }
+}
+.appDiaryRecordEditing .appDiaryRecordPage16 .appDiaryRecordPageWrapper,
+.appDiaryRecordEditing .appDiaryRecordPage1 .appDiaryRecordPageWrapper,
+.appDiaryRecordEditing .appDiaryRecord-content {
+    height: calc(100vh - 44px);
+}
+.appDiaryRecordPage16 .appDiaryRecordPageWrapper,
+.appDiaryRecordPage1 .appDiaryRecordPageWrapper,
+.appDiaryRecord-content .dhrtScroll-wrapperInner,
+.appDiaryRecord-content {
+    height: calc(100vh - 106px);
+}
+.appDiaryRecordPageWrapper,
+.appDiaryRecord-edit .appDiaryRecord-content .dhrtScroll-wrapperInner,
+.appDiaryRecord-edit .appDiaryRecord-content {
+    height: calc(100vh - 114px);
+}
+.appCustomNumpad-bodyKeyboardKey span {
+    display: none;
+}
+.appDiaryRecord-content {
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+
+}
+.appDiaryRecord-content > div {
+    height: 100%;
+}
+.appDiaryRecordPage1 .appDiaryRecordPageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.appDiaryRecordPage1-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.appDiaryRecordPage-buttonRight div,
+.appDiaryRecordPage1-button {
+    height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    width: 223px;
+    background: $am_diary_text;
+    border-radius: 29px;
+    opacity: 1;
+    color: $am_color;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+    .appDiaryRecordPage-buttonRight div,
+    .appDiaryRecordPage1-button {
+        height: 57px;
+        line-height: 57px;
+        font-size: 22px;
+    }
+}
+.appDiaryRecord-content .dhrtScroll-wrapperInner {
+    display: flex;
+    align-items: center;
+}
+.appDiaryRecordEdit-summary {
+    background: $am_bg;
+    border-radius: 12px;
+    padding: 16px 16px;
+}
+.appDiaryRecordEdit-summary .appDiaryRecordPage1-datePaginator {
+    margin: 8px auto 16px;
+}
+.appDiaryStatus-super .appDiaryRecordPage1-datePaginator {
+    margin: 8px auto;
+}
+@media screen and (min-height: 667px)  {
+    .appDiaryStatus-super .appDiaryRecordPage1-datePaginator {
+        margin: 16px auto;
+    }
+}
+@media screen and (min-height: 736px)  {
+    .appDiaryStatus-super .appDiaryRecordPage1-datePaginator {
+        margin: 32px auto;
+    }
+}
+.appDiaryRecordPage1-datePaginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px auto;
+}
+.appDiaryRecordPage1-datePaginator > *:first-child  {
+    margin-right: 25px;
+}
+.appDiaryRecordPage1-datePaginator > *:last-child  {
+    margin-left: 25px;
+}
+.appDiaryRecordPage1-datePaginator > * {
+    cursor: pointer;
+    border-radius: 100%;
+    border: 3px solid $am_diary_text;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px
+}
+.appDiaryRecordPage1-datePaginatorBtn.disabled {
+    border-color: $am_diary_disabled;
+}
+.appDiaryRecordPage1-datePaginatorBtn.disabled:after {
+    color: $am_diary_disabled;
+}
+.appDiaryStatus-super .appDiaryRecordPage1-datePaginatorBtn.disabled {
+    border-color: $am_diarySuper_disabled;
+}
+.appDiaryStatus-super .appDiaryRecordPage1-datePaginatorBtn.disabled:after {
+    color: $am_diarySuper_disabled;
+}
+.appDiaryRecordPage1-datePaginatorBtn:after {
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    line-height: 28px;
+    color: $am_diary_text;
+}
+.appDiaryRecordPage1-datePaginatorBtnLeft:after {
+    content: '‹';
+    left: 8px;
+}
+.appDiaryRecordPage1-datePaginatorBtnRight:after {
+    content: '›';
+    left: 11px;
+}
+.appDiaryRecord-tools .appIcons {
+    cursor: pointer;
+}
+.appDiaryRecordPage1-image img {
+    height: 100%;
+    width: auto;
+}
+.appDiaryRecordPage1-image {
+    margin-bottom: 32px;
+    width: auto;
+    max-width: 414px;
+    height: calc(100vh - 450px);
+    max-height: 194px;
+    text-align: center;
+}
+
+.appDiaryRecordStoryModal {
+    padding: 16px;
+    min-width: 250px;
+    min-height: 100px;
+}
+
+.appDiaryRecordEdit-summary {
+    color: $am_text;
+    max-width: $mobile_width;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.appDiaryRecordEdit-summaryGraph {
+    font-weight: 500;
+}
+.appDiaryRecordEdit-summaryItem {
+    line-height: 18px;
+}
+.appDiaryRecordEdit-summaryItem.performed {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.appDiaryRecordEdit-summaryItem.better {
+    margin-bottom: 4px;
+    display: none;
+}
+.appDiaryRecordEdit-summaryGraphRank {
+    font-weight: 500;
+    font-size: 14px;
+}
+@media screen and (min-height: 736px) {
+    .appDiaryRecordEdit-summaryItem.performed {
+        margin-bottom: 16px;
+    }
+    .appDiaryRecordEdit-summaryItem.better {
+        margin-bottom: 12px;
+    }
+    .appDiaryRecordEdit-summaryGraphRank {
+        font-size: 20px;
+    }
+
+}
+
+.appDiaryRecordEdit-summaryItemSeparatorWrap {
+    text-align: center;
+}
+.appDiaryRecordEdit-summaryItemSeparator {
+    width: 120px;
+    height: 1px;
+    background: $am_line;
+    margin: 16px auto;
+}
+@media screen and (min-height: 736px) {
+    .appDiaryRecordEdit-summaryItemSeparator {
+        margin: 16px auto;
+    }
+}
+.appDiaryRecordEdit-summaryBtnStoryWrapper {
+    display: flex;
+    justify-content: center;
+}
+.appDiaryRecordEdit-summaryBtnStory img {
+    width: 56px;
+}
+@media screen and (min-height: 736px) {
+    .appDiaryRecordEdit-summaryBtnStory img {
+        width: 80px;
+    }
+}
+.appDiaryRecordEdit-summaryBtnStory {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 0 44px;
+    color: #9A9A9A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+.appDiaryRecordEdit-summaryGraph {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.appDiaryRecordEdit-summaryGraphLine {
+    width: 1px;
+    height: 90px;
+    background: $am_line;
+
+}
+.appDiaryRecordEdit-summaryItem.better span {
+    color: $am_color;
+}
+.appDiaryRecordEdit-summaryGraphDays  {
+    background: url(/images/diaryDays.svg);
+    font-size: 22px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+.appDiaryRecordEdit-summaryGraphDays,
+.appDiaryRecordEdit-summaryGraphPercent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appDiaryRecordEdit-summaryGraphDaysNum {
+    font-size: 14px;
+    font-weight: 600;
+}
+.appDiaryRecordEdit-summaryGraphPercent {
+    align-items: flex-start;
+}
+.appDiaryRecordEdit-summaryGraphDays {
+    flex-direction: column;
+}
+.appDiaryRecordEdit-summaryGraphRank {
+    display: none;
+    text-align: center;
+    padding: 0 16px;
+}
+@media screen and (min-height: 667px) {
+    .appDiaryRecordEdit-summaryGraphRank {
+        padding: 16px;
+    }
+
+}
+.appDiaryRecordEditing .appPageContentBody > .dhrtScroll-wrapperInner > div,
+.appDiaryRecordEditing .appPageContentBody > .dhrtScroll-wrapperInner {
+    height: 100vh;
+}
+.appDiaryRecordEditing .amToolbar {
+    display: none;
+}
+.appDiaryRecord-edit .appDiaryRecord-progress {
+    display: block;
+    height: 112px;
+}
+.withoutSattvaPoints .appDiaryRecord-progressSattvaPoints {
+    display: none;
+}
+.withoutSattvaPoints.appDiaryRecord-edit .appDiaryRecord-progress {
+    height: 70px;
+}
+.appDiaryRecord .dhrtScroll-wrapperOuter {
+    width: auto;
+    overflow: auto;
+}
+/*
+.appDiaryRecord-edit .appDiaryRecordPage4 .appDiaryRecord-progress,
+.appDiaryRecord-edit .appDiaryRecordPage5 .appDiaryRecord-progress {
+    height: 66px;
+}
+@media screen and (min-width: 375px) {
+    .appDiaryRecord-edit .appDiaryRecordPage4 .appDiaryRecord-progress,
+    .appDiaryRecord-edit .appDiaryRecordPage5 .appDiaryRecord-progress {
+        height: 122px;
+    }
+}
+*/
+
+.appDiaryRecord-progress {
+    background: $amDiary-progressBg;
+    padding: 16px 16px 8px;
+    display: none;
+    margin: 0 auto;
+}
+.appDiaryRecord-progressBar {
+    width: 100%;
+    background: $amDiary-progressBarBg;
+    height: 4px;
+    border-radius: 2px;
+}
+.appDiaryRecord-progressMeter {
+    width: 75%;
+    background: $amDiary-progressBar;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.appDiaryRecord-progressSattvaBarWrapper {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 8px auto;
+}
+.appDiaryRecordPage4 .appDiaryRecord-progressSattvaBarWrapper,
+.appDiaryRecordPage5 .appDiaryRecord-progressSattvaBarWrapper {
+    margin: 8px auto;
+}
+.appDiaryRecord-settingsPlan {
+    padding: 32px 0;
+}
+.appDiaryRecord-progressSattvaPointsText {
+    font-size: 12px;
+}
+.appDiaryRecord-progressSattvaPoints {
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: $am_text;
+}
+.appDiaryRecord-progressSattvaBar {
+    width: 2px;
+    height: 14px;
+    border-radius: 1px;
+    background-color: $amDiary-progressBar;
+    margin: 0 2px;
+
+    &.long {
+        height: 20px;
+    }
+
+    &.active {
+        &.green {
+            background-color: $am_diary_sattva_green;
+        }
+        &.yellow {
+            background-color: $am_diary_sattva_yellow;
+        }
+        &.red {
+            background-color: $am_diary_sattva_red;
+        }
+    }
+}
+
+.appDiaryRecord-pointsBody {
+    display: flex;
+}
+
+.appDiaryRecord-pointsBodySattvaBarWrapper {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 16px;
+}
+.appDiaryRecord-pointsBodySattvaBar {
+    width: 8px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 1px 0;
+
+    &.long {
+        width: 14px;
+    }
+
+    &.active {
+        &.green {
+            background-color: $am_diary_sattva_green;
+        }
+        &.yellow {
+            background-color: $am_diary_sattva_yellow;
+        }
+        &.red {
+            background-color: $am_diary_sattva_red;
+        }
+    }
+}
+
+.appDiaryRecord-pointsBodyTable {
+    margin-top: 9px;
+}
+
+.appDiaryRecord-pointsBodyTableLine {
+    height: 24px;;
+}
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.appProgressRadial {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $amDiary-barColor;
+}
+.appDiaryStatus-super .appProgressRadial {
+    background-color: $amDiary-barColor-super;
+}
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.appProgressRadial .appProgressRadial-overlay {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $amDiary-overlayColor;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.appDiaryRecordEdit-summaryGraphDaysTxt,
+.appProgressRadial-overlayText {
+    font-size: 6px;
+    line-height: 6px;
+}
+.appDiaryRecordEdit-summaryGraphDaysTxt,
+.appDiaryRecordEdit-summaryGraphDaysNum {
+    position: relative;
+    left: 2px;
+    top: -1px;
+}
+.appDiaryRecordEdit-summaryGraphDaysNum {
+    line-height: 18px;
+}
+.appProgressRadial-overlayPercent {
+    line-height: 16px;
+    font-size: 14px;
+}
+.appDiaryRecordEdit-summary.summaryEdit .dhrtScroll-wrapperInner {
+    max-height: calc(100vh - 374px);
+}
+.appDiaryRecordEdit-summary .dhrtScroll-wrapperInner {
+    max-height: calc(100vh - 422px);
+}
+.appDiaryRecordEdit-summaryMorningPractices label {
+    display: flex;
+    align-items: center;
+}
+
+
+.appDiaryRecordPage-helpLink .appIcons {
+    font-size: 31px;
+}
+.stage1 {
+    width: calc(100% - 24px);
+}
+.appDiaryRecordPage-helpLink {
+    /*display: flex;*/
+    display: none;
+    justify-content: flex-end;
+    position: absolute;
+    right: -16px;
+    top: -8px;
+}
+.appDiaryRecordPage .dhrtCheckbox label.appDiaryRecordPage-morningAll {
+    margin-top: 24px;
+}
+.appDiaryRecordPage .dhrtCheckbox label {
+    margin: 8px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: fit-content;
+}
+@media screen and (min-height: 667px) {
+    .appDiaryRecordPage .dhrtCheckbox label.appDiaryRecordPage-morningAll {
+        margin-top: 50px;
+    }
+
+}
+@media screen and (min-width: 375px) {
+    .appDiaryRecordPage-helpLink {
+        right: 0;
+        top: 0;
+    }
+}
+.appDiaryRecordEdit-summaryEndingStageContent > * {
+    display: block;
+    width: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.appDiaryRecordEdit-summaryEndingStageLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    color: #999999;
+}
+.appDiaryRecordEdit-summaryEndingStageContent {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 16px);
+}
+#appDiaryRecordStoryModal .dhrtModalWindow-contentClose {
+    display: none;
+}
+.theme_am.appDiaryRecord .dhrtCheckboxView:after {
+    border-right-color: $am_bg;
+    border-top-color: $am_bg;
+}
+.theme_am.appDiaryRecord .dhrtCheckboxView label {
+    color: inherit;
+}
+.theme_am.appDiaryRecord .dhrtCheckboxView {
+    border-radius: 100%;
+    background-color: $am_bg;
+    border-color: $am_diary_checkBorder;
+}
+.theme_am.appDiaryRecord .appDiaryRecordPage .dhrtCheckboxView:after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.theme_am.appDiaryRecord .appDiaryRecordPage .dhrtCheckboxView {
+    border-color: white;
+    background-color: transparent;
+}
+.theme_am.appDiaryRecord input[type='checkbox']:checked + .dhrtCheckboxView {
+    background-color: $am_diary_check;
+    border-color: $am_diary_check;
+}
+.theme_am.appDiaryRecord input[type='checkbox']:checked + .dhrtCheckboxView:after {
+    border-top-color: white;
+    border-right-color: white;
+}
+
+.appDiaryRecordEdit-summaryMorningPractices > *:not(:last-child) {
+    margin-right: 8px;
+}
+.appDiaryRecordEdit-summaryMorningPractices {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.appDiaryRecordEdit-summaryMorningPractices .appDiaryRecordEdit-summaryEndingStageLinkName {
+    font-size: 12px;
+    color: $am_text;
+}
+.appDiaryRecordEdit-summaryMorningPractices .dhrtCheckbox label .dhrtCheckboxView {
+    margin-right: 4px;
+}
+.theme_am.appDiaryRecord .dhrtRadioView,
+.theme_am.appDiaryRecord input[type="radio"]:checked + .dhrtRadioView {
+    border-color: white;
+}
+
+
+
+
+.dhrtCheckbox.withCustomNumpad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 8px;
+}
+@media screen and (min-height: 667px) {
+    .dhrtCheckbox.withCustomNumpad {
+        flex-direction: column;
+    }
+}
+.appDiaryRecordPageWrapper.withCustomNumpad .appDiaryRecordPage-helpLink {
+    top: -8px;
+}
+.appDiaryRecordPageWrapper.withCustomNumpad {
+    padding-top: 32px;
+
+}
+
+.dhrtCheckbox.withCustomNumpad label:not(:last-child) {
+    margin-right: 8px;
+}
+.dhrtCheckbox.withCustomNumpad label .appRadioView {
+    margin-right: 4px;
+}
+.dhrtCheckbox.withCustomNumpad label {
+    width: fit-content;
+}
+.dhrtCheckbox.withCustomNumpad.stage5 label,
+.dhrtCheckbox.withCustomNumpad.stage6 label {
+    width: 100%;
+}
+.appDiaryRecord {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.appDiaryRecordPageWrapper {
+    padding: 32px 24px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+.appDiaryRecordPage1 .appDiaryRecordPageWrapper {
+    align-items: center;
+}
+
+.appCustomNumpad {
+    width: inherit;
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@media screen and (min-width: 414px) {
+    .appCustomNumpad {
+        width: 414px;
+        left: 50%;
+        margin-left: -207px;
+        right: auto;
+    }
+}
+@media screen and (min-height: 736px) {
+    .appCustomNumpad {
+        position: relative;
+        left: -24px;
+        right: 24px;
+        margin-top: 32px;
+        margin-left: 0;
+        width: calc(100% + 48px);
+    }
+}
+.appCustomNumpad-headQuestion,
+.appCustomNumpad-headUnit {
+    font-size: 18px;
+
+}
+
+.appCustomNumpad-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 14px;
+    padding-bottom: 8px;
+    /*background: $am_color;*/
+}
+.appCustomNumpad-headDisplay {
+    text-align: center;
+    border: none;
+    color: #FFFFFF;
+    font-size: 32px;
+    background: transparent;
+}
+.appCustomNumpad-body {
+    background-color: #F5F0EF;
+    padding-bottom: 2px;
+    margin: 0;
+}
+.appCustomNumpad-bodyKeyboard {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    gap: 6px;
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    padding: 4px;
+
+}
+.appCustomNumpad-bodyKeyboardKey {
+    background-color: #FCFCFE;
+    height: 30px;
+    box-shadow: 0 1px 0 #898A8D;
+    border-radius: 5px;
+}
+.appCustomNumpad-bodyKeyboardKey:nth-child(10) {
+    font-size: 25px;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.appCustomNumpad-bodyKeyboardKey:nth-child(11) {
+    font-size: 25px;
+    background-color: #F5F0EF;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.appCustomNumpad-bodyKeyboardKey:nth-last-child(n+3) {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.appCustomNumpad-bodyKeyboardKey:nth-last-child(n+3)::first-line {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.appCustomNumpad-bodySaveButton {
+    color: #F68B5F;
+    font-size: 16px;
+    text-align: right;
+    border-bottom: 0.5px solid #E5E5E5;
+    height: 36px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.appCustomNumpad-bodySaveButton > .msppIcons-delete {
+    color: grey;
+    padding-left: 15px;
+
+}
+
+.appDiaryRecordPage-help {
+    background: white;
+    color: black;
+    box-shadow: 0px -0.5px 2px #00000029;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    z-index: 100;
+    height: inherit;
+    width: inherit;
+}
+.appDiaryRecordPage-helpHead {
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    background: #F5F0EF;
+    box-shadow: 0px 0.5px 0px #0000004D;
+    backdrop-filter: blur(30px);
+    border-radius: 12px 12px 0 0;
+
+}
+.appDiaryRecordPage-helpHeadClose {
+    position: relative;
+    left: 105px;
+}
+.appDiaryRecordPage-helpContent {
+    font-size: 16px;
+    line-height: 29px;
+    padding: 30px 15px;
+}
+.appDiaryRecord-toolsLeft {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    position: absolute;
+}
+

@@ -1,0 +1,329 @@
+@import "../colors";
+@import "../variables";
+
+$mobile_width: 1024px;
+$menu_width: 457px;
+
+.sadvipra {
+
+    @media screen and (min-width: $mobile_width) {
+        display: flex;
+        align-items: stretch;
+    }
+
+    &Layout {
+
+        .appPageContent {
+            padding: 0;
+            width: 100%;
+        }
+
+        .appBrand {
+            z-index: 1031;
+
+            .appMobileMenu-wrapper {
+                order: 2;
+                margin-right: 0;
+            }
+
+            .appLogoMain {
+                margin: 0;
+            }
+
+            #appLogo path {
+                fill: white;
+            }
+
+            @media screen and (min-width: $mobile_width) {
+                .appLogoMain,
+                #appLogo {
+                    width: 94px;
+                    height: 105px;
+                }
+            }
+
+            &Menu {
+                padding: 24px;
+                width: 100%;
+
+                background: $brand-menu-bg;
+                height: 118px;
+                margin-right: 0;
+
+                @media screen and (min-width: $mobile_width) {
+                    min-height: 100vh;
+                    height: auto;
+                    max-width: $menu_width;
+                }
+            }
+
+            &-link {
+                order: 1;
+
+                .appName {
+                    flex-direction: row;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+
+                    @media screen and (min-width: $mobile_width) {
+                        font-size: 20px;
+                        position: relative;
+                        left: -8px;
+                    }
+                }
+            }
+        }
+
+        #appMobileMenu-chk:checked + .appBrandMenu {
+            height: 100vh;
+
+            .appUser {
+                transform: scale(1);
+            }
+        }
+
+        .appUser {
+            transform: scale(0);
+            transform-origin: calc(100% - 35px) 70px;
+            background: transparent;
+            padding: 20px 0;
+
+            @media screen and (min-width: $mobile_width) {
+                transform: scale(1);
+                padding-left: 8px;
+            }
+
+            &-name {
+
+
+                &Main,
+                &Social {
+                    font-size: 16px;
+                    color: white;
+                    line-height: 20px;
+                    font-family: Roboto-medium;
+                }
+                & {
+                    font-size: 12px;
+                }
+                &Social {
+                    order: -1;
+                    width: auto;
+                }
+
+
+
+            }
+            .withSpirit .appUser-nameMain {
+                order: 1;
+                width: 100%;
+                font-size: 14px;
+            }
+
+            &-role {
+                color: $brand-menu;
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            &-avatar {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                box-sizing: content-box;
+                border: 3px solid #fff;
+                border-radius: 50%;
+                margin-right: 22px;
+            }
+
+            &-copyInfo {
+                color: rgba(252, 109, 53, 0.2);
+
+                &:hover {
+                    color: rgba(252, 109, 53, 1);
+                }
+            }
+        }
+
+        .appMenu {
+            background: $brand-menu-bg;
+            left: 0;
+            top: 0;
+            transform-origin: calc(100% - 35px) 70px;
+            padding-top: 236px;
+            margin: 0;
+            height: auto;
+
+            @media screen and (min-width: $mobile_width) {
+                padding-top: 264px;
+            }
+
+            .dhrtScroll-wrapperOuter {
+                overflow: auto;
+            }
+            .dhrtScroll-wrapperInner {
+                width: auto;
+                padding-right: 0;
+                max-height: none;
+                height: auto;
+                overflow-y: auto;
+                overflow-x: auto;
+            }
+
+            &-content {
+                padding-bottom: 64px;
+            }
+
+            &-item {
+                padding: 12px 32px;
+                border: 1px solid transparent;
+
+                @media screen and (min-width: $mobile_width) {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+
+                &:hover {
+                    background: transparent;
+                    border-color: rgba(252, 109, 53, 0.8);
+                }
+
+                &Icon {
+                    color: $brand-menu-icon;
+                    opacity: .8;
+                    margin-right: 32px;
+
+                    /*@media screen and (min-width: $mobile_width) {
+                        font-size: 24px;
+                    }*/
+                }
+
+                &Text {
+                    color: white;
+                    font-size: 20px;
+
+                    /*@media screen and (min-width: $mobile_width) {
+                        font-size: 18px;
+                    }*/
+                }
+
+            }
+        }
+
+        .appContent {
+            padding: 0;
+
+            .appPageHeader {
+                padding: 32px 32px 16px;
+                margin-bottom: 8px;
+            }
+
+            .appPageContent {
+                padding: 16px 32px 32px;
+            }
+
+            .appHeaderTools {
+                & > *:not(:last-child) {
+                    margin-right: 16px;
+                }
+
+                .appTools {
+                    &-search {
+                        min-width: 219px;
+                        display: none;
+
+                        .appSearch-btn {
+                            position: absolute;
+                            right: 12px;
+                            top: 12px;
+                        }
+                        .appSearch-input {
+                            border: 1px solid $input-border;
+                            border-radius: 72px;
+                            background: transparent;
+                            color: $sadvipra-txt;
+                            height: 48px;
+                            line-height: 46px;
+                            padding: 0 48px 0 24px;
+                            width: 100%;
+
+                            &::placeholder {
+                                color: $sadvipra-placeholder;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                    }
+                    &-meeting {
+                        font-size: 20px;
+                        line-height: 20px;
+                        text-align: right;
+
+                        &Txt {
+                            color: #A4A4A7;
+                        }
+                        &Time {
+                            color: $sadvipra-color;
+                        }
+                    }
+                    &-lesson {
+
+                        &Btn {
+                            background: $sadvipra-color;
+                            border-radius: 72px;
+                            color: white;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            padding: 8px 16px;
+                            height: 48px;
+                            line-height: 32px;
+                        }
+
+
+                    }
+
+                    &-notice {
+
+                        &Btn {
+                            position: relative;
+                            cursor: pointer;
+
+                            &:hover {
+                                path {
+                                    fill: #8b8c8c;
+                                }
+                            }
+
+                            &Alert {
+                                display: none;
+                                position: absolute;
+                                top: 3px;
+                                right: 0;
+                            }
+                        }
+                    }
+
+                    &-lang {
+                        width: 20px;
+                    }
+                }
+
+                .dhrtDropdown-link {
+                    margin-right: 0;
+                    padding-right: 0;
+
+                    &:after {
+                        content: none;
+                    }
+                }
+
+
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+/* pastel1 */
+
+.appEventsReport-period {
+  margin-bottom: 16px;
+}
+
+@media all and (min-width: 1200px) {
+  .appEventsReport-period {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.appEventsReport-periodTitle {
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.appEventsReport-filters {
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: rgba(91, 91, 91, 0.1);
+}
+
+.appEventsReport-filtersTitle {
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.appEventsReport-filtersItems {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.appEventsReport-filtersItems > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media all and (min-width: 1024px) {
+  .appEventsReport-filtersItems {
+    margin-left: 64px;
+  }
+}
+
+.appEventsReport-head {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+.appEventsReport-head > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.appEventsReport-headRow {
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+}
+
+.appEventsReport-headRow.region {
+  width: 100px;
+}
+
+.appEventsReport-headRow.bhukti {
+  width: 200px;
+}
+
+.appEventsReport-headRow.unit {
+  width: 100px;
+}
+
+.appEventsReport-headRow.range {
+  width: 50px;
+}
+
+.appEventsReport-headRow.event {
+  /* текст в одну строку обрезается и добавляется 3 точки вконце*/
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  width: 50px;
+}
+
+.appEventsReport-region {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.appEventsReport-region > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.appEventsReport-regionInfo {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.appEventsReport-regionContentBhukti {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.appEventsReport-regionContentBhukti > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.appEventsReport-regionContentBhukti:nth-child(odd) {
+  background: rgba(91, 91, 91, 0.1);
+}
+
+.appEventsReport-regionContentBhuktiInfo {
+  width: 200px;
+}
+
+.appEventsReport-regionContentBhuktiInfo .bhuktiName {
+  color: #20717C;
+}
+
+.appEventsReport-regionContentBhuktiInfo .bhuktiBP {
+  color: #DC6A3A;
+}
+
+.appEventsReport-regionContentBhuktiContentUnit {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.appEventsReport-regionContentBhuktiContentUnit > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.appEventsReport-regionContentBhuktiContentUnit:nth-child(even) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.appEventsReport-regionContentBhuktiContentUnit:nth-child(odd) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitInfo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitInfo > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitInfoName {
+  width: 100px;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitInfoMargiisActive {
+  width: 30px;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitColumn {
+  width: 50px;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitColumnBottom .diff {
+  font-size: 10px;
+  letter-spacing: -1px;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitColumnBottom .red {
+  color: #F26165;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitColumnBottom .green {
+  color: #20717C;
+}
+
+.appEventsReport-regionContentBhuktiContentUnitRange {
+  width: 50px;
+}
+
+
+/*# sourceMappingURL=app_unitEvents.css.map*/

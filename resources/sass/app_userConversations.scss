@@ -1,0 +1,144 @@
+.appPageUserConversations {
+    .msgQuestionMsgs-msgMainInfo {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .appQuestionMsgs-userInfo {
+        width: calc(100% - 48px);
+    }
+    .appQuestionsList-subject {
+        max-height: 38px;
+        padding-top: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        line-height: 18px;
+        color: $question_title;
+        margin-bottom: 4px;
+    }
+    .dhrtModalWindow-content {
+        max-height: 90vh;
+        max-width: 90vw;
+    }
+    .appQuestions {
+        display: block;
+    }
+    .appQuestionHead {
+        width: 100%;
+    }
+    .appQuestionHead-subject {
+        font-weight: bold;
+        color: $txt_greyMd;
+        font-size: 16px;
+    }
+    .appQuestionMsgs {
+        padding: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        .appQuestionMsgs-userInfo {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .appQuestion {
+            width: 100%;
+            .dhrtModalWindow-head {
+                box-shadow: none;
+            }
+        }
+        .appQuestionMsgs {
+            padding: 32px
+        }
+
+        .appQuestions .dhrtScroll-wrapperInner, .appQuestionMsg-container {
+            height: auto;
+        }
+        .appQuestion .dhrtModalWindow-footer {
+            height: auto;
+        }
+        .appQuestionActions-editor {
+            max-width: none;
+        }
+        .note-editor.note-airframe .note-editing-area .note-editable {
+            min-height: auto;
+            height: 80px;
+        }
+    }
+}
+
+.appUserConversations-new {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 16px;
+    padding: 8px 24px;
+    font-weight: 600;
+    background-color: $marga;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 32px;
+    &:hover {
+        box-shadow: 0 0 5px $margaLt;
+    }
+}
+
+.appUserConversations-wait {
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 14px;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #646464;
+    margin: 0 auto 16px;
+}
+
+.appQuestionHead-back {
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 32px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: $marga;
+    font-weight: bold;
+    padding-bottom: 16px;
+    left: -4px;
+
+    &Icon {
+        font-size: 22px;
+        line-height: 22px;
+        position: relative;
+        bottom: 1px;
+    }
+    &Text {
+        line-height: 22px;
+        margin-left: 4px;
+    }
+}
+
+.appUserConversations-unavailable {
+    div {
+        font-size: 14px;
+
+        a {
+            color: $marga;
+            text-decoration: underline !important;
+        }
+    }
+    & > div {
+        margin-bottom: 6px;
+    }
+}
+

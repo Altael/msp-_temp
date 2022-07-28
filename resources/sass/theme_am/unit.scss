@@ -1,0 +1,447 @@
+@import "../mixins";
+@import "../colors";
+
+.amUnit-content {
+    padding: 16px 32px 100px;
+}
+.amUnit-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.amUnit-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100px;
+    width: calc(33% - 16px);
+    margin: 8px;
+}
+
+.amUnit-memberAvatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.amUnit-motd {
+    margin-bottom: 16px;
+    text-align: center;
+}
+.amUnit-memberName {
+    font-size: 11px;
+    line-height: 11px;
+    color: #999;
+}
+.amUnit-memberInfo {
+    line-height: 16px;
+    padding: 4px 2px;
+    text-align: center;
+}
+.amUnit-programs {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+.amUnitPrograms {
+    &-pageTools {
+        padding: 32px 0;
+        .appPageTools-wrap {
+            margin-bottom: 0;
+        }
+    }
+    .appTable-colTop {
+        color: $txt_greyMd;
+    }
+}
+.amUnitPrograms-type {
+    flex-grow: 1;
+}
+.amPage-title {
+    padding-left: 28px;
+    &:before {
+        left: 8px;
+    }
+
+}
+.amUnitPrograms {
+    padding: 16px 32px;
+
+    .amPage-title {
+
+        & + * {
+            margin-top: 25px;
+        }
+    }
+
+    &-head {
+        margin-bottom: 8px;
+    }
+    &-body {
+        .appTable-row {
+            margin-left: -32px;
+            margin-right: -32px;
+            padding: 8px 16px 8px 32px;
+            align-items: center;
+        }
+    }
+    &-unitSelector {
+        @include flex-jl-ac;
+        @include child-mr16;
+        padding: 8px;
+        margin-bottom: 32px;
+
+        &Title {
+            color: $txt_greyMd;
+            line-height: 16px;
+            font-size: 13px;
+        }
+        &Input {
+            .dhrtDropdown {
+                height: 22px;
+                line-height: 22px;
+            }
+        }
+    }
+    &-pageTools {
+        @include flex-jb-ac;
+        @include child-mr16;
+
+        &Buttons {
+            @include flex-jl-ac;
+            @include child-mr8;
+
+            &Item {
+                font-size: 24px;
+                color: #666;
+                cursor: pointer;
+                display: block;
+            }
+        }
+    }
+    &-member {
+        width: 30px;
+
+        &s {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+
+            &Count {
+                @include flex-jc-ac;
+                width: 54px;
+
+                &Val {
+                    width: 46px;
+                    height: 28px;
+                    line-height: 20px;
+                    padding: 4px;
+                    font-size: 12px;
+
+                    border-radius: 8px;
+                    text-align: center;
+                    color: white;
+                    background: $pastel1-button-bg-light;
+                }
+
+            }
+        }
+
+        &Avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            margin-right: 4px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+    &-tools {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 21px;
+        padding: 8px 4px;
+        text-align: right;
+
+        .msppIcons-tools {
+            font-size: 15px;
+            color: #919191;
+        }
+        .dhrtDropdown {
+            padding-right: 0;
+        }
+
+    }
+    &-date {
+        width: 55px;
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+    &-type {
+        width: calc(100% - 130px);
+        color: $pastel1-txt-dark;
+    }
+    &-tools {
+        text-align: right;
+    }
+    &-unitSelector {
+        padding-right: 0;
+        &Input {
+            flex-grow: 1;
+            border-bottom: 1px solid $border_color;
+            text-align: right;
+
+            .dhrtDropdown input[type=text] {
+                height: 23px;
+            }
+        }
+    }
+}
+.amUnitMember-settingsProgrammer .dhrtSwitch {
+    justify-content: space-between;
+    display: flex;
+}
+.amUnitMember-settingsProgrammer .dhrtSwitchSpinnerText {
+    font-size: 14px;
+    color: #646464;
+}
+.amUnit-tools {
+    margin-bottom: 16px;
+    @include flex-jb-ac;
+    @include child-mr16;
+}
+.amUnit-toolbar {
+    @include flex-jr-ac;
+    @include child-mr16;
+}
+.amUnit-toolbarBtn,
+.amUnit-programsBtn {
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+.appTable-col.amUnitPrograms-members {
+    width: calc(100% - 70px);
+    padding-top: 0;
+}
+.amUnitPrograms-tools .dhrtDropdown {
+    height: 20px;
+    line-height: 20px;
+}
+.eventEdit-vip {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .appForm-groupTitle {
+        flex-grow: 1;
+    }
+
+    &Checkbox {
+        width: 20px;
+    }
+}
+.appHandbookPrograms {
+    padding: 16px 32px;
+
+    &-toolbar {
+        width: 100%;
+        margin-bottom: 32px;
+        @include flex-jb-ac;
+        @include child-mr16;
+
+        &Buttons {
+            @include flex-jl-ac;
+            @include child-mr8;
+
+            &Item {
+                font-size: 24px;
+                color: #666;
+                cursor: pointer;
+                display: block;
+            }
+        }
+
+
+    }
+
+    .appTable-body .appTable-row {
+        margin-left: -32px;
+        margin-right: -32px;
+        padding-left: 32px;
+        padding-right: 32px;
+        align-items: flex-start;
+    }
+
+    &-vip {
+        width: 40px;
+    }
+    &-tools {
+        width: 29px;
+
+        .dhrtDropdown {
+            line-height: 22px;
+        }
+    }
+    &-order {
+        width: 36px;
+    }
+    &-name {
+        width: calc(100% - 105px);
+        .short {
+            color: $pastel-red;
+        }
+
+        &Name {
+            @include flex-jl-as;
+            line-height: 14px;
+            margin-bottom: 4px;
+            margin-top: 3px;
+        }
+        &Notes {
+            color: $txt_greyLt;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}
+.amUnitProgramsModal-members {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+
+    &Filter {
+        &Status {
+            @include flex-jb-ac;
+            @include child-mr4;
+            margin-bottom: 16px;
+
+            .appForm-groupTitle {
+                margin-bottom: 0;
+            }
+
+            &Btn {
+                border: 1px solid $border_color;
+                border-radius: 8px;
+                padding: 4px 16px;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+                }
+            }
+        }
+        &Name {
+            border: 1px solid $border_color;
+            border-radius: 8px;
+            padding: 16px;
+        }
+    }
+}
+.amUnitProgramsModal-member {
+    width: 100%;
+    padding: 8px;
+
+    &Name {
+        @include flex-jb-ac;
+        @include child-mr4;
+
+        .appTable-filterField {
+            flex-grow: 1;
+        }
+        span {
+            flex-basis: 20px;
+            width: 20px;
+            text-align: right;
+            color: $txt_greyLt;
+        }
+    }
+}
+.amUnitProgramsModal-member input[type=checkbox]:checked + div .amUnitPrograms-memberAvatar {
+    border: 2px solid rgba(50, 221, 87, 0.5);
+
+}
+.amUnitProgramsModal-member input[type=checkbox] {
+    display: none;
+}
+.amUnitProgramsModal-itemEdit {
+    &Date,
+    &Program {
+        display: flex;
+        align-items: center;
+    }
+    &Title {
+        color: #646464;
+        font-size: 14px;
+        margin-right: 16px;
+    }
+    &InitiatedGuests,
+    &NotInitiatedGuests {
+        @include flex-jb-ac;
+        @include child-mr16;
+        line-height: 14px;
+
+        $clearWidth: 50px;
+
+        .fldTitle {
+            width: calc(100% - #{$clearWidth});
+        }
+        input {
+            width: $clearWidth;
+        }
+    }
+    &Participants {
+
+
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid $border_color;
+
+
+        .dhrtSwitch {
+            @include flex-jb-ac;
+            height: auto;
+            line-height: 14px;
+        }
+    }
+}
+
+.amUnitProgramsModal-memberView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.amUnitPrograms-memberName {
+    text-align: left;
+}
+
+.amUnitMemberSettings {
+    &-mainInfo {
+        @include flex-jc-ac;
+        flex-direction: column;
+    }
+    &-Footer {
+        @include flex-ja-ac;
+        @include child-mr16;
+    }
+}

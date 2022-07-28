@@ -1,0 +1,426 @@
+@import "colors";
+@import "variables";
+
+.appHandbookNames .appTable-col {
+    width: calc((100% - 20px) / 6);
+}
+
+.appTable-col.appHandbookNames-tools {
+    width: 20px;
+}
+.appTable-head .appTable-col.appTable-colInline {
+    flex-direction: row;
+}
+.appSamgiitEditor,
+.appRewardEditor {
+    .dhrtModalWindow-content {
+        max-width: 90vw;
+        min-width: 280px;
+    }
+    .textOverflowRows {
+        white-space: nowrap;
+    }
+    [class*="appSamgiitsList-trans"] {
+        .textOverflowRow {
+            max-height: 68px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+    }
+    .appTable-col {
+        width: 100%;
+    }
+    .appTable-col span {
+        color: #ccc;
+    }
+    .dhrtModalWindow-body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &-body {
+        .appTable-row {
+            align-items: center;
+        }
+        .appRewardEditor-samgiita_number {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &-tools .dhrtDropdown {
+        height: 15px;
+        line-height: 15px;
+    }
+    &-head {
+        align-items: flex-start;
+
+        .appSamgiitEditor-id,
+        .appSamgiitEditor-tools,
+        .appRewardEditor-id,
+        .appRewardEditor-tools {
+            display: none;
+        }
+        .appTable-colTop {
+            margin-bottom: 4px;
+            margin-top: 4px;
+            margin-right: 8px;
+        }
+        .appTable-filter,
+        .appTable-filter_listFilter {
+            flex-grow: 1;
+        }
+    }
+    .appTable-body {
+        .appTable-col {
+            line-height: 15px;
+        }
+
+    }
+    .appSamgiitEditor-pageTools,
+    .appRewardEditor-pageTools {
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+
+        &Buttons {
+            display: flex;
+        }
+
+        .appSamgiitEditor-itemPremium {
+            display: flex;
+            align-items: center;
+            & .appForm-groupTitle {
+                margin-bottom: 0;
+            }
+            & .appForm-input {
+                width: 20px;
+            }
+        }
+    }
+    &Modal-itemEditContent {
+        width: 100%;
+        padding: 32px 0;
+
+
+    }
+    &Modal-itemEdit textarea {
+        height: 150px;
+    }
+    [class^="appRewardEditor-trans"] {
+        .textOverflowRow {
+
+            max-height: 68px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+}
+.appSamgiitEditor {
+    &-premium .appTable-filterField {
+        width: auto;
+    }
+
+    &-head .appSamgiitEditor-premium {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &-body .appTable-row {
+        align-items: flex-start;
+    }
+}
+
+.appSamgiitsList {
+    &-samgiita_number {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .msppIcons-tools {
+            margin-right: 0;
+        }
+        .dhrtDropdown {
+            line-height: 15px;
+            height: 15px;
+        }
+    }
+    &-premium {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 31px;
+
+        &Check {
+            width: 15px;
+        }
+    }
+}
+.appTable-colTop {
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .appSamgiitEditor-pageTools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #appSamgiitEditorModal-itemEdit & {
+            height: 20px;
+        }
+    }
+    [class*="appSamgiitsList-"].appTable-col {
+        width: calc(33% - 11px);
+    }
+    [class*="appSamgiitsList-trans"].appTable-col {
+        width: calc(50% - 8px);
+    }
+    [class*="appSamgiitEditorModal-itemEdit-layout"] {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .appSamgiitEditorModal-itemEditContent,
+    .appRewardEditorModal-itemEditContent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .appSamgiitEditorModal-itemEdit-layout1,
+    .appRewardEditorModal-itemEdit-layout1 {
+        width: 100%;
+    }
+    .appSamgiitEditorModal-itemEdit-layout2,
+    .appRewardEditorModal-itemEdit-layout2 {
+        width: calc(50% - 20px);
+    }
+    .appSamgiitEditorModal-itemEdit-layout3,
+    .appRewardEditorModal-itemEdit-layout3 {
+        width: calc(33% - 14px);
+    }
+    .appSamgiitEditorModal-itemEdit-layout4,
+    .appRewardEditorModal-itemEdit-layout4 {
+        width: calc(25% - 12px);
+    }
+    .appSamgiitEditorModal-itemEditNotFirst,
+    .appRewardEditorModal-itemEditNotFirst {
+        margin-left: 16px;
+    }
+
+    .appTable-head .appSamgiitEditor-tools,
+    .appTable-head .appRewardEditor-tools {
+        height: 43px;
+        justify-content: center;
+    }
+    .appTable-head .appTable-col {
+        flex-direction: column;
+    }
+
+    .appTable-head .appTable-col.appTable-colInline .appTable-filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .appTable-head .appTable-col.appTable-colInline .appTable-filter input {
+        width: auto;
+        margin-left: 8px;
+    }
+    .appSamgiitEditor-head .appSamgiitEditor-id,
+    .appRewardEditor-head .appRewardEditor-id,
+    .appSamgiitEditor-head .appSamgiitEditor-tools,
+    .appRewardEditor-head .appRewardEditor-tools {
+        display: inherit;
+    }
+    .appRewardEditor-head .appTable-colTop {
+        margin-right: 0;
+    }
+    .appSamgiitEditor .textOverflowRows,
+    .appRewardEditor .textOverflowRows {
+        white-space: normal;
+    }
+    .appRewardEditor-pageTools {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .appRewardEditor .appTable-head {
+        .appTable-col {
+            display: flex;
+        }
+    }
+
+    .appRewardEditor-En,
+    .appRewardEditor-Ru {
+        width: calc(50% - 8px);
+    }
+    .appRewardEditor-id {
+        width: 50px;
+    }
+    .appRewardEditor-dateRec {
+        width: 110px;
+    }
+    .appRewardEditor-date {
+        width: 70px;
+    }
+    .appRewardEditor-sourceEn,
+    .appRewardEditor-sourceRu {
+        width: calc(50% - 218px);
+    }
+    .appRewardEditor-titleEn,
+    .appRewardEditor-titleRu {
+        width: calc(50% - 208px);
+    }
+    .appRewardEditor-authorEn,
+    .appRewardEditor-authorRu,
+     {
+        width: 90px;
+    }
+    .appRewardEditor-placeEn,
+    .appRewardEditor-placeRu,
+    {
+        width: 90px;
+    }
+    .appRewardEditor-type {
+        width: 116px;
+    }
+    .appRewardEditor-tools {
+        width: 36px;
+    }
+
+}
+
+
+.appSpiritualNamesTable .appTable-head {
+    .appTable-col {
+        display: none;
+    }
+
+    .appSpiritualNames-nameEn,
+    .appSpiritualNames-nameRu {
+        display: flex;
+        width: 50%;
+    }
+}
+
+.appSpiritualNames-tools {
+    width: 4%;
+}
+
+.appSpiritualNamesTable .appTable-filter_listIcon {
+    bottom: 16px;
+}
+
+.appSpiritualNamesTable-body .appTable-row {
+    align-items: center;
+}
+
+.appHandbookPrograms {
+    .amPage-title {
+        width: calc(100% - 32px);
+        max-width: calc( #{$amWidth} - 32px );
+    }
+}
+.appHandbookPrograms-slug {
+    width: 20%;
+}
+.appHandbookPrograms-nameEn,
+.appHandbookPrograms-nameRu {
+    width: calc(40% - 25px);
+}
+.appHandbookPrograms-tools {
+    width: 50px;
+}
+@media screen and (min-width: 414px) {
+    .appSpiritualNamesTable .appTable-head {
+        .appSpiritualNames-nameEn,
+        .appSpiritualNames-nameRu {
+            width: auto;
+        }
+    }
+
+    .appSpiritualNamesTable .appTable-filter_listIcon {
+        bottom: 4px;
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .appSpiritualNamesTable .appTable-head {
+        .appTable-col {
+            display: block;
+        }
+
+        .appSpiritualNames-nameEn,
+        .appSpiritualNames-nameRu {
+            display: block;
+            width: 18%;
+        }
+    }
+
+    .appSpiritualNames-nameSanskrit {
+        width: 16%;
+    }
+    .appSpiritualNames-nameEn,
+    .appSpiritualNames-nameRu,
+    .appSpiritualNames-descEn,
+    .appSpiritualNames-descRu {
+        width: 18%;
+    }
+
+    .appSpiritualNames-sex {
+        width: 8%;
+    }
+}
+
+.appHandbookMissingLessonsTable .appTable-head {
+    .appTable-col {
+        display: none;
+    }
+
+    .appHandbookMissingLessons-name,
+    .appHandbookMissingLessons-currentLesson {
+        display: block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 414px) {
+    .appHandbookMissingLessonsTable .appTable-head {
+
+        .appHandbookMissingLessons-name,
+        .appHandbookMissingLessons-currentLesson {
+            width: auto;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .appHandbookMissingLessonsTable .appTable-head {
+        .appTable-col {
+            display: block;
+            width: 16%;
+        }
+
+        .appHandbookMissingLessons-id {
+            width: 4%;
+        }
+
+        .appHandbookMissingLessons-name,
+        .appHandbookMissingLessons-currentLesson {
+            width: 16%;
+        }
+    }
+
+    .appHandbookMissingLessons-id {
+        width: 4%;
+    }
+}
+
+

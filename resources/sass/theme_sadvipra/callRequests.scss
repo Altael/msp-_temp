@@ -1,0 +1,58 @@
+.sadvipraCallRequests {
+
+    &,
+    &-content {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    &-item {
+        flex-wrap: wrap;
+    }
+
+    &-id {
+        width: 55px;
+    }
+    &-avatar {
+        width: 45px;
+    }
+
+    &-callType {
+        width: 120px;
+    }
+    &-date {
+        width: 110px;
+    }
+    &-sex {
+        width: 50px;
+    }
+    &-phone {
+        width: 115px;
+    }
+    &-messenger {
+        width: 100px;
+    }
+    &-city {
+        width: 100px;
+    }
+    &-country {
+        width: 100px;
+    }
+    &-name {
+        width: calc(100% - 970px);
+    }
+    &-tools {
+        width: 100px;
+        flex-direction: row;
+        align-items: center;
+
+        & > *:not(:last-child) {
+            margin-right: 4px;
+        }
+        & > * {
+            width: 30px;
+        }
+    }
+
+
+}

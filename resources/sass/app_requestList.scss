@@ -1,0 +1,211 @@
+.appRequests-toolsMenuLink > span {
+    padding: 8px;
+}
+.appRequests-statusBtn {
+    cursor: pointer;
+}
+.appRequests-actionBtn:hover {
+    color: $white;
+    background-color: $marga;
+}
+.appRequests-actionBtn {
+    color: $marga;
+    font-size: 12px;
+    border: 2px solid $marga;
+    border-radius: 8px;
+    text-align: center;
+    padding: 4px 8px;
+    white-space: nowrap;
+}
+.appRequests-languageNo {
+    color: $red;
+}
+
+
+
+
+
+.appRequests-actionText,
+.appRequests-lessonText {
+    margin-right: 12px;
+}
+
+.appRequests-avatar {
+    width: 42px;
+    order: 1;
+    padding-right: 0;
+}
+.appRequests-name .appIcons {
+    margin-right: 4px;
+}
+.appRequests-name {
+    width: calc(100% - 42px - 30px);
+    order: 2;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.appRequests-city {
+    width: 100%;
+    order: 8;
+}
+.appRequests-action {
+    width: 125px;
+    order: 5;
+}
+.appRequests-lesson {
+    width: 75px;
+    order: 6;
+}
+.appRequests-phone {
+    width: 120px;
+    order: 9;
+}
+.appRequests-language {
+    width: 40px;
+    color: $green;
+    order: 10;
+}
+.appRequests-hours {
+    width: 48px;
+    order: 7;
+    padding-right: 12px;
+}
+.appRequests-status {
+    width: 40px;
+    order: 4;
+}
+.appRequests-tools {
+    display: flex;
+    order: 3;
+    width: 30px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.appRequests-creation {
+    order: 11;
+    width: 79px;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.appRequests-lessonValue {
+    background: $margaVeryLT;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $marga;
+    font-weight: bold;
+    padding: 4px;
+    width: 35px;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .appRequestList .appTable-head .appTable-col {
+        flex-direction: column;
+    }
+
+    .appTable-head .appRequests-avatar,
+    .appTable-head .appRequests-status,
+    .appTable-head .appRequests-language,
+    .appTable-head .appRequests-creation {
+        display: flex;
+    }
+
+    .appTable-head .appRequests-name,
+    .appRequests-name {
+        width: calc(100% - 42px - 80px - 40px - 80px - 56px - 60px - 40px - 100px - 108px - 20px);
+        //flex-grow: 1;
+        margin-bottom: 0;
+    }
+    .appTable-head .appRequests-city,
+    .appRequests-city {
+        width: 80px;
+        order: 3;
+        margin-bottom: 0;
+    }
+    .appTable-head .appRequests-action,
+    .appRequests-action {
+        width: 108px;
+        order: 4;
+        margin-bottom: 0;
+    }
+    .appTable-head .appRequests-lesson,
+    .appRequests-lesson {
+        width: 56px;
+        order: 5;
+        margin-bottom: 0;
+    }
+    .appTable-head .appRequests-phone,
+    .appRequests-phone {
+        width: 100px;
+        order: 6;
+        margin-bottom: 0;
+    }
+    .appRequests-language {
+        width: 40px;
+        order: 7;
+    }
+    .appTable-head .appRequests-hours,
+    .appRequests-hours {
+        width: 60px;
+        order: 8;
+        margin-bottom: 0;
+    }
+    .appRequests-status {
+        width: 40px;
+        order: 9;
+    }
+    .appRequests-creation {
+        width: 80px;
+        order: 10;
+    }
+    .appRequests-tools {
+        width: 20px;
+        order: 11;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .appTable-head .appRequests-name,
+    .appRequests-name {
+        width: calc(100% - 42px - 120px - 45px - 108px - 90px - 60px - 45px - 130px - 90px - 20px);
+        //flex-grow: 1;
+    }
+    .appTable-head .appRequests-city,
+    .appRequests-city {
+        width: 120px;
+    }
+    .appRequests-status {
+        width: 45px;
+    }
+    .appTable-head .appRequests-action,
+    .appRequests-action {
+        width: 108px;
+    }
+    .appTable-head .appRequests-lesson,
+    .appRequests-lesson {
+        width: 60px;
+    }
+    .appTable-head .appRequests-hours,
+    .appRequests-hours {
+        width: 90px;
+    }
+    .appRequests-language {
+        width: 45px;
+    }
+    .appTable-head .appRequests-phone,
+    .appRequests-phone {
+        width: 130px;
+    }
+    .appRequests-creation {
+        width: 90px;
+    }
+}
+

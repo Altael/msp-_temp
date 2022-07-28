@@ -1,0 +1,36 @@
+/*
+<div class="btn" :title="__('Clear all filters')">
+    <span class="btnText">{{ __('Clear all filters') }}</span>
+    <span class="btnIcon msppIcons-clean"></span>
+</div>
+*/
+
+.dhrtBtn {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #919191;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 34px;
+    line-height: 16px;
+
+}
+
+.dhrtBtnText {
+    font-size: 12px;
+    display: none;
+}
+.dhrtBtnIcon {
+    font-size: 14px;
+}
+.dhrtBtn > *:not(:last-child) {
+    margin-right: 4px;
+}
+@media all and (min-width: 1200px) {
+    .dhrtBtnText {
+        display: inline-block;
+    }
+}

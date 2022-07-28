@@ -1,0 +1,53 @@
+.audioPlayer-custom {
+    width: 100%;
+    height: 50px;
+    background-color: #4B4B4B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    border-radius: 6px;
+    margin: 8px auto 16px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.audioPlayer-customButton {
+    margin-right: 16px;
+    width: 22px;
+}
+
+.audioPlayer-customButtonPlay {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid #fff;
+}
+
+.audioPlayer-customButtonPause::before {
+    content: '';
+    background-color: #fff;
+    width: 4px;
+    height: 18px;
+    display: block;
+    position: relative;
+    top: 8px;
+}
+.audioPlayer-customButtonPause::after {
+    content: '';
+    background-color: #fff;
+    width: 4px;
+    height: 18px;
+    display: block;
+    position: relative;
+    left: 9px;
+    bottom: 10px;
+}
+
+.audioPlayer-customTime {
+    color: #9F9F9F;
+}
+.audioPlayer-customTrackName {
+    display: none;
+}
+
+

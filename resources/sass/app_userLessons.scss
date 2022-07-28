@@ -1,0 +1,31 @@
+.appUserLessons .appTable-row {
+  display: flex;
+    flex-wrap: nowrap;
+  font-size: 14px;
+}
+
+.appUserLessons .appTable-body .appTable-row {
+  font-size: 16px;
+}
+
+.appUserLessons-lesson {
+  width: 48px;
+}
+
+.appUserLessons-date .form-control {
+    background: transparent;
+    cursor: pointer;
+}
+.appUserLessons-date {
+  width: 105px;
+}
+.appUserLessons-acarya {
+    width: calc(100% - 48px - 100px);
+}
+.appUserLessons-acaryaText {
+    #overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+}

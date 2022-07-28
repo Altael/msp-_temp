@@ -1,0 +1,429 @@
+@import "../colors";
+@import "colors";
+
+.appBlogList-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.appBlogList-item {
+    display: block;
+    background-color: $white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.appBlogList-itemInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 15px;
+}
+
+.appBlogList-itemInfoWrap {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.appBlogList-itemInfoImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.appBlogList-itemInfoTitle {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.appBlogList-itemInfoTime {
+    color: $txt_greyLt;
+    line-height: 16px;
+    font-size: 13px;
+}
+
+.appBlogList-itemInfoSubtitle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.appBlogList-itemImg {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.appBlogList-itemIcons {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 10px;
+
+    .appIcons {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .appBlogList-itemIcon:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    .msppIcons::before {
+        font-size: 18px;
+        font-weight: 500;
+        color: $txt_tools;
+        margin-right: 4px;
+    }
+
+    span {
+        color: $txt_greyLt;
+        font-size: 14px;
+        line-height: 14px;
+        margin-right: 4px;
+    }
+
+    .liked .msppIcons::before,
+    .liked span {
+        color: $am_color;
+    }
+}
+.appBlogNews {
+    font-family: "SF Pro Display", Arial, sans-serif;
+}
+.appBlogNews-tools {
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.appBlogNews-toolsButtons {
+    display: flex;
+    align-items: center;
+
+    *:not(:last-child) {
+        margin-right: 4px;
+    }
+    .msppIcons-calendar {
+        color: #8c8c8c;
+        font-size: 22px;
+        margin-left: 12px;
+    }
+}
+
+.appBlogNews-linksWrapper {
+    height: 142px;
+    padding: 16px 0;
+    background: $white;
+
+    .dhrtHorizontalScroll-wrapperOuter {
+        height: 110px;
+    }
+}
+.appBlogNews-links .appConnect2app.connected {
+    display: none;
+}
+.appBlogNews-links {
+    padding: 0;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    .mspForm-button {
+        margin-right: 16px;
+    }
+    .appConnect2app-connected,
+    .appTelegram .appCheck-telegramTerms,
+    .appTelegram .appTelegramNotice-after {
+        display: none;
+    }
+    .dhrtHorizontalScroll-wrapperOuter {
+        height: 126px;
+    }
+    .dhrtHorizontalScroll-wrapperInner {
+
+    }
+    .appForm-group {
+        margin: 10px 0;
+    }
+}
+
+.appBlogNews-link {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow: 0 2px 3px #00000029;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 16px;
+
+    &Wrap {
+        padding-right: 8px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px #A7A7A7;
+    }
+
+    &.orange {
+        background: transparent linear-gradient(180deg, $white -50%, $link-orange 100%) 0% 0% no-repeat padding-box;
+    }
+
+    &.green {
+        background: transparent linear-gradient(180deg, $white -50%, $link-green 100%) 0% 0% no-repeat padding-box;
+    }
+
+    &.blue {
+        background: transparent linear-gradient(180deg, $white -50%, $link-blue 100%) 0% 0% no-repeat padding-box;
+    }
+
+    &.purple {
+        background: transparent linear-gradient(180deg, $white -50%, $link-purple 100%) 0% 0% no-repeat padding-box;
+    }
+}
+
+.appBlogNews-linkIcon {
+    color: $white;
+    font-size: 34px;
+    margin-bottom: 4px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 34px;
+
+    &.msppIcons-book1 {
+        font-size: 30px;
+    }
+}
+
+.appBlogNews-linkImgTel {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 8px;
+}
+
+.appBlogNews-linkText {
+    line-height: 13px;
+    font-size: 11px;
+    height: 26px;
+    flex-shrink: 0;
+    text-align: center;
+    color: $white;
+}
+
+.appBlogNews-avatar {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+}
+
+.appBlogList-itemIcon {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .msppIcons-heart-empty {
+        font-weight: bold;
+    }
+}
+
+.appBlog p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+
+.appBlogList-itemBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.appBlogList-audio {
+    padding: 16px;
+}
+.appBlogList-audio audio,
+.appBlogList-itemBodyText iframe,
+.appBlogList-itemBodyText audio {
+    width: 100%;
+}
+
+
+.appBlogList-itemBodyText a {
+    text-decoration: solid;
+    color: $marga;
+}
+.appConnect2appWrap {
+    text-align: center;
+}
+
+.appBlogList-itemVideo video {
+    width: 100%;
+}
+.appNews .audioPlayer {
+    padding: 0 16px;
+}
+.appNews .appBlogNewsModal-svadhyayaAudio .audioPlayer {
+    padding: 0;
+}
+.appNews .appPageContentBody > .dhrtScroll-wrapperInner {
+    height: calc(100vh - 70px);
+}
+[id^="readMore-button"] {
+    display: none;
+}
+.appBlogList-itemBodyText {
+    max-height: 88px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    transition: all 1.5s ease;
+
+}
+[id^="readMore-button"]:checked ~ .appBlogList-itemBodyText {
+
+    -webkit-line-clamp: unset;
+    max-height: none;
+}
+
+[id^="readMore-button"]:checked ~ .appBlogList-itemBodyLink {
+    display: none;
+}
+body.theme_am .appBlogNewsModal-dailyCardTextWrap .dhrtScroll-wrapperInner {
+    padding-bottom: 0;
+}
+.appBlogList-itemImg {
+    margin-top: 8px;
+}
+.appBlogList-itemBodyLink {
+    order: 1;
+    color: $am_color;
+    cursor: pointer;
+    font-size: 16px;
+}
+.appBlogNewsModal-dailyCardText {
+    line-height: 18px;
+}
+
+
+
+
+
+.appTelegram {
+
+    .appTelegramNotConnected {
+        margin: 0;
+    }
+
+    .appForm-button {
+        background: transparent linear-gradient(180deg, $white -50%, $link-blueLt 100%) 0% 0% no-repeat padding-box;
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 0 2px 3px #00000029;
+        border-radius: 10px;
+        padding: 16px;
+
+        .appTelegramIcon {
+            font-size: 34px;
+            margin-bottom: 4px;
+            margin-right: 0;
+            color: $white;
+            display: block;
+            -webkit-box-flex: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
+            height: 34px;
+        }
+
+        .appTelegramText {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 13px;
+            text-align: center;
+            white-space: normal;
+        }
+    }
+    &.appItemDisabled .appForm-button  {
+        background: transparent linear-gradient(180deg, $white -50%, #777 100%) 0 0 no-repeat padding-box;
+    }
+    &.appItemDisabled .appForm-button .appTelegramIcon {
+        color: $disabled;
+    }
+}
+
+
+
+
+.appConnect2app {
+    cursor: pointer;
+
+    .mspForm-button {
+        background: transparent linear-gradient(180deg, $white -50%, $link-purpleMd 100%) 0% 0% no-repeat padding-box;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 0 2px 3px #00000029;
+        border-radius: 10px;
+        padding: 16px;
+        margin-right: 0;
+
+        .appConnect2appWrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover {
+            box-shadow: 0 0 5px #A7A7A7;
+        }
+
+        .appConnect2appImg {
+            width: 56px;
+            height: 34px;
+            margin-bottom: 4px;
+        }
+
+        .appConnect2appText {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 13px;
+            text-align: center;
+            white-space: normal;
+            color: $white;
+            width: auto;
+        }
+    }
+}
+
+
+

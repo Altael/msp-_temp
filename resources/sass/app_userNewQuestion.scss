@@ -1,0 +1,53 @@
+.appUserNewQuestion {
+  color: $txt_grey;
+}
+
+.appUserNewQuestion-finish {
+  margin-bottom: 16px;
+  font-size: 16px
+}
+
+.appUserNewQuestion-head {
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $border;
+  margin-bottom: 24px;
+}
+
+.appUserNewQuestion-fieldName {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.appUserNewQuestion-fieldInput {
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid $border;
+  box-shadow: none;
+  padding: 8px;
+}
+
+.appUserNewQuestion-submit {
+  display: flex;
+  justify-content: flex-end;
+
+  button{
+    padding: 8px 24px;
+    font-weight: 600;
+    background-color: $marga;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    &:hover {
+      box-shadow: 0 0 5px $margaLt;
+    }
+  }
+}
+
+.appUserNewQuestion-footerButtons {
+    justify-content: space-between;
+}
+

@@ -1,0 +1,48 @@
+.appHome {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.appHome-item  {
+    background-color: rgb(255,179,78,0.6);
+    color: $white;
+    transition: all 0.3s;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    width: 271px;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.appHome-item:hover {
+    background-color: $marga;
+    color: $white;
+}
+
+.appHome-itemIcon {
+    margin-right: 8px;
+    font-size: 18px;
+    color: $white;
+}
+
+@media screen and (min-width: 425px) {
+    .appHome {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .appHome-item  {
+        width: 184px;
+        margin: 4px auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .appHome {
+        /*display: none;*/
+    }
+}

@@ -1,0 +1,147 @@
+/* if single use @import "crm-effects.css";*/
+.dhrtModalWindow  {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1040;
+}
+.dhrtModalWindow .dhrtScroll-wrapperInner {
+    padding-bottom: 0;
+}
+.dhrtModalWindow-back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 1041;
+}
+
+.dhrtModalWindow-scroll .dhrtModalWindow-body,
+.dhrtModalWindow-scroll .dhrtScroll-wrapperInner {
+    max-height: calc(90vh - 36px - 36px - 75px);
+}
+.dhrtModalWindow-scroll .mspForm-groupTitle {
+    margin-bottom: 0;
+}
+
+.dhrtModalWindow-content {
+    max-height: 90vh;
+    max-width: 90vw;
+    min-width: 280px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);
+    /*padding: 0 0 20px;*/
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1042;
+}
+.dhrtModalWindow-close:hover {
+    color: #5e5e5e;
+}
+.dhrtModalWindow-close {
+    color: #919191;
+    font-size: 28px;
+    line-height: 22px;
+    cursor: pointer;
+    width: 30px;
+    padding: 0 8px;
+}
+.dhrtModalWindow-head {
+    height: 54px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+    padding: 16px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dhrtModalWindow-title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: calc(100% - 30px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.dhrtModalWindow-bodyContent {
+    padding: 32px;
+}
+.dhrtModalWindow-footer {
+    box-shadow: 0 -3px 3px rgba(0,0,0,0.05);
+    /*z-index: 4;*/
+    padding: 16px 0;
+}
+.dhrtModalWindow-footerButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.dhrtModalWindow-footerButton {
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 115px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #646464;
+}
+.dhrtModalWindow-footerButton:hover {
+     box-shadow: 0 0 5px #919191;
+}
+.dhrtModalWindow-footerSave {
+    border: 1px solid transparent;
+    background-color: #FFB34E;
+    color: white;
+}
+.dhrtModalWindow-footerSave:hover {
+     box-shadow: 0 0 5px rgba(255, 179, 78, 0.36);
+}
+.dhrtModalWindow-footerSave.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.dhrtModalWindow-footerSave.disabled:hover {
+    box-shadow: none;
+}
+
+
+
+
+@media screen and (min-width: 414px){
+    .dhrtModalWindow-content {
+        min-width: 360px;
+        max-width: 360px;
+    }
+}
+@media screen and (min-width: 768px){
+    /*.dhrtModalWindow-head,
+    .dhrtModalWindow-footer,
+    .dhrtModalWindow-body {
+        padding-left: 32px;
+        padding-right: 32px;
+    }*/
+
+    .dhrtModalWindow-footerButton {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .dhrtModalWindow-footer {
+        width: auto;
+    }
+    .dhrtModalWindow-footerButton:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+

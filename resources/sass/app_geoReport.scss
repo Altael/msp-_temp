@@ -1,0 +1,151 @@
+.appGeoReport-count {
+    font-size: 13px;
+    color: $txt_greyLt;
+}
+.appGeoReport-level {
+    border-radius: 8px;
+    padding: 25px;
+    background-color: $white;
+}
+.appGeoReport-levelWrap {
+  margin: 4px 0 4px 8px;
+  color: $txt_grey;
+}
+.appGeoReport-levelSector {
+    margin-left: 0;
+}
+
+.appGeoReport-levelName {
+    display: flex;
+    align-items: flex-start;
+}
+.appGeoReport-levelNameText {
+    font-size: 20px;
+    line-height: 22px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.appGeoReport-levelNameTextTitle {
+    font-size: 14px;
+    line-height: 18px;
+    color: $txt_greyLt;
+    margin-top: 4px;
+}
+.appGeoReport-iconGrid {
+    margin-right: 14px;
+    margin-top: 2px;
+    font-size: 14px;
+}
+.appGeoReport-levelInfo {
+    padding: 16px 0 0 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: max-content auto max-content auto;
+    grid-column-gap: 4px;
+}
+
+.appGeoReport-listName,
+.appGeoReport-listValue {
+    align-self: center;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    display: flex;
+}
+.appGeoReport-listName {
+    color: $txt_greyLt;
+}
+.appGeoReport-listValue {
+    font-weight: 700;
+}
+.appGeoReport-iconsCircle {
+    position: relative;
+}
+.appGeoReport-iconsCircle::after {
+    content: '';
+    border: 2px solid $border;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    position: absolute;
+    bottom: -4px;
+    left: 34px;
+}
+.appGeoReport-iconsCircle::before {
+    color: $txt_tools;
+    position: absolute;
+    bottom: 1px;
+    left: 39px;
+    font-size: 16px;
+}
+.appGEO-detailContentStaffAvatarWrap:hover .appGEO-detailContentStaffAvatar {
+    margin-bottom: 2px;
+}
+.appGEO-detailContentStaffAvatarWrap:hover {
+    overflow: visible;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 112px;
+}
+.appGEO-detailContentStaffAvatarWrap {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+
+    z-index: 9;
+    overflow: hidden;
+}
+.appGeoReport-listValueAcarya {
+    width: 24px
+}
+.appGEO-detailContentStaffAvatar:not(:last-child) {
+    margin-right: 4px;
+}
+.appGEO-detailContentStaffAvatar {
+    position: relative;
+    border: 1px solid $border;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    /*left: -8px;*/
+}
+
+.appGeoReport-levelWrap {
+    display: block;
+    cursor: pointer;
+}
+
+
+.appGeoReport-levelWrap .appGeoReport-levelWrap {
+    display: none;
+}
+.appGeoReport-levelCheck:checked + .appGeoReport-levelWrap > .appGeoReport-levelWrap {
+    display: block;
+}
+
+@media screen and (min-width: 414px) {
+    .appGeoReport-levelInfo {
+        grid-column-gap: 8px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .appGeoReport-levelInfo {
+        padding-left: 28px;
+        grid-column-gap: 16px;
+        grid-template-columns: max-content auto max-content auto max-content auto max-content auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .appGeoReport-levelInfo {
+        grid-template-columns: max-content auto max-content auto max-content auto max-content auto max-content auto max-content auto max-content auto;
+    }
+    .appGeoReport-listName,
+    .appGeoReport-listValue {
+        font-size: 15px;
+    }
+}
+

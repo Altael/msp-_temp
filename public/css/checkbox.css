@@ -1,0 +1,132 @@
+.dhrtCheckbox-noView {
+    opacity: 0;
+    transform: scale(0);
+}
+.dhrtCheckbox label {
+    margin: 4px 0;
+    padding-left: 0;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #646464;
+    font-size: 14px;
+    width: fit-content;
+    cursor: pointer;
+ }
+.dhrtCheckbox label .dhrtCheckboxView{
+    margin-right: 8px;
+}
+.dhrtCheckboxView {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #e6e6e6;
+    overflow: visible;
+    z-index: 1;
+    background-color: #fff;
+    margin-right: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.dhrtCheckboxView:hover {
+    border-color: #FFB34E;
+}
+.dhrtCheckbox input[type=checkbox]{
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -16px;
+}
+
+.dhrtCheckboxView:after {
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 5px;
+    left: 0;
+    top: 9px;
+}
+input[type='checkbox']:checked + .dhrtCheckboxView {
+    background-color: #FFB34E;
+    border-color: #FFB34E;
+}
+input[type='checkbox']:checked + .dhrtCheckboxView:after {
+    border-color: #fff;
+    position: absolute;
+    left: 2px;
+    top: 8px;
+}
+input[type='checkbox'] + .dhrtCheckboxView:after {
+    animation: none;
+}
+input[type='checkbox']:focus:not(checked) + .dhrtCheckboxView:after,
+input[type='checkbox']:focus:checked + .dhrtCheckboxView:after {
+    animation: check 0.8s;
+}
+
+/* checkbox */
+
+@-webkit-keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 5px;
+    }
+    50% {
+        height: 9px;
+        width: 5px;
+    }
+}
+@-moz-keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 5px;
+    }
+    50% {
+        height: 9px;
+        width: 5px;
+    }
+}
+@-ms-keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 5px;
+    }
+    50% {
+        height: 9px;
+        width: 5px;
+    }
+}
+@keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 5px;
+    }
+    50% {
+        height: 9px;
+        width: 5px;
+    }
+}

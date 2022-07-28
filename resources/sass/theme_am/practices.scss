@@ -1,0 +1,89 @@
+@import "../colors";
+@import "colors";
+@import "../theme_am/variables";
+
+#amPost {
+    img {
+        width: 100%;
+    }
+
+    p {
+        text-align: left;
+
+    }
+
+    .practices & .appPost-body a {
+        color: $am_colorPractices;
+    }
+    .education & .appPost-body a {
+        color: $am_color;
+    }
+}
+#amCategories {
+
+    .amCategories-item:first-child {
+        border-top: 1px $practices_border solid;
+    }
+    .amCategories-item {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px 48px 24px 32px;
+        border-bottom: 1px $practices_border solid;
+        position: relative;
+
+        &:before {
+            right: 32px;
+        }
+
+        &Title {
+            font-size: 16px;
+            line-height: 20px;
+            color: $practices_subtitle;
+
+
+        }
+        &Subtitle {
+            font-size: 12px;
+            color: $practices_title;
+            line-height: 14px;
+            max-height: 42px;
+        }
+    }
+
+    input[type='checkbox']:checked + .dhrtCheckboxView {
+        background-color: $am_colorPractices;
+        border-color: $am_colorPractices;
+    }
+    .dhrtModalWindow-footerSave {
+        background-color: $am_colorPractices;
+    }
+    .amToolbar-item.active {
+        color: $am_colorPractices;
+    }
+    .appQuestionsList-blockContentQuestion:hover,
+    .appQuestionsList-blockContentQuestion:active {
+        border-color: $am_colorPractices;
+    }
+
+    .appUserRequest-restActionsButton {
+        border-color: $am_colorPractices;
+        color: $am_colorPractices;
+    }
+    .msppIcons-chevron-right {
+        font-size: 20px;
+        color: $txt_tools;
+    }
+    .msppIcons-settings::before {
+        color: $txt_greyLt;
+        font-size: 24px;
+    }
+    .amPage-title {
+
+    }
+
+}
+
+
+

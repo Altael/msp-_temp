@@ -1,0 +1,170 @@
+@mixin child-mr4 {
+    & > *:not(:last-child) {
+        margin-right: 4px;
+    }
+}
+
+@mixin child-mr8 {
+    & > *:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+@mixin child-mr16 {
+    & > *:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+@mixin flex-jl-ac {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin flex-jl-as {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+@mixin flex-jl-ae {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+
+@mixin flex-jr-ac {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+@mixin flex-jb-ac {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin flex-jb-as {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+@mixin flex-ja-ac {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin flex-ja-as {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+@mixin flex-jc-ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin flex-ja-ac {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin flex-jc-ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin textOverflowRow {
+    /* текст в одну строку обрезается и добавляется 3 точки вконце*/
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+
+@mixin textOverflowRows2 {
+    /* текст в 3 строки обрезается и добавляется 3 точки вконце*/
+    max-height: 54px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@mixin textOverflowRows3 {
+    /* текст в 3 строки обрезается и добавляется 3 точки вконце*/
+    max-height: 54px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@mixin textOverflowRows4 {
+    /* текст в 3 строки обрезается и добавляется 3 точки вконце*/
+    max-height: 54px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+@mixin textOverflowRows5 {
+    /* текст в 3 строки обрезается и добавляется 3 точки вконце*/
+    max-height: 54px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+}
+
+@mixin linkDisabled {
+    pointer-events: none;
+    cursor: none;
+    color: #ccc;
+}
+
+@mixin amDCPage-bg {
+    background: linear-gradient(225deg, $amDC-bgLight, $amDC-bgDark);
+}
+
+@mixin btn-hover {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

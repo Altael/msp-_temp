@@ -1,0 +1,28 @@
+// Typography
+$font-family-base: 'SF Pro Display', Arial, sans-serif;
+$font-family-light: 'SF Pro Display Light', Arial, sans-serif;
+$font-family-tools: 'SF Pro Text Medium', Arial, sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$zindex-dropdown:          1000 !default;
+$zindex-sticky:            1020 !default;
+$zindex-fixed:             1030 !default;
+$zindex-modal-backdrop:    1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+
+$amToolBar: 62px;
+$amDiary-toolsHeight: 46px;
+$amWidth: 414px;
+$amWidthHalf: $amWidth/2;
+$amDiary-progressHeight: 120px;
+$amSattavaPointsHeight: 30px;
+$amSattavaTextHeight: 32px;
+$borderHeight1: 520px;
+$borderHeight2: 660px;
+$borderHeight3: 750px;
+
+$pageTitleHeight: 75px;
+$amDiaryIndicator: 106px;

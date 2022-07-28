@@ -1,0 +1,26 @@
+@import "colors";
+
+.amPageUserConversation {
+    .appPageContentBody > .dhrtScroll-wrapperInner {
+        height: calc(100vh - 62px);
+    }
+    .appUserConversations {
+        padding: 0 16px;
+    }
+    .appUserConversations-wait {
+        margin-top: 32px;
+    }
+    .appUserConversations-new {
+        background-color: $am_colorProfile;
+    }
+    .appUserNewQuestion {
+        padding-top: 32px;
+    }
+    .dhrtModalWindow-footerButton {
+        min-width: 100px;
+    }
+    a.appCheck-telegramTerms {
+        color: $am_colorProfile;
+    }
+
+}

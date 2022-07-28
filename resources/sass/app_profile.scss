@@ -1,0 +1,477 @@
+@import "colors";
+@import "mixins";
+
+.appProfile {
+    margin-bottom: 32px;
+
+    &Page {
+        .appPageContent {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.theme_am .appProfile {
+    display: block;
+}
+
+
+#appProfilelModa-success .dhrtModalWindow-body {
+    padding: 240px;
+}
+
+#appProfileModal-error .appModal-confirm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.appModal-confirm {
+    text-align: center;
+}
+
+.appProfileCard {
+    background-color: $bg-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 32px;
+}
+
+.appProfile-avatar {
+    margin-bottom: 16px;
+}
+
+.appProfileCard-name {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.appProfileCard-nameSpirit {
+    color: $txt-grey;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.appProfileCard-nameCivil {
+    color: $txt_subtitle;
+    font-size: 14px;
+}
+
+.appProfileCard-main {
+    width: 100%;
+}
+
+.appProfileCard-mainField {
+    margin-bottom: 4px;
+    padding: 8px;
+    font-size: 12px;
+    border-bottom: 1px solid #E2E2E2;
+}
+.appProfileCard-mainFieldValue {
+    color: $txt_subtitle;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 1200px) {
+    .appProfileCard-mainField {
+        display: flex;
+        justify-content: space-between;
+    }
+    .appProfileCard-mainFieldValue {
+        justify-content: flex-end;
+    }
+}
+
+.appProfileCard-mainField:last-child {
+    border: none;
+}
+
+.appProfileCard-mainFieldName {
+    font-weight: 600;
+    margin-top: 5px;
+    color: $txt_grey;
+    height: 27px;
+}
+
+
+
+.appProfileInfo {
+    background-color: $bg-white;
+    padding: 48px 32px;
+}
+.appMissingLessongs-gender {
+    @include flex-jl-ac;
+    @include child-mr8;
+    label span {
+        color: #646464;
+        line-height: 39px;
+    }
+}
+.appProfile-initiationDate {
+    width: 105px;
+    .appForm-input {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .appProfile-acaryaFirst {
+        display: flex;
+        align-items: center;
+
+        .appMissingLessongs-gender {
+            margin-right: 64px;
+        }
+    }
+}
+
+.appProfile-gender .dhrtRadio,
+.appProfile-english .dhrtRadio {
+    display: flex;
+}
+
+.appProfile-gender .dhrtRadio label:last-child,
+.appProfile-english .dhrtRadio label:last-child {
+    margin-left: 16px;
+}
+
+.appProfile-cityText {
+    font-size: 13px;
+    color: $txt_greyMd;
+    margin-bottom: 2px;
+    font-weight: 300;
+}
+
+.appProfile-fieldMark {
+    color: $txt_greyMd;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.appProfile-mark::after {
+    content: '*';
+    color: $marga;
+    position: relative;
+    top: -4px;
+    left: 2px;
+}
+
+.appProfile-eula {
+    display: flex;
+    align-items: center;
+    margin: 8px 8px 8px 0;
+}
+
+.appProfile-eula .dhrtCheckboxView {
+    top: 0;
+}
+
+a.appCheck-telegramTerms:hover,
+.appProfile-eula .dhrtCheckboxView:hover {
+    text-decoration: $marga;
+    color: $marga;
+}
+
+a.appCheck-telegramTerms {
+    width: 100%;
+    text-align: center;
+}
+.appTelegramNotConnected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4px;
+}
+.appProfile-agreementLink {
+    color: $app_link;
+    cursor: pointer;
+}
+.appProfile-agreementDoc {
+    font-size: 13px;
+    margin-top: 4px;
+    margin-left: 24px;
+}
+.appProfile-eula .appProfile-agreement {
+    display: flex;
+    flex-direction: column;
+}
+.appProfile-agreement .appProfile-mark {
+    color: $marga;
+}
+
+.appProfile-eula .appProfile-agreement a {
+    color: $marga;
+    text-decoration: underline;
+}
+a.appCheck-telegramTerms {
+    text-align: center;
+    display: block;
+    color: $marga;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 4px;
+}
+.appTelegramNotice {
+    margin-bottom: 8px;
+    line-height: 16px;
+    text-align: center;
+    width: 100%;
+    color: $txt_greyMd;
+    font-size: 14px;
+}
+.appTelegramConnected .appIcons.msppIcons-send {
+    margin-right: 4px;
+}
+.appTelegramConnected {
+    text-align: center;
+}
+
+.appTelegramNotice-after {
+    margin-top: 4px;
+    line-height: 16px;
+    text-align: center;
+    color: #ccc;
+}
+.appProfile-eula input[type='checkbox']:checked + .dhrtCheckboxView {
+    background-color: $marga;
+    border-color: $marga;
+}
+
+.appProfile-eula .dhrtCheckbox label {
+    display: flex;
+    align-items: flex-start;
+}
+
+.appProfile-save {
+    display: flex;
+    justify-content: center;
+}
+
+.appPageForm-inputField {
+    color: $form_txt_field;
+    border-radius: 8px;
+    border: 1px solid $txt_border;
+    width: 100%;
+    padding: 4px;
+}
+
+.appPageForm-headerTitle {
+    margin-bottom: 32px;
+}
+
+.appPageForm-headerTitleName {
+    font-weight: 600;
+    font-size: 24px;
+    color: $txt-grey;
+}
+
+.appPageForm-headerTitleAddition {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $txt_greyMd;
+    margin-bottom: 4px;
+}
+
+.appPageForm-header .appPageForm-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appProfile-englishTelegram .dhrtCheckbox a {
+    color: $marga;
+}
+.appProfile-englishTelegram .dhrtCheckbox a:hover {
+    color: $marga;
+}
+
+
+.appPageUserConversations .appTelegram,
+.appProfile .appTelegram {
+    margin: 16px auto;
+}
+.appPageForm-body {
+    margin-bottom: 40px;
+}
+
+.appPageForm-input {
+    margin-bottom: 24px;
+}
+
+.appPageForm-input label {
+    font-weight: 300;
+    font-size: 13px;
+    color: $txt_grey;
+}
+
+.appPageForm-input input {
+    font-weight: 300;
+    color: $txt-grey;
+    font-size: 14px;
+    border: 2px solid $txt_border;
+}
+
+.appPageForm-input [type="text"] {
+    border-radius: 8px;
+}
+
+.appPageForm-input [type="submit"] {
+    background-color: $marga;
+    border-radius: 8px;
+    padding: 8px 24px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+}
+
+.appPageForm-footerBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.appProfile .appPageForm-footerBlock {
+    display: block;
+
+}
+
+.appProfile-infoMessage {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    color: $marga;
+}
+
+.appProfile-diaryInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.appProfile-diaryInfo span {
+    margin-right: 4px;
+}
+
+.appProfile .appConnect2app .mspForm-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent linear-gradient(180deg, $white -50%, $link-purpleMd 100%) 0% 0% no-repeat padding-box;
+    padding: 9px 6px;
+    border-radius: 8px;
+    max-width: 280px;
+    min-width: 230px;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0 auto;
+
+    &:hover {
+        box-shadow: 0 0 5px $link-purpleMd;
+    }
+}
+
+.appProfile .appConnect2appWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.appProfile .appConnect2appText {
+    font-weight: 500;
+    color: $white;
+    line-height: 14px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.appProfile .appConnect2appImg {
+    width: 32px;
+}
+
+.appProfile .appConnect2app.connected .mspForm-button {
+    opacity: 0.5;
+}
+
+@media (min-width: 414px) {
+    .appTelegram {
+        max-width: 400px;
+    }
+}
+.appProfile-fasting {
+
+    .appForm-groupRow {
+        display: block;
+    }
+
+    &Items {
+        display: flex;
+
+        label {
+            margin-right: 16px;
+        }
+    }
+
+
+
+}
+@media (min-width: 1024px) {
+    .appMSPLayout {
+        .appProfileCard {
+            width: 25%;
+        }
+        .appProfileInfo {
+            width: 75%;
+            margin-left: 10px;
+        }
+        .appPageForm-header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .appPageForm-header > div {
+            width: calc(50% - 28px);
+        }
+        .appPageForm-body {
+            display: flex;
+            justify-content: space-between;
+        }
+        .appPageForm-body > div {
+            width: calc(50% - 28px);
+        }
+        .appPageForm-footer {
+            margin-left: calc(50% + 28px);
+        }
+        .appPageForm-input [type="submit"] {
+            width: auto;
+        }
+
+
+
+    }
+
+}
+
+.appProfile-diaryInfo .appForm-groupTitle {
+    margin-bottom: 0;
+    margin-right: 4px;
+}
+
+
+
+
+
+
